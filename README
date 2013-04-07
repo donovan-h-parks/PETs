@@ -1,0 +1,134 @@
+Putative Evolutionary Trees (PETs)
+ by Donovan Parks and Phil Hugenholtz
+-------------------------------------------------------------------------------
+
+Putative Evolutionary Trees is free software: you can redistribute it and/or 
+modify it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Putative Evolutionary Trees is distributed in the hope that it will be 
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Putative Evolutionary Trees.  If not, see <http://www.gnu.org/licenses/>.
+
+
+Installation:
+-------------------------------------------------------------------------------
+
+PETs is a command-line program written in C++.  To install PETs, download and 
+uncompress it with the unzip command:
+  unzip PETs_1_0_0.zip
+
+To compile PETs on OSX or Linux simply type 'make' from within the source directory 
+of PETs. The resulting executable will be in the bin directory. A precompiled 
+executables for Windows is provided in the bin directory. Please note that even 
+under Windows, Network Diversity must be run from the command-line (i.e., the DOS 
+prompt).
+
+
+Program usage:
+-------------------------------------------------------------------------------
+
+Usage: Network Diversity [OPTIONS]
+Calculates taxon- and phylogenetic-basec beta diversity measures.
+
+Options:
+ -h, --help           Produce help message.
+ -l, --list-calc      List all supported calculators.
+ -u, --unit-tests     Execute unit tests.
+ 
+ -c, --calculator     Desired calculator (e.g., Bray-Curtis, Canberra).
+ -w, --weighted       Indicated if sequence abundance data should be used.
+ -y, --count          Use count data as opposed to relative proportions.
+
+ -n, --nexus-file     Nexus input file (must contain a Taxa and Splits block, root split system with Outgroup taxa).
+ -t, --newick-file    Newick input file (tree treated as implicitly rooted).
+ -s, --sample-file    Sample file indicating number of times each sequences is found in a sample.
+ -o, --output-file    Output file.
+
+ -x, --max-data-vecs  Maximum number of profiles (data vectors) to have in memory at once (default = 1000).
+
+ -v, --verbose        Provide additional information on program execution.
+
+Examples of Use:
+ ./NetworkDiversity -n input.nex -s seq.txt -o output.txt -c Bray-Curtis -w
+ ./NetworkDiversity -t input.tre -s seq.txt -o output.txt -c Bray-Curtis -w
+  
+Verifying software installation:
+-------------------------------------------------------------------------------
+
+A set of unit tests is included to verify proper installation of the Network 
+Diversity software. The unit tests can be run with:
+  ./NetworkDiversity -u
+
+The software should not be used if any of the unit tests fail.
+
+Input file formats:
+-------------------------------------------------------------------------------
+
+Network Diversity uses Newick trees and Nexus split systems as input. Information 
+on the Newick tree format can be found at: 
+  http://evolution.genetics.washington.edu/phylip/newicktree.html.
+  
+Here is a simple Newick tree with three leaf nodes labelled A, B, and C:
+ (A:1,(B:1,C:1):1);
+ 
+Trees or split systems containing incompatible splits can be specified using
+the Nexus format. Network Diversity is compatible with Nexus files generated
+by SplitsTree (http://www.splitstree.org/). In particular, Network Diversity
+requires a Taxa and Splits block.
+
+Sequence count information must be specified as a tab-delimited table where
+each row is a sample and each column is the name of a leaf node in the provided
+tree. Data must be provided for all leaf nodes in the tree. Consider the 
+following example:
+
+	A	B	C
+Sample1	1	2	3
+Sample2	10	1	0
+Sample3	0	0	1
+
+The first row is a tab seperate list of the taxa present in the tree or split 
+system. Please note that this line MUST start with a tab. The number of sequences 
+associated with each taxa is then indicated for each sample on a seperate
+row. In this example, the first sample is labelled 'Sample1' and contains 1
+instance of taxa A, 2 instances of B, and 3 instances of C. Sample3
+contains only instances of C, but note that zeros must be specified for the
+other taxa.
+
+Example input files are avaliable in the unit-tests directory. 
+
+Output file format:
+-------------------------------------------------------------------------------
+
+The resulting dissimilarity between samples is written as a tab-delimited, 
+lower-triangular dissimilarity matrix with the first line indicating the number
+of samples. Consider the following output:
+
+3
+A
+B	1
+C	2	3
+
+The first line indicates that there are 3 samples. The dissimilarity between 
+samples A and B is 1, A and C is 2, and B and C is 3.
+
+Citing PETs:
+-------------------------------------------------------------------------------
+
+If you use PETs in your research, please cite:
+
+Parks, D.H. and 
+
+
+Contact Information:
+-------------------------------------------------------------------------------
+
+Donovan Parks
+donovan.parks@gmail.com
+
+Program website: http://kiwi.cs.dal.ca/Software/Network_Diversity
