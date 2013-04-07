@@ -70,7 +70,7 @@ void Node::leaves(Node* node, std::vector<Node*>& leafVector)
 		leaves(node->child(i), leafVector);
 }
 
-std::vector<Node*> Node::nodes()
+std::vector<Node*> Node::breadthFirstOrder()
 {
 	std::vector<Node*> nodes;
 

@@ -31,6 +31,10 @@ class SplitSystem
 {
 public:
 	SplitSystem() {}
+	SplitSystem(const std::string& name): m_name(name) {}
+
+	std::string name() const { return m_name; }
+	void name(const std::string& name) { m_name = name; }
 
 	uint numSplits() const { return m_splits.size(); }
 
@@ -39,6 +43,11 @@ public:
 	bool isCompatible();
 	void createTree(Tree& tree);
 
+	void print(std::ofstream& fout) const;
+
 private:
+	std::string m_name;
 	std::set<Split> m_splits;
+
+	std::vector<bool> m_taxaMask;
 };

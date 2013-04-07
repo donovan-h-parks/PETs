@@ -30,9 +30,14 @@
 class Split
 {
 public:
+	static const char RIGHT_TAXA = 0;
+	static const char LEFT_TAXA = 1;	
+	static const char MISSING_TAXA = 2;
+
+public:
 	Split();
 	Split(const Split& other);
-	Split(float weight, uint frequency, const std::vector<bool>& split);
+	Split(float weight, uint frequency, const std::vector<byte>& split);
 	~Split() {}
 
 	Split& operator=(Split const& other);
@@ -44,15 +49,22 @@ public:
 	uint frequency() const { return m_frequency; }
 	void frequency(uint freq) { m_frequency = freq; }
 
+	uint splitSize() const { return m_split.size(); }
+	
+	bool isTaxaInSplit(uint taxaIndex) const { return m_split.at(taxaIndex) != MISSING_TAXA; }
+	uint numTaxaInSplit() const;
+
 	bool isTrivial() const;
 
+	void print(std::ofstream& fout) const;
+
 private:
-	std::vector<bool> split() const { return m_split; }
+	std::vector<byte> split() const { return m_split; }
 
 private:
 	float m_weight;
 	uint m_frequency;
 
 	/** Specifies the sequence ID of sequences on the left (1) and right (0) of a split. */
-	std::vector<bool> m_split;
+	std::vector<byte> m_split;
 };

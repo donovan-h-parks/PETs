@@ -204,16 +204,43 @@ void SplitSystem::createTree(Tree& tree)
 
 void SplitSystem::addSplit(const Split& split) 
 { 
+	// add split to split system
 	std::set<Split>::iterator it = m_splits.find(split);
 	if(it == m_splits.end())
+	{
 		m_splits.insert(split); 
+
+		// add taxa to taxa mask
+		if(m_taxaMask.empty())
+			m_taxaMask.resize(split.splitSize(), false);
+
+		for(uint i = 0; i < split.splitSize(); ++i)
+		{
+			if(split.isTaxaInSplit(i))
+				m_taxaMask.at(i) = true;
+		}
+	}
 	else
 	{
 		// increase frequecy of split
-		Split split = *it;
-		split.frequency(split.frequency() + 1);
-
+		Split newSplit = *it;
 		m_splits.erase(it);
-		m_splits.insert(split);
+
+		uint freq = newSplit.frequency();
+		float avgWeight = (float(freq)/(freq+1))*newSplit.weight() + (1.0f/(freq+1))*split.weight();
+		newSplit.weight(avgWeight);
+		newSplit.frequency(freq + 1);
+	
+		m_splits.insert(newSplit);
 	}
+}
+
+void SplitSystem::print(std::ofstream& fout) const
+{
+	fout << "Name: " << m_name << std::endl;
+	fout << "Splits: " << m_splits.size() << std::endl;
+
+	std::set<Split>::const_iterator it;
+	for(it = m_splits.begin(); it != m_splits.end(); ++it)
+		it->print(fout);
 }

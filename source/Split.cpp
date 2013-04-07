@@ -23,7 +23,7 @@
 
 #include "Split.hpp"
 
-Split::Split(float weight, uint frequency, const std::vector<bool>& split)
+Split::Split(float weight, uint frequency, const std::vector<byte>& split)
 	: m_weight(weight), m_frequency(frequency), m_split(split)
 {
 
@@ -52,7 +52,48 @@ bool Split::operator<(const Split& other) const
 		return m_split < other.split();
 }
 
+uint Split::numTaxaInSplit() const
+{
+	uint taxaInSplit = 0;
+	for(uint i = 0; i < m_split.size(); ++i)
+	{
+		if(m_split.at(i) == LEFT_TAXA || m_split.at(i) == RIGHT_TAXA)
+			taxaInSplit++;
+	}
+
+	return taxaInSplit;
+}
+
 bool Split::isTrivial() const
 {
+	uint leftTaxa = 0;
+	uint rightTaxa = 0;
+	for(uint i = 0; i < m_split.size(); ++i)
+	{
+		if(m_split.at(i) == LEFT_TAXA)
+			leftTaxa++;
+
+		if(m_split.at(i) == RIGHT_TAXA)
+			rightTaxa++;
+
+		if(leftTaxa > 1 && rightTaxa > 1)
+			return false;
+	}
+
 	return true;
+}
+
+void Split::print(std::ofstream& fout) const
+{
+	for(uint i = 0; i < m_split.size(); ++i)
+	{
+		if(m_split.at(i) == RIGHT_TAXA)
+			fout << "0";
+		else if(m_split.at(i) == LEFT_TAXA)
+			fout << "1";
+		else if(m_split.at(i) == MISSING_TAXA)
+			fout << "x";
+	}
+
+	fout << "\t" << m_weight << "\t" << m_frequency << std::endl;
 }

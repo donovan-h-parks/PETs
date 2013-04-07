@@ -53,7 +53,8 @@ public:
 	const std::vector<Node*>& children() const { return m_children; }
 	    
 	std::vector<Node*> leaves();
-	std::vector<Node*> nodes();
+	std::vector<Node*> nodes() { return breadthFirstOrder(); }
+	std::vector<Node*> breadthFirstOrder();
 
 private:
 	void leaves(Node* node, std::vector<Node*>& leafVector);

@@ -24,38 +24,45 @@
 #include "PETs.hpp"
 #include "Tree.hpp"
 #include "NewickIO.hpp"
+#include "StringUtils.hpp"
 
 int main(int argc, char* argv[])
 {
 	PETs pets;
 
 	// read input file specifying forest of trees for each gene
-	std::ifstream fin(argv[1]);
+	std::string inputFile("../../unit-tests/test-case1.txt"); //argv[1]
+	std::ifstream fin(inputFile.c_str());
 	if(!fin.is_open())
 	{
-		std::cout << "[Error] Failed to open input file: " << argv[1] << std::endl;
+		std::cout << "[Error] Failed to open input file: " << inputFile << std::endl;
 	}
 
 	std::string geneName;
-	std::vector<Tree> trees;
+	std::vector<Tree*> trees;
 	while(!fin.eof())
 	{
 		std::string line;
 		getline(fin, line);
+
+		if(line.empty())
+			continue;
 
 		if(line[0] == '%')
 		{
 			if(!geneName.empty())
 				pets.addGene(geneName, trees);
 
-			geneName = line.substr(1);
+			geneName = StringUtils::removeWhiteSpaces(line.substr(1));
+			trees.clear();
 		}
 		else
 		{
-			Tree tree;
+			Tree* tree = new Tree();
 			NewickIO newickIO;
-			newickIO.parseNewickString(tree, line);
+			newickIO.parseNewickString(*tree, line);
 
+			tree->name(geneName + "-" + StringUtils::toString(trees.size()));
 			trees.push_back(tree);
 		}
 	}
@@ -65,6 +72,10 @@ int main(int argc, char* argv[])
 
 	// build split systems from each forest of gene trees
 	pets.buildSplitSystems();
+
+	std::ofstream fout("../../unit-tests/test.txt");
+	pets.print(fout);
+	fout.close();
 
 	return 0;
 }

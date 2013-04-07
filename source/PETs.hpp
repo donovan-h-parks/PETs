@@ -31,14 +31,16 @@ class PETs
 public:
 	PETs() {}
 
-	void addGene(const std::string& geneName, const std::vector<Tree>& trees);
+	void addGene(const std::string& geneName, const std::vector<Tree*>& trees);
 	void buildSplitSystems();
+
+	void print(std::ofstream& fout) const;
 
 private:
 	void identifyUniqueTaxa();
 
 private:
-	typedef std::map<std::string, std::vector<Tree> > GeneTreeMap;
+	typedef std::map<std::string, std::vector<Tree*> > GeneTreeMap;
 	GeneTreeMap m_geneTrees;
 
 	typedef std::map<std::string, SplitSystem > GeneSplitSystemMap;
