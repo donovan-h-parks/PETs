@@ -32,6 +32,9 @@ public:
 	Tree(Node* root): m_root(root), m_name("") {}
 	~Tree();
 
+	Tree(const Tree& tree);
+	Tree* clone() const { return new Tree(*this); }
+
 	std::string name() const  { return m_name; }
 	void name(const std::string& name) { m_name = name; }
 
@@ -40,6 +43,8 @@ public:
 
 	std::vector<Node*> leaves(Node* subtree) const;
 	std::vector<Node*> nodes(Node* subtree) const { return breadthFirstOrder(subtree); }
+
+	std::set<std::string> commonTaxa(const Tree* tree);
 
 	uint numNodes() const { return m_numNodes; }
 	void numNodes(uint numNodes) { m_numNodes = numNodes; }
@@ -53,8 +58,12 @@ public:
 	float patristicDistance(Node* node1, Node* node2);
 	double distanceToRoot(Node* node);
 
+	void project(const std::set<std::string>& leavesToRetain);
+
 private:
 	void destroySubtree(Node* node);
+
+	Node* cloneSubtree(Node* node);
 
 	void leaves(Node* node, std::vector<Node*>& leaves) const;
 

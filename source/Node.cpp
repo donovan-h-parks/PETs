@@ -54,6 +54,23 @@ Node& Node::operator=(const Node &rhs)
   return *this;
 }
 
+void Node::removeChild(uint pos)
+{
+	m_children.erase(m_children.begin() + pos);
+}
+
+void Node::removeChild(Node* node)
+{
+	for(unsigned int i = 0; i < m_children.size(); i++)
+	{
+		if(m_children.at(i) == node)
+		{
+			m_children.erase(m_children.begin() + i);
+			return;
+		}
+	}
+}
+
 std::vector<Node*> Node::leaves()
 {
 	std::vector<Node*> leafVector;

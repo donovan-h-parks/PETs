@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
 	PETs pets;
 
 	// read input file specifying forest of trees for each gene
-	std::string inputFile("../../unit-tests/test-case1.txt"); //argv[1]
+	std::string inputFile("../../unit-tests/euclidean-test.txt"); //argv[1]
 	std::ifstream fin(inputFile.c_str());
 	if(!fin.is_open())
 	{
@@ -70,10 +70,9 @@ int main(int argc, char* argv[])
 
 	fin.close();
 
-	// build split systems from each forest of gene trees
-	pets.buildSplitSystems();
+	pets.conclustador("../../unit-tests/conclustador-results.txt");
 
-	std::ofstream fout("../../unit-tests/test.txt");
+	std::ofstream fout("../../unit-tests/euclidean-result.txt");
 	pets.print(fout);
 	fout.close();
 

@@ -41,20 +41,25 @@ public:
 
 	Node* parent() const  { return m_parent; }
 	void parent(Node* parent) { m_parent = parent; }
-	void RemoveParent() { m_parent = NULL; }
+	void removeParent() { m_parent = NULL; }
 	    
 	bool isRoot() const { return m_parent == NULL; }
 	bool isLeaf() const  { return m_children.empty(); }
  
 	uint numberOfChildren() const { return m_children.size(); }
 	Node* child(uint pos) const { return m_children[pos]; }
+	const std::vector<Node*>& children() const { return m_children; }
 	void addChild(Node* node);
 	void removeChildren() { m_children.clear(); }
-	const std::vector<Node*>& children() const { return m_children; }
-	    
+	void removeChild(uint pos);
+	void removeChild(Node* node);
+	
 	std::vector<Node*> leaves();
 	std::vector<Node*> nodes() { return breadthFirstOrder(); }
 	std::vector<Node*> breadthFirstOrder();
+
+	bool isProcessed() const { return m_bProcessed; }
+	void setProcessed(bool bProcessed) { m_bProcessed = bProcessed; }
 
 private:
 	void leaves(Node* node, std::vector<Node*>& leafVector);
@@ -63,7 +68,9 @@ private:
 	std::string m_name;
   
 	Node* m_parent;
-  float m_distanceToParent; 
+	float m_distanceToParent; 
 
 	std::vector<Node*> m_children;
+
+	bool m_bProcessed;
 };

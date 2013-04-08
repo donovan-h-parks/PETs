@@ -52,6 +52,25 @@ void Tree::destroySubtree(Node* node)
 	}
 }
 
+Tree::Tree(const Tree& tree): m_root(NULL), m_name(tree.name()), m_numNodes(tree.numNodes()), m_numLeaves(tree.numLeaves())
+{
+	m_root = cloneSubtree(tree.root());
+}
+
+Node* Tree::cloneSubtree(Node* node) 
+{
+  Node* clone = new Node(*node);
+  clone->removeChildren();
+
+  for(uint i = 0; i < node->numberOfChildren(); i++)
+  {
+	clone->addChild(cloneSubtree(node->child(i)));
+  }
+
+  return clone;
+}
+
+
 void Tree::root(Node* root)
 {
 	m_root = root;
@@ -170,4 +189,106 @@ double Tree::distanceToRoot(Node* node)
 	}
 
 	return dist;
+}
+
+void Tree::project(const std::set<std::string>& leavesToRetain)
+{
+	// mark all internal node as active so we can distinguish them from true leaf nodes
+	std::vector<Node*> allNodes = nodes(m_root);
+	for(uint i = 0; i < allNodes.size(); ++i)
+		allNodes.at(i)->setProcessed(!allNodes.at(i)->isLeaf());
+
+	// 1. Removes leave nodes from the tree.
+	std::vector<Node*> allLeaves = leaves(m_root);
+	for(uint i = 0; i < allLeaves.size(); ++i)
+	{
+		if(!leavesToRetain.count(allLeaves.at(i)->name()))
+		{
+			allLeaves.at(i)->parent()->removeChild(allLeaves.at(i));
+			delete allLeaves.at(i);
+		}
+	}
+
+	// 2. Collapse any internal nodes that have less than 2 children. This
+	// is done in a breadth first manner from the leaf nodes to the root node.
+	std::vector<Node*> curNodes = leaves(m_root);
+	std::set<Node*> nextNodes;
+	while(!curNodes.empty())
+	{
+		nextNodes.clear();
+		for(uint i = 0; i < curNodes.size(); ++i)
+		{
+			Node* node = curNodes[i];
+
+			if(!node->isRoot())
+				nextNodes.insert(node->parent());
+
+			if(node->isProcessed() && node->numberOfChildren() == 0)
+			{
+				if(node->isRoot())
+				{
+					// we have a root with no children so just leave it as the sole node in the tree
+				}
+				else
+				{
+					// remove this node from the tree
+					node->parent()->removeChild(node);
+					nextNodes.erase(node);
+					delete node;
+				}
+			}
+			else if(node->isProcessed() && node->numberOfChildren() == 1)
+			{		
+				if(node->isRoot())
+				{
+					// the root is degenerate so we must make its sole child the new root
+					root(node->child(0));
+					node->child(0)->parent(NULL);
+					node->child(0)->distanceToParent(Node::NO_DISTANCE);
+					nextNodes.erase(node);
+					delete node;
+				}
+				else
+				{
+					// remove node from tree after assigning its sole child to its parent
+					node->parent()->addChild(node->child(0));	
+					
+					if(node->child(0)->distanceToParent() != Node::NO_DISTANCE)
+					{
+						// keep track of branch lengths
+						node->child(0)->distanceToParent(node->child(0)->distanceToParent() + node->distanceToParent()); 
+					}
+
+					node->parent()->removeChild(node);
+					nextNodes.erase(node);
+					delete node;
+				}
+			}	
+		}
+
+		curNodes.clear();
+		std::copy(nextNodes.begin(), nextNodes.end(), std::back_inserter(curNodes));
+	}
+
+	m_numNodes = nodes(m_root).size();
+	m_numLeaves = leaves(m_root).size();
+}
+
+std::set<std::string> Tree::commonTaxa(const Tree* tree)
+{
+	std::vector<Node*> leaves1 = leaves(m_root);
+	std::set<std::string> leafSet1;
+	for(uint i = 0; i < leaves1.size(); ++i)
+		leafSet1.insert(leaves1.at(i)->name());
+
+	std::vector<Node*> leaves2 = tree->leaves(tree->root());
+	std::set<std::string> leafSet2;
+	for(uint i = 0; i < leaves2.size(); ++i)
+		leafSet2.insert(leaves2.at(i)->name());
+
+	std::set<std::string> intersect;
+	std::set_intersection(leafSet1.begin(), leafSet1.end(),
+							leafSet2.begin(), leafSet2.end(),
+							std::inserter(intersect, intersect.begin()));
+	return intersect;
 }

@@ -202,45 +202,156 @@ void SplitSystem::createTree(Tree& tree)
 	*/
 }
 
+void SplitSystem::addTree(const Tree* const tree)
+{
+	// save tree
+	m_trees.push_back(tree);
+
+	// create taxa map for first tree
+	if(m_taxaIdMap.size() == 0)
+	{
+		std::vector<Node*> leaves = tree->root()->leaves();
+		for(uint i = 0; i < leaves.size(); ++i)
+			m_taxaIdMap[leaves.at(i)->name()] = i;
+	}
+
+	// check if tree is implicitly rooted
+	bool bImplicitRoot = (tree->root()->numberOfChildren() == 2);
+
+	// build split for each node in the tree
+	std::set<Split> geneTreeSplits;
+	std::vector<Node*> nodes = tree->root()->breadthFirstOrder();
+	for(uint j = 0; j < nodes.size(); ++j)
+	{
+		Node* curNode = nodes.at(j);
+
+		if(curNode->isRoot())
+			continue;
+
+		// if tree is implicitly rooted, only process the left child of
+		// the implicit root in order to avoid double counting the split
+		if(bImplicitRoot && curNode->parent()->isRoot())
+		{
+			if(curNode == curNode->parent()->children()[0])
+				continue;
+		}
+
+		std::vector<bool> split(m_taxaIdMap.size(), Split::RIGHT_TAXA);	// initialize split all taxa in the right bipartition
+
+		std::vector<Node*> leaves = curNode->leaves();
+		for(uint k = 0; k < leaves.size(); ++k)
+		{
+			TaxaIdMap::iterator taxaIdIter = m_taxaIdMap.find(leaves.at(k)->name());
+			split.at(taxaIdIter->second) = Split::LEFT_TAXA;
+		}
+
+		addSplit(Split(curNode->distanceToParent(), 1, split));
+		geneTreeSplits.insert(Split(curNode->distanceToParent(), 1, split));
+	}
+
+	m_treeSplits.push_back(geneTreeSplits);
+}
+
 void SplitSystem::addSplit(const Split& split) 
 { 
 	// add split to split system
-	std::set<Split>::iterator it = m_splits.find(split);
-	if(it == m_splits.end())
+	std::set<Split>::iterator it = m_uniqueSplits.find(split);
+	if(it == m_uniqueSplits.end())
 	{
-		m_splits.insert(split); 
-
-		// add taxa to taxa mask
-		if(m_taxaMask.empty())
-			m_taxaMask.resize(split.splitSize(), false);
-
-		for(uint i = 0; i < split.splitSize(); ++i)
-		{
-			if(split.isTaxaInSplit(i))
-				m_taxaMask.at(i) = true;
-		}
+		m_uniqueSplits.insert(split);
 	}
 	else
 	{
 		// increase frequecy of split
 		Split newSplit = *it;
-		m_splits.erase(it);
+		m_uniqueSplits.erase(it);
 
 		uint freq = newSplit.frequency();
 		float avgWeight = (float(freq)/(freq+1))*newSplit.weight() + (1.0f/(freq+1))*split.weight();
 		newSplit.weight(avgWeight);
-		newSplit.frequency(freq + 1);
-	
-		m_splits.insert(newSplit);
+		newSplit.frequency(freq + split.frequency());
+
+		m_uniqueSplits.insert(newSplit);
 	}
 }
 
 void SplitSystem::print(std::ofstream& fout) const
 {
 	fout << "Name: " << m_name << std::endl;
-	fout << "Splits: " << m_splits.size() << std::endl;
+	fout << "Unique splits: " << m_uniqueSplits.size() << std::endl;
+	fout << "Trees in split system: " << m_trees.size() << std::endl;
+	fout << "Taxa map: " << std::endl;
+	TaxaIdMap::const_iterator taxaIdIt;	
+	for(taxaIdIt = m_taxaIdMap.begin(); taxaIdIt != m_taxaIdMap.end(); ++taxaIdIt)
+		fout << taxaIdIt->first << "\t" << taxaIdIt->second << std::endl;
+	fout << std::endl;
 
+	fout << "Unique splits (split, weight, frequency): " << std::endl;
 	std::set<Split>::const_iterator it;
-	for(it = m_splits.begin(); it != m_splits.end(); ++it)
+	for(it = m_uniqueSplits.begin(); it != m_uniqueSplits.end(); ++it)
 		it->print(fout);
 }
+
+std::set<std::string> SplitSystem::commonTaxa(const SplitSystem& splitSystem) const
+{
+	std::set<std::string> taxa1;
+	TaxaIdMap::const_iterator it;
+	for(it = m_taxaIdMap.begin(); it != m_taxaIdMap.end(); ++it)
+		taxa1.insert(it->first);
+
+	std::map<std::string, uint> taxaIdMap = splitSystem.taxaIdMap();
+	std::set<std::string> taxa2;
+	for(it = taxaIdMap.begin(); it != taxaIdMap.end(); ++it)
+		taxa2.insert(it->first);
+
+	std::set<std::string> intersect;
+	std::set_intersection(taxa1.begin(), taxa1.end(),
+													taxa2.begin(), taxa2.end(),
+													std::inserter(intersect, intersect.begin()));
+	return intersect;
+}
+
+/*
+
+Implementation is flawed. Doesn't account for identical splits
+occuring after taxa are removed. As such, these splits are counted twice.
+Ex:
+
+Project onto ABCD:
+AB|CDE -> AB|CD
+ABE|CD -> AB|CD
+
+These are the same split now, but appear seperately in the original
+split system. Need to account for this.
+
+void SplitSystem::project(const std::set<std::string> taxa)
+{
+	m_uniqueSplits.clear();
+
+	// determine taxa indices to keep
+	std::vector<uint> indicesToKeep;
+	std::set<std::string>::const_iterator itCommon;
+	for(itCommon = taxa.begin(); itCommon != taxa.end(); ++itCommon)
+	{
+		TaxaIdMap::iterator findIt = m_taxaIdMap.find(*itCommon);
+		indicesToKeep.push_back(findIt->second);
+	}
+
+	std::sort(indicesToKeep.begin(), indicesToKeep.end());
+
+	for(uint i = 0; i < m_treeSplits.size(); ++i)
+	{
+		std::set<Split>::iterator it;
+		for(it = m_treeSplits.at(i).begin(); it != m_treeSplits.at(i).end(); ++it)
+		{
+			std::vector<bool> split = it->split();		
+			std::vector<bool> projSplit(indicesToKeep.size());
+
+			for(uint j = 0; j < indicesToKeep.size(); ++j)
+				projSplit.at(j) = split.at(indicesToKeep.at(j));
+
+			addSplit(Split(it->weight(), it->frequency(), projSplit));
+		}
+	}
+}
+*/

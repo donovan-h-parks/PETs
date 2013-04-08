@@ -36,18 +36,34 @@ public:
 	std::string name() const { return m_name; }
 	void name(const std::string& name) { m_name = name; }
 
-	uint numSplits() const { return m_splits.size(); }
+	uint numUniqueSplits() const { return m_uniqueSplits.size(); }
+	uint numTrees() const { return m_treeSplits.size(); }
+	std::set<Split> uniqueSplits() const { return m_uniqueSplits; }
 
-	void addSplit(const Split& split);
+	void addTree(const Tree* const tree);
+	std::vector<const Tree* const> trees() const { return m_trees; }
+
+	std::map<std::string, uint> taxaIdMap() const { return m_taxaIdMap; }
+
+	std::set<std::string> commonTaxa(const SplitSystem& splitSystem) const;
 
 	bool isCompatible();
 	void createTree(Tree& tree);
 
+	//void project(const std::set<std::string> taxa);
+
 	void print(std::ofstream& fout) const;
 
 private:
-	std::string m_name;
-	std::set<Split> m_splits;
+	void addSplit(const Split& split);
 
-	std::vector<bool> m_taxaMask;
+private:
+	std::string m_name;
+
+	std::vector<const Tree* const> m_trees;
+	std::vector<std::set<Split> > m_treeSplits;
+	std::set<Split> m_uniqueSplits;
+
+	typedef std::map<std::string, uint> TaxaIdMap;
+	TaxaIdMap m_taxaIdMap;
 };

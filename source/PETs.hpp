@@ -32,20 +32,11 @@ public:
 	PETs() {}
 
 	void addGene(const std::string& geneName, const std::vector<Tree*>& trees);
-	void buildSplitSystems();
+
+	void conclustador(const std::string& file);
 
 	void print(std::ofstream& fout) const;
 
 private:
-	void identifyUniqueTaxa();
-
-private:
-	typedef std::map<std::string, std::vector<Tree*> > GeneTreeMap;
-	GeneTreeMap m_geneTrees;
-
-	typedef std::map<std::string, SplitSystem > GeneSplitSystemMap;
-	GeneSplitSystemMap m_geneSplitSystems;
-
-	typedef std::map<std::string, uint> TaxaIdMap;
-	TaxaIdMap m_taxaIds;
+	std::vector<SplitSystem> m_geneSplitSystems;
 };

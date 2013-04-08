@@ -23,10 +23,10 @@
 
 #include "Split.hpp"
 
-Split::Split(float weight, uint frequency, const std::vector<byte>& split)
+Split::Split(float weight, uint frequency, const std::vector<bool>& split)
 	: m_weight(weight), m_frequency(frequency), m_split(split)
 {
-
+	canonicalFormat();
 }
 
 Split::Split(const Split& other)
@@ -49,19 +49,25 @@ Split& Split::operator=(Split const& other)
 
 bool Split::operator<(const Split& other) const
 {
-		return m_split < other.split();
+	return m_split < other.split();
 }
 
-uint Split::numTaxaInSplit() const
+void Split::canonicalFormat()
 {
-	uint taxaInSplit = 0;
-	for(uint i = 0; i < m_split.size(); ++i)
-	{
-		if(m_split.at(i) == LEFT_TAXA || m_split.at(i) == RIGHT_TAXA)
-			taxaInSplit++;
-	}
+	// make sure split is in the canonical format
+	// (first taxa present should be encoded to be on the left of the split)
+	bool bReverseSplit = (m_split.at(0) == RIGHT_TAXA);
 
-	return taxaInSplit;
+	if(bReverseSplit)
+	{
+		for(uint i = 0; i < m_split.size(); ++i)
+		{
+			if(m_split.at(i) == RIGHT_TAXA)
+				m_split.at(i) = LEFT_TAXA;
+			else
+				m_split.at(i) = RIGHT_TAXA;
+		}
+	}
 }
 
 bool Split::isTrivial() const
@@ -91,8 +97,6 @@ void Split::print(std::ofstream& fout) const
 			fout << "0";
 		else if(m_split.at(i) == LEFT_TAXA)
 			fout << "1";
-		else if(m_split.at(i) == MISSING_TAXA)
-			fout << "x";
 	}
 
 	fout << "\t" << m_weight << "\t" << m_frequency << std::endl;

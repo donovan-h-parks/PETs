@@ -23,6 +23,7 @@
 
 //--- Common Numeric Values ---------------------------------------------------
 
+const float INF = std::numeric_limits<float>::max();
 
 //--- Useful flags ---
 
