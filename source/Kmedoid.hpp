@@ -21,33 +21,27 @@
 
 #pragma once
 
-// Generally only 3rd party header files should be included in this file. That is, header files that will
-// almost never be changed. If a project header is added to this file, the entire project will need to be
-// recompiled whenever this file changes. There are cases where this is reasonable (i.e., header files 
-// specifying common typedef's or constants that must be included in almost every file anyways).
+#include "Precompiled.hpp"
 
-// C/C++ includes
-#include <vector>
-#include <set>
-#include <map>
-#include <stack>
-#include <queue>
-#include <iterator>
-#include <algorithm>
-#include <string>
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <iomanip>
-#include <cmath>
-#include <cassert>
-#include <cstdlib>
-#include <ctime>
-#include <limits>
-#include <float.h>
+class Kmedoid
+{
+public:
+	Kmedoid() {}
+	~Kmedoid() {}
 
-// Project files (add with caution!)
-#include "DataTypes.hpp"
-#include "Common.hpp"
+	std::vector<uint> cluster(const Matrix& distMatrix, const std::vector<std::string>& labels, uint numClusters, uint numIterations);
 
+	bool print(const std::string& filename);
 
+private:
+	double determineClosestMedoids(const Matrix& distMatrix);
+	bool swapMedoids(const Matrix& distMatrix, double& cost);
+
+private:
+	std::vector<uint> m_medoids;
+	std::vector<uint> m_clusterId;
+
+	std::vector<uint> m_bestClustering;
+
+	std::vector<std::string> m_labels;
+};

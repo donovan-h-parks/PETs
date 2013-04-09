@@ -28,6 +28,8 @@
 
 int main(int argc, char* argv[])
 {
+	srand((uint)time(NULL));
+
 	PETs pets;
 
 	// read input file specifying forest of trees for each gene
