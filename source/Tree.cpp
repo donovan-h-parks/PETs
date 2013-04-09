@@ -132,7 +132,7 @@ std::vector<Node*> Tree::breadthFirstOrder(Node* subtree) const
 	return nodes;
 }
 
-float Tree::patristicDistance(Node* node1, Node* node2)
+double Tree::patristicDistance(Node* node1, Node* node2)
 {
 	std::vector<Node*> path;
 	std::vector<Node*> pathMatrix1;
@@ -168,7 +168,7 @@ float Tree::patristicDistance(Node* node1, Node* node2)
 	}
 
 	// get distance from node 1 to node 2
-	float dist = 0;
+	double dist = 0;
 	for (int i = 0; i <= tmp1; ++i)
 		dist += pathMatrix1[i]->distanceToParent();
 

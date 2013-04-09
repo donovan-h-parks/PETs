@@ -96,7 +96,7 @@ void NewickIO::parseNodeInfo(Node* node, std::string& nodeInfo)
 		node->name(name);
 
 	if(!length.empty())
-		node->distanceToParent((float)::atof(length.c_str()));
+		node->distanceToParent((double)::atof(length.c_str()));
 }
 
 bool NewickIO::parseNewickString(Tree& tree, const std::string& newickStr)

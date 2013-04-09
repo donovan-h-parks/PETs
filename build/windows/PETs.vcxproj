@@ -76,11 +76,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\source\HierarchicalClustering.hpp" />
     <ClInclude Include="..\..\source\Common.hpp" />
     <ClInclude Include="..\..\source\Conclustador.hpp" />
     <ClInclude Include="..\..\source\DataTypes.hpp" />
+    <ClInclude Include="..\..\source\NeighbourJoining.hpp" />
     <ClInclude Include="..\..\source\NewickIO.hpp" />
     <ClInclude Include="..\..\source\Node.hpp" />
+    <ClInclude Include="..\..\source\PCoA.hpp" />
     <ClInclude Include="..\..\source\PETs.hpp" />
     <ClInclude Include="..\..\source\Precompiled.hpp" />
     <ClInclude Include="..\..\source\Split.hpp" />
@@ -90,11 +93,13 @@
     <ClInclude Include="..\..\source\UnitTests.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\source\HierarchicalClustering.cpp" />
     <ClCompile Include="..\..\source\Conclustador.cpp" />
     <ClCompile Include="..\..\source\main.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="..\..\source\NeighbourJoining.cpp" />
     <ClCompile Include="..\..\source\NewickIO.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
@@ -103,6 +108,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="..\..\source\PCoA.cpp" />
     <ClCompile Include="..\..\source\PETs.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>

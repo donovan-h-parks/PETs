@@ -37,13 +37,13 @@ void Conclustador::calculateDist(const std::vector<SplitSystem>& splitSystems)
 
 		for(uint j = i+1; j < splitSystems.size(); ++j)
 		{
-			float dist = calculateDist(splitSystems.at(i), splitSystems.at(j));
+			double dist = calculateDist(splitSystems.at(i), splitSystems.at(j));
 			m_dist.at(i).at(j) = m_dist.at(j).at(i) = dist;
 		}
 	}
 }
 
-float Conclustador::calculateDist(const SplitSystem& ss1, const SplitSystem& ss2)
+double Conclustador::calculateDist(const SplitSystem& ss1, const SplitSystem& ss2)
 {
 	// get taxa in common between split systems
 	std::set<std::string> commonTaxa = ss1.commonTaxa(ss2);
@@ -64,19 +64,19 @@ float Conclustador::calculateDist(const SplitSystem& ss1, const SplitSystem& ss2
 									splits2.begin(), splits2.end(),
 									std::inserter(allSplits, allSplits.begin()));
 
-	float dist = 0.0f;
+	double dist = 0.0f;
 	std::set<Split>::iterator allSplitsIt;
 	for(allSplitsIt = allSplits.begin(); allSplitsIt != allSplits.end(); ++allSplitsIt)
 	{
 		std::set<Split>::iterator it1 = splits1.find(*allSplitsIt);
-		float f1 = 0.0;
+		double f1 = 0.0;
 		if(it1 != splits1.end())
-			f1 = float(it1->frequency()) / ss1.numTrees();
+			f1 = double(it1->frequency()) / ss1.numTrees();
 
 		std::set<Split>::iterator it2 = splits2.find(*allSplitsIt);
-		float f2 = 0.0;
+		double f2 = 0.0;
 		if(it2 != splits2.end())
-			f2 = float(it2->frequency()) / ss2.numTrees();
+			f2 = double(it2->frequency()) / ss2.numTrees();
 
 		dist += (f1-f2)*(f1-f2);
 	}

@@ -267,7 +267,7 @@ void SplitSystem::addSplit(const Split& split)
 		m_uniqueSplits.erase(it);
 
 		uint freq = newSplit.frequency();
-		float avgWeight = (float(freq)/(freq+1))*newSplit.weight() + (1.0f/(freq+1))*split.weight();
+		double avgWeight = (double(freq)/(freq+1))*newSplit.weight() + (1.0f/(freq+1))*split.weight();
 		newSplit.weight(avgWeight);
 		newSplit.frequency(freq + split.frequency());
 

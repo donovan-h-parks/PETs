@@ -23,25 +23,35 @@
 
 #include "Precompiled.hpp"
 
-#include "SplitSystem.hpp"
+#include "Tree.hpp"
+#include "Node.hpp"
 
-class Conclustador
+class NeighbourJoining
 {
-public:
-	Conclustador() {}
-	
-	void calculateDist(const std::vector<SplitSystem>& splitSystems);
+ public:
+	/** Constructor. */
+	NeighbourJoining() {}
 
-	bool printMatrix(const std::string& filename);
+	/** Destructor. */
+	~NeighbourJoining();
 
-	Matrix distMatrix() const { return m_dist; }
-	std::vector<std::string> labels() const { return m_labels; }
-
+	/** 
+	 * @brief Build neighbour joining (NJ) tree from a distance matrix.
+	 * @param distMatrix Matrix indicating pairwise distance between objects.
+	 * @param labels Labels identifying each row/col of the distance matrix.
+	 * @param tree Resulting NJ tree.
+	 */
+	void buildTree(Matrix& distMatrix, const std::vector<std::string>& labels, Tree* tree);
+  
 private:
-	double calculateDist(const SplitSystem& ss1, const SplitSystem& ss2);
-	SplitSystem project(const SplitSystem& splitSystem, const std::set<std::string>& commonTaxa);
+	double* m_separationSums;
+	double* m_separations;	
+	int m_rowIndex, m_colIndex;
 
-private:
-	std::vector<std::string> m_labels;
-	Matrix m_dist;
+	int m_numActiveClusters;
+	bool* m_activeClusters;
+
+	void findNearestClusters(Matrix& distMatrix);
+	void updateClusters(Matrix& distMatrix, std::vector<Node*>& clusters);
+	void updateDistanceMatrix(Matrix& distMatrix);
 };

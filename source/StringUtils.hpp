@@ -58,7 +58,7 @@ public:
 		return oss.str();
 	}
 
-	static string toString(float d, int precision)
+	static string toString(double d, int precision)
 	{
 		ostringstream oss;
 		oss << setprecision(precision) << d;

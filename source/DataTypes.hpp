@@ -26,4 +26,4 @@ typedef unsigned int uint;
 typedef unsigned char byte;
 typedef unsigned long ulong;
 
-typedef std::vector< std::vector<float> > Matrix;
+typedef std::vector< std::vector<double> > Matrix;

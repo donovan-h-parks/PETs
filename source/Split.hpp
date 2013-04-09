@@ -36,14 +36,14 @@ public:
 public:
 	Split();
 	Split(const Split& other);
-	Split(float weight, uint frequency, const std::vector<bool>& split);
+	Split(double weight, uint frequency, const std::vector<bool>& split);
 	~Split() {}
 
 	Split& operator=(Split const& other);
 	bool operator< (const Split& other) const;
 
-	float weight() const { return m_weight; }
-	void weight(float weight) { m_weight = weight; }
+	double weight() const { return m_weight; }
+	void weight(double weight) { m_weight = weight; }
 
 	uint frequency() const { return m_frequency; }
 	void frequency(uint freq) { m_frequency = freq; }
@@ -61,7 +61,7 @@ private:
 	void canonicalFormat();
 
 private:
-	float m_weight;
+	double m_weight;
 	uint m_frequency;
 	std::vector<bool> m_split;
 };

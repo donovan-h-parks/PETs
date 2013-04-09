@@ -26,7 +26,7 @@
 class Node
 {
 public:
-	static const float NO_DISTANCE;
+	static const double NO_DISTANCE;
 
 public:
 	Node(const std::string& name = "");
@@ -36,8 +36,8 @@ public:
 	std::string name() const	{	return m_name; }
 	void name(const std::string& name)	{	m_name = name; }
    
-	float distanceToParent() const { return m_distanceToParent; }
-	void distanceToParent(float distance) { m_distanceToParent = distance; }
+	double distanceToParent() const { return m_distanceToParent; }
+	void distanceToParent(double distance) { m_distanceToParent = distance; }
 
 	Node* parent() const  { return m_parent; }
 	void parent(Node* parent) { m_parent = parent; }
@@ -68,7 +68,7 @@ private:
 	std::string m_name;
   
 	Node* m_parent;
-	float m_distanceToParent; 
+	double m_distanceToParent; 
 
 	std::vector<Node*> m_children;
 

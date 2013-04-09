@@ -23,7 +23,7 @@
 
 #include "Node.hpp"
 
-const float Node::NO_DISTANCE = -1.0f;
+const double Node::NO_DISTANCE = -1.0f;
 
 Node::Node(const std::string& name)
 	: m_name(name), m_parent(NULL), m_distanceToParent(NO_DISTANCE)

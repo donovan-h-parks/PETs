@@ -55,7 +55,7 @@ public:
 	std::vector<Node*> postOrder(Node* subtree) const;
 	std::vector<Node*> breadthFirstOrder(Node* subtree) const;
 
-	float patristicDistance(Node* node1, Node* node2);
+	double patristicDistance(Node* node1, Node* node2);
 	double distanceToRoot(Node* node);
 
 	void project(const std::set<std::string>& leavesToRetain);
