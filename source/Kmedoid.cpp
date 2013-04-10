@@ -27,8 +27,8 @@ std::vector<uint> Kmedoid::cluster(const Matrix& distMatrix, const std::vector<s
 {
 	m_labels = labels;
 
-	m_medoids.reserve(numClusters);
-	m_clusterId.reserve(distMatrix.size());
+	m_medoids.resize(numClusters);
+	m_clusterId.resize(distMatrix.size());
 
 	double minCost = std::numeric_limits<double>::max();
 	for(uint i = 0; i < numIterations; ++i)
@@ -85,8 +85,8 @@ bool Kmedoid::swapMedoids(const Matrix& distMatrix, double& cost)
 
 	std::set<uint> mediodIndices(m_medoids.begin(), m_medoids.end());
 
-	std::vector<uint> bestMedoids;
-	std::vector<uint> bestClusterId;
+	std::vector<uint> bestMedoids = m_medoids;
+	std::vector<uint> bestClusterId = m_clusterId;
 	bool bConverged = true;
 	for(uint i = 0; i < m_medoids.size(); ++i)
 	{
@@ -129,13 +129,13 @@ bool Kmedoid::print(const std::string& filename)
 
 	for(uint i = 0; i < m_medoids.size(); ++i)
 	{
-		fout << "Cluster " << (i+1) << ":" << std::endl;
+		fout << "%Cluster " << (i+1) << std::endl;
 		for(uint j = 0; j < m_bestClustering.size(); ++j)
 		{
 			if(m_bestClustering.at(j) == i)
 				fout << m_labels.at(j) << std::endl;
-			fout << std::endl;
 		}
+		fout << std::endl;
 	}
 
 	return true;

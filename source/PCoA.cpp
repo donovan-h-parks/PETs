@@ -455,7 +455,7 @@ void EigDecomp::tql2 ()
 	}
 }
 
-void PCoA::print(const std::string& filename)
+void PCoA::print(const std::string& filename, const std::vector<std::string>& labels)
 {
 	std::ofstream fout(filename.c_str());
 	if(!fout.is_open())
@@ -466,11 +466,21 @@ void PCoA::print(const std::string& filename)
 
 	// write projected data
 	fout << "Projected data (each column is a point): " << std::endl;
+	for(uint i = 0; i < labels.size(); ++i)
+	{
+		fout << labels.at(i);
+		if(i < labels.size()-1)
+			fout << '\t';
+	}
+	fout << std::endl;
+
 	for(uint i = 0; i < m_projectedData.at(0).size(); ++i)
 	{
 		for(uint ptIndex = 0; ptIndex < m_projectedData.size(); ++ptIndex)
 		{
-			fout << m_projectedData.at(ptIndex).at(i) << '\t';
+			fout << m_projectedData.at(ptIndex).at(i);
+			if(ptIndex < m_projectedData.size()-1)
+				fout << '\t';
 		}
 		fout << std::endl;
 	}

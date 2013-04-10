@@ -210,9 +210,10 @@ void SplitSystem::addTree(const Tree* const tree)
 	// create taxa map for first tree
 	if(m_taxaIdMap.size() == 0)
 	{
-		std::vector<Node*> leaves = tree->root()->leaves();
-		for(uint i = 0; i < leaves.size(); ++i)
-			m_taxaIdMap[leaves.at(i)->name()] = i;
+		std::vector<std::string> leafNames = tree->root()->leafNames();
+		std::sort(leafNames.begin(), leafNames.end());
+		for(uint i = 0; i < leafNames.size(); ++i)
+			m_taxaIdMap[leafNames.at(i)] = i;
 	}
 
 	// check if tree is implicitly rooted

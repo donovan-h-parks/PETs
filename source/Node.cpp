@@ -87,6 +87,22 @@ void Node::leaves(Node* node, std::vector<Node*>& leafVector)
 		leaves(node->child(i), leafVector);
 }
 
+std::vector<std::string> Node::leafNames()
+{
+	std::vector<std::string> leafNameVec;
+	leafNames(this, leafNameVec);
+	return leafNameVec;
+}
+
+void Node::leafNames(Node* node, std::vector<std::string>& leafNameVec)
+{
+	if(node->isLeaf())
+		leafNameVec.push_back(node->name());
+
+	for(unsigned int i = 0; i < node->numberOfChildren(); i++)
+		leafNames(node->child(i), leafNameVec);
+}
+
 std::vector<Node*> Node::breadthFirstOrder()
 {
 	std::vector<Node*> nodes;

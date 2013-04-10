@@ -26,6 +26,11 @@
 #include "PETs.hpp"
 #include "Conclustador.hpp"
 
+#include "Kmedoid.hpp"
+#include "PCoA.hpp"
+#include "HierarchicalClustering.hpp"
+#include "NewickIO.hpp"
+
 void PETs::addGene(const std::string& geneName, const std::vector<Tree*>& trees)
 {
 	SplitSystem splitSystem(geneName);
@@ -47,9 +52,25 @@ void PETs::print(std::ofstream& fout) const
 
 void PETs::conclustador(const std::string& file)
 {
+	std::cout << "Euclidean distance." << std::endl;
 	Conclustador c;
 	c.calculateDist(m_geneSplitSystems);
 	c.printMatrix(file);
 
+	std::cout << "K-medioids." << std::endl;
+	Kmedoid kmedoid;
+	kmedoid.cluster(c.distMatrix(), c.labels(), 2, 100);
+	kmedoid.print("../../unit-tests/kmedoid.txt");
 
+	std::cout << "PCoA." << std::endl;
+	PCoA pcoa;
+	pcoa.project(c.distMatrix());
+	pcoa.print("../../unit-tests/pcoa.txt", c.labels());
+
+	std::cout << "UPGMA." << std::endl;
+	HierarchicalClustering clustering;
+	Tree upgmaTree;
+	clustering.UPGMA(c.distMatrix(), c.labels(), &upgmaTree);
+	NewickIO newickIO;
+	newickIO.write(upgmaTree, "../../unit-tests/upgma.txt");
 }

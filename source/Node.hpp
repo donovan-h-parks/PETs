@@ -55,6 +55,7 @@ public:
 	void removeChild(Node* node);
 	
 	std::vector<Node*> leaves();
+	std::vector<std::string> leafNames();
 	std::vector<Node*> nodes() { return breadthFirstOrder(); }
 	std::vector<Node*> breadthFirstOrder();
 
@@ -63,6 +64,7 @@ public:
 
 private:
 	void leaves(Node* node, std::vector<Node*>& leafVector);
+	void leafNames(Node* node, std::vector<std::string>& leafVector);
 
 private:
 	std::string m_name;

@@ -33,6 +33,7 @@ void Conclustador::calculateDist(const std::vector<SplitSystem>& splitSystems)
 	// calculate distance between split systems
 	for(uint i = 0; i < splitSystems.size(); ++i)
 	{
+		std::cout << "  " << splitSystems.at(i).name() << std::endl;
 		m_labels.push_back(splitSystems.at(i).name());
 
 		for(uint j = i+1; j < splitSystems.size(); ++j)
@@ -75,6 +76,8 @@ double Conclustador::calculateDist(const SplitSystem& ss1, const SplitSystem& ss
 
 		std::set<Split>::iterator it2 = splits2.find(*allSplitsIt);
 		double f2 = 0.0;
+		double freq = it2->frequency();
+		double trees = ss2.numTrees();
 		if(it2 != splits2.end())
 			f2 = double(it2->frequency()) / ss2.numTrees();
 

@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
 	PETs pets;
 
 	// read input file specifying forest of trees for each gene
-	std::string inputFile("../../unit-tests/euclidean-test.txt"); //argv[1]
+	std::string inputFile("../../unit-tests/arPETs9595.trees.subsampled.txt"); //argv[1]
 	std::ifstream fin(inputFile.c_str());
 	if(!fin.is_open())
 	{
