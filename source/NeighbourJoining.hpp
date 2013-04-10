@@ -41,7 +41,7 @@ class NeighbourJoining
 	 * @param labels Labels identifying each row/col of the distance matrix.
 	 * @param tree Resulting NJ tree.
 	 */
-	void buildTree(Matrix& distMatrix, const std::vector<std::string>& labels, Tree* tree);
+	void buildTree(Matrix& distMatrix, const Strings& labels, Tree* tree);
   
 private:
 	double* m_separationSums;

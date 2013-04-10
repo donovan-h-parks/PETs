@@ -23,21 +23,9 @@
 
 #include "Precompiled.hpp"
 
-#include "SplitSystem.hpp"
-#include "Tree.hpp"
-
-class PETs
+class Tools
 {
 public:
-	PETs() {}
-	~PETs();
-
-	void addGene(const std::string& geneName, const std::vector<Tree*>& trees);
-
-	void conclustador(const std::string& file);
-
-	void print(std::ofstream& fout) const;
-
-private:
-	std::vector<SplitSystem*> m_geneSplitSystems;
+	static bool printMatrix(const std::string& filename, const Matrix& matrix, const Strings& labels);
+	static bool readMatrix(const std::string& file, Matrix& matrix, Strings& labels);
 };

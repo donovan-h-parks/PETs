@@ -25,7 +25,7 @@
 #include "NeighbourJoining.hpp"
 
 
-void HierarchicalClustering::clustering(CLUSTER_TYPE clusterType, const Matrix& _distMatrix, const std::vector<std::string>& labels, Tree* tree)
+void HierarchicalClustering::clustering(CLUSTER_TYPE clusterType, const Matrix& _distMatrix, const Strings& labels, Tree* tree)
 {
 	if(clusterType == NEIGHBOUR_JOINING)
 	{
@@ -180,7 +180,7 @@ void HierarchicalClustering::updateDistanceMatrix(CLUSTER_TYPE clusterType, Matr
 	}
 }
 
-void HierarchicalClustering::NJ(const Matrix& _distMatrix, const std::vector<std::string>& labels, Tree* tree)
+void HierarchicalClustering::NJ(const Matrix& _distMatrix, const Strings& labels, Tree* tree)
 {
 	// keep original distance matrix unmodified
 	Matrix distMatrix = _distMatrix;

@@ -32,6 +32,7 @@ class SplitSystem
 public:
 	SplitSystem() {}
 	SplitSystem(const std::string& name): m_name(name) {}
+	~SplitSystem();
 
 	std::string name() const { return m_name; }
 	void name(const std::string& name) { m_name = name; }
@@ -45,7 +46,7 @@ public:
 
 	std::map<std::string, uint> taxaIdMap() const { return m_taxaIdMap; }
 
-	std::set<std::string> commonTaxa(const SplitSystem& splitSystem) const;
+	std::set<std::string> commonTaxa(const SplitSystem* const splitSystem) const;
 
 	bool isCompatible();
 	void createTree(Tree& tree);

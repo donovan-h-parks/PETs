@@ -32,7 +32,7 @@ NeighbourJoining::~NeighbourJoining()
 	delete[] m_activeClusters;
 }
 
-void NeighbourJoining::buildTree(Matrix& distMatrix, const std::vector<std::string>& labels, Tree* tree)
+void NeighbourJoining::buildTree(Matrix& distMatrix, const Strings& labels, Tree* tree)
 {
 	// allocation space for temporary variables
   m_separationSums = new double[distMatrix.size()];

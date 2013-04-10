@@ -34,6 +34,8 @@ int main(int argc, char* argv[])
 
 	// read input file specifying forest of trees for each gene
 	std::string inputFile("../../unit-tests/arPETs9595.trees.subsampled.txt"); //argv[1]
+	//std::string inputFile("../../unit-tests/test-case1.txt");
+	
 	std::ifstream fin(inputFile.c_str());
 	if(!fin.is_open())
 	{

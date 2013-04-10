@@ -27,3 +27,4 @@ typedef unsigned char byte;
 typedef unsigned long ulong;
 
 typedef std::vector< std::vector<double> > Matrix;
+typedef std::vector<std::string> Strings;

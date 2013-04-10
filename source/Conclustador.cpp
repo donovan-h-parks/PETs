@@ -22,8 +22,9 @@
 #include "Precompiled.hpp"
 
 #include "Conclustador.hpp"
+#include "Tools.hpp"
 
-void Conclustador::calculateDist(const std::vector<SplitSystem>& splitSystems)
+void Conclustador::calculateDist(const std::vector<SplitSystem*>& splitSystems)
 {
 	// initialize distance matrix
 	m_dist.resize(splitSystems.size());
@@ -33,8 +34,8 @@ void Conclustador::calculateDist(const std::vector<SplitSystem>& splitSystems)
 	// calculate distance between split systems
 	for(uint i = 0; i < splitSystems.size(); ++i)
 	{
-		std::cout << "  " << splitSystems.at(i).name() << std::endl;
-		m_labels.push_back(splitSystems.at(i).name());
+		std::cout << "  " << splitSystems.at(i)->name() << std::endl;
+		m_labels.push_back(splitSystems.at(i)->name());
 
 		for(uint j = i+1; j < splitSystems.size(); ++j)
 		{
@@ -44,21 +45,23 @@ void Conclustador::calculateDist(const std::vector<SplitSystem>& splitSystems)
 	}
 }
 
-double Conclustador::calculateDist(const SplitSystem& ss1, const SplitSystem& ss2)
+double Conclustador::calculateDist(const SplitSystem* const ss1, const SplitSystem* const ss2)
 {
 	// get taxa in common between split systems
-	std::set<std::string> commonTaxa = ss1.commonTaxa(ss2);
+	std::set<std::string> commonTaxa = ss1->commonTaxa(ss2);
 	
 	if(commonTaxa.size() < 4)
 		return INF;
 
 	// project split systems onto set of common taxa
-	SplitSystem projSS1 = project(ss1, commonTaxa);
-	SplitSystem projSS2 = project(ss2, commonTaxa);
+	SplitSystem* projSS1 = project(ss1, commonTaxa);
+	projSS1->name("projSS1");
+	SplitSystem* projSS2 = project(ss2, commonTaxa);
+	projSS2->name("projSS2");
 
 	// calculate Euclidean distance between splits
-	std::set<Split> splits1 = projSS1.uniqueSplits();
-	std::set<Split> splits2 = projSS2.uniqueSplits();
+	std::set<Split> splits1 = projSS1->uniqueSplits();
+	std::set<Split> splits2 = projSS2->uniqueSplits();
 	
 	std::set<Split> allSplits;
 	std::set_union(splits1.begin(), splits1.end(),
@@ -72,14 +75,12 @@ double Conclustador::calculateDist(const SplitSystem& ss1, const SplitSystem& ss
 		std::set<Split>::iterator it1 = splits1.find(*allSplitsIt);
 		double f1 = 0.0;
 		if(it1 != splits1.end())
-			f1 = double(it1->frequency()) / ss1.numTrees();
+			f1 = double(it1->frequency()) / ss1->numTrees();
 
 		std::set<Split>::iterator it2 = splits2.find(*allSplitsIt);
 		double f2 = 0.0;
-		double freq = it2->frequency();
-		double trees = ss2.numTrees();
 		if(it2 != splits2.end())
-			f2 = double(it2->frequency()) / ss2.numTrees();
+			f2 = double(it2->frequency()) / ss2->numTrees();
 
 		dist += (f1-f2)*(f1-f2);
 	}
@@ -89,43 +90,28 @@ double Conclustador::calculateDist(const SplitSystem& ss1, const SplitSystem& ss
 	// apply correction for number of taxa
 	dist = dist / sqrt(2.0f*commonTaxa.size() - 6.0f);
 
+	delete projSS1;
+	delete projSS2;
+
 	return dist;
 }
 
-SplitSystem Conclustador::project(const SplitSystem& splitSystem, const std::set<std::string>& commonTaxa)
+SplitSystem* Conclustador::project(const SplitSystem* const splitSystem, const std::set<std::string>& commonTaxa)
 {
-	SplitSystem projSplitSystem;
+	SplitSystem* projSplitSystem = new SplitSystem;
 	
-	std::vector<const Tree* const> trees = splitSystem.trees();
+	std::vector<const Tree* const> trees = splitSystem->trees();
 	for(uint i = 0; i < trees.size(); ++i)
 	{
 		Tree* projTree = trees.at(i)->clone();
 		projTree->project(commonTaxa);
-		projSplitSystem.addTree(projTree);
+		projSplitSystem->addTree(projTree);
 	}
 
 	return projSplitSystem;
 }
 
-bool Conclustador::printMatrix(const std::string& filename)
+bool Conclustador::print(const std::string& filename)
 {
-	std::ofstream fout(filename.c_str());
-	if(!fout.is_open())
-	{
-		std::cout << "[Error] Failed to output matrix file: " << filename << std::endl;
-		return false;
-	}
-
-	for(uint r = 0; r < m_dist.size(); ++r)
-	{
-		fout << m_labels.at(r);
-
-		for(uint c = 0; c < m_dist.size(); ++c)
-			fout << '\t' << m_dist.at(r).at(c);
-		fout << std::endl;
-	}
-
-	fout.close();
-
-	return true;
+	return Tools::printMatrix(filename, m_dist, m_labels);
 }

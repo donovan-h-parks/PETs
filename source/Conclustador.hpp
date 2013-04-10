@@ -30,18 +30,18 @@ class Conclustador
 public:
 	Conclustador() {}
 	
-	void calculateDist(const std::vector<SplitSystem>& splitSystems);
+	void calculateDist(const std::vector<SplitSystem*>& splitSystems);
 
-	bool printMatrix(const std::string& filename);
+	bool print(const std::string& filename);
 
 	Matrix distMatrix() const { return m_dist; }
-	std::vector<std::string> labels() const { return m_labels; }
+	Strings labels() const { return m_labels; }
 
 private:
-	double calculateDist(const SplitSystem& ss1, const SplitSystem& ss2);
-	SplitSystem project(const SplitSystem& splitSystem, const std::set<std::string>& commonTaxa);
+	double calculateDist(const SplitSystem* const ss1, const SplitSystem* const ss2);
+	SplitSystem* project(const SplitSystem* const splitSystem, const std::set<std::string>& commonTaxa);
 
 private:
-	std::vector<std::string> m_labels;
+	Strings m_labels;
 	Matrix m_dist;
 };

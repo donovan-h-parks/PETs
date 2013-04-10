@@ -65,4 +65,16 @@ public:
 		return oss.str();
 	}
 
+	static Strings split(const std::string &str, char delim) 
+	{
+		Strings elems;
+
+    std::stringstream ss(str);
+    std::string item;
+    while(std::getline(ss, item, delim))
+        elems.push_back(item);
+
+    return elems;
+	}
+
 };

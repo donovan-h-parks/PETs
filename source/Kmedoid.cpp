@@ -23,7 +23,7 @@
 
 #include "Kmedoid.hpp"
 
-std::vector<uint> Kmedoid::cluster(const Matrix& distMatrix, const std::vector<std::string>& labels, uint numClusters, uint numIterations)
+std::vector<uint> Kmedoid::cluster(const Matrix& distMatrix, const Strings& labels, uint numClusters, uint numIterations)
 {
 	m_labels = labels;
 

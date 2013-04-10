@@ -90,6 +90,7 @@
     <ClInclude Include="..\..\source\Split.hpp" />
     <ClInclude Include="..\..\source\SplitSystem.hpp" />
     <ClInclude Include="..\..\source\StringUtils.hpp" />
+    <ClInclude Include="..\..\source\Tools.hpp" />
     <ClInclude Include="..\..\source\Tree.hpp" />
     <ClInclude Include="..\..\source\UnitTests.hpp" />
   </ItemGroup>
@@ -127,6 +128,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="..\..\source\Tools.cpp" />
     <ClCompile Include="..\..\source\Tree.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>

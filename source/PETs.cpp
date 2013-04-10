@@ -31,12 +31,20 @@
 #include "HierarchicalClustering.hpp"
 #include "NewickIO.hpp"
 
+PETs::~PETs()
+{
+	for(uint i = 0; i < m_geneSplitSystems.size(); ++i)
+		delete m_geneSplitSystems.at(i);
+
+	m_geneSplitSystems.clear();
+}
+
 void PETs::addGene(const std::string& geneName, const std::vector<Tree*>& trees)
 {
-	SplitSystem splitSystem(geneName);
+	SplitSystem* splitSystem = new SplitSystem(geneName);
 
 	for(uint i = 0; i < trees.size(); ++i)
-		splitSystem.addTree(trees.at(i));
+		splitSystem->addTree(trees.at(i));
 
 	m_geneSplitSystems.push_back(splitSystem);
 }
@@ -45,7 +53,7 @@ void PETs::print(std::ofstream& fout) const
 {
 	for(uint i = 0; i < m_geneSplitSystems.size(); ++i)
 	{
-		m_geneSplitSystems.at(i).print(fout);
+		m_geneSplitSystems.at(i)->print(fout);
 		fout << std::endl;
 	}
 }
@@ -55,11 +63,11 @@ void PETs::conclustador(const std::string& file)
 	std::cout << "Euclidean distance." << std::endl;
 	Conclustador c;
 	c.calculateDist(m_geneSplitSystems);
-	c.printMatrix(file);
+	c.print(file);
 
 	std::cout << "K-medioids." << std::endl;
 	Kmedoid kmedoid;
-	kmedoid.cluster(c.distMatrix(), c.labels(), 2, 100);
+	kmedoid.cluster(c.distMatrix(), c.labels(), 3, 1000);
 	kmedoid.print("../../unit-tests/kmedoid.txt");
 
 	std::cout << "PCoA." << std::endl;

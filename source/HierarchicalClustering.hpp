@@ -46,7 +46,7 @@ public:
 	 * @param labels Labels identifying each row/col of the distance matrix.
 	 * @param tree Resulting hierarchical tree.
 	 */
-	static void clustering(CLUSTER_TYPE clusterType, const Matrix& distMatrix, const std::vector<std::string>& labels, Tree* tree);
+	static void clustering(CLUSTER_TYPE clusterType, const Matrix& distMatrix, const Strings& labels, Tree* tree);
 
 
 	/** 
@@ -55,7 +55,7 @@ public:
 	 * @param labels Labels identifying each row/col of the distance matrix.
 	 * @param tree Resulting hierarchical tree.
 	 */
-	static void completeLinkage(const Matrix& distMatrix, const std::vector<std::string>& labels, Tree* tree)
+	static void completeLinkage(const Matrix& distMatrix, const Strings& labels, Tree* tree)
 	{
 		clustering(COMPLETE_LINKAGE, distMatrix, labels, tree);
 	}
@@ -66,7 +66,7 @@ public:
 	 * @param labels Labels identifying each row/col of the distance matrix.
 	 * @param tree Resulting hierarchical tree.
 	 */
-	static void singleLinkage(const Matrix& distMatrix, const std::vector<std::string>& labels, Tree* tree)
+	static void singleLinkage(const Matrix& distMatrix, const Strings& labels, Tree* tree)
 	{
 		clustering(SINGLE_LINKAGE, distMatrix, labels, tree);
 	}
@@ -77,7 +77,7 @@ public:
 	 * @param labels Labels identifying each row/col of the distance matrix.
 	 * @param tree Resulting hierarchical tree.
 	 */
-	static void UPGMA(const Matrix& distMatrix, const std::vector<std::string>& labels, Tree* tree)
+	static void UPGMA(const Matrix& distMatrix, const Strings& labels, Tree* tree)
 	{
 		clustering(AVERAGE_LINKAGE, distMatrix, labels, tree);
 	}
@@ -88,7 +88,7 @@ public:
 	 * @param labels Labels identifying each row/col of the distance matrix.
 	 * @param tree Resulting NJ tree.
 	 */
-	static void NJ(const Matrix& distMatrix, const std::vector<std::string>& labels, Tree* tree);
+	static void NJ(const Matrix& distMatrix, const Strings& labels, Tree* tree);
 
 protected:
 	static void findNearestClusters(Matrix& distMatrix, uint& row, uint& col);

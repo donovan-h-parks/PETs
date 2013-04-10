@@ -25,6 +25,14 @@
 
 #include "NewickIO.hpp"
 
+SplitSystem::~SplitSystem()
+{
+	for(uint i = 0; i < m_trees.size(); ++i)
+		delete m_trees.at(i);
+
+	m_trees.clear();
+}
+
 bool SplitSystem::isCompatible()
 {
 	/*
@@ -210,7 +218,7 @@ void SplitSystem::addTree(const Tree* const tree)
 	// create taxa map for first tree
 	if(m_taxaIdMap.size() == 0)
 	{
-		std::vector<std::string> leafNames = tree->root()->leafNames();
+		Strings leafNames = tree->root()->leafNames();
 		std::sort(leafNames.begin(), leafNames.end());
 		for(uint i = 0; i < leafNames.size(); ++i)
 			m_taxaIdMap[leafNames.at(i)] = i;
@@ -293,14 +301,14 @@ void SplitSystem::print(std::ofstream& fout) const
 		it->print(fout);
 }
 
-std::set<std::string> SplitSystem::commonTaxa(const SplitSystem& splitSystem) const
+std::set<std::string> SplitSystem::commonTaxa(const SplitSystem* const splitSystem) const
 {
 	std::set<std::string> taxa1;
 	TaxaIdMap::const_iterator it;
 	for(it = m_taxaIdMap.begin(); it != m_taxaIdMap.end(); ++it)
 		taxa1.insert(it->first);
 
-	std::map<std::string, uint> taxaIdMap = splitSystem.taxaIdMap();
+	std::map<std::string, uint> taxaIdMap = splitSystem->taxaIdMap();
 	std::set<std::string> taxa2;
 	for(it = taxaIdMap.begin(); it != taxaIdMap.end(); ++it)
 		taxa2.insert(it->first);

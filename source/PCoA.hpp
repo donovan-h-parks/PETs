@@ -49,7 +49,7 @@ public:
 		return m_projectedData.at(0).size();
 	}
 
-	void print(const std::string& filename, const std::vector<std::string>& labels);
+	void print(const std::string& filename, const Strings& labels);
 
 private:
 	Matrix m_projectedData;

@@ -90,18 +90,6 @@ void PCoA::project(const Matrix& distMatrix)
 
 	EigDecomp(M, U, D, E, m_projectedData.size());
 
-	// Check for negative eignvalues
-	for(uint i = 0; i < m_projectedData.size(); ++i)
-	{
-		if(D[i] < 0)
-		{
-			std::cout << "[Warning] Negative eigenvectors in PCoA calculation." << std::endl;
-			D[i] = -D[i];
-			for(uint j = 0; j < m_projectedData.size(); ++j)
-				U[i + j*m_projectedData.size()] = -U[i + j*m_projectedData.size()];
-		}
-	}
-
 	// Step 6: Find desending order of eigenvalues
 	for(uint i = 0; i < m_projectedData.size(); ++i)
 		D[i] = fabs(D[i]);
@@ -455,7 +443,7 @@ void EigDecomp::tql2 ()
 	}
 }
 
-void PCoA::print(const std::string& filename, const std::vector<std::string>& labels)
+void PCoA::print(const std::string& filename, const Strings& labels)
 {
 	std::ofstream fout(filename.c_str());
 	if(!fout.is_open())

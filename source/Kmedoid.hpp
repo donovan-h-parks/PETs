@@ -29,7 +29,7 @@ public:
 	Kmedoid() {}
 	~Kmedoid() {}
 
-	std::vector<uint> cluster(const Matrix& distMatrix, const std::vector<std::string>& labels, uint numClusters, uint numIterations);
+	std::vector<uint> cluster(const Matrix& distMatrix, const Strings& labels, uint numClusters, uint numIterations);
 
 	bool print(const std::string& filename);
 
@@ -43,5 +43,5 @@ private:
 
 	std::vector<uint> m_bestClustering;
 
-	std::vector<std::string> m_labels;
+	Strings m_labels;
 };

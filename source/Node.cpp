@@ -87,14 +87,14 @@ void Node::leaves(Node* node, std::vector<Node*>& leafVector)
 		leaves(node->child(i), leafVector);
 }
 
-std::vector<std::string> Node::leafNames()
+Strings Node::leafNames()
 {
-	std::vector<std::string> leafNameVec;
+	Strings leafNameVec;
 	leafNames(this, leafNameVec);
 	return leafNameVec;
 }
 
-void Node::leafNames(Node* node, std::vector<std::string>& leafNameVec)
+void Node::leafNames(Node* node, Strings& leafNameVec)
 {
 	if(node->isLeaf())
 		leafNameVec.push_back(node->name());
