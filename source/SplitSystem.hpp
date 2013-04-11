@@ -40,6 +40,7 @@ public:
 	uint numUniqueSplits() const { return m_uniqueSplits.size(); }
 	uint numTrees() const { return m_treeSplits.size(); }
 	std::set<Split> uniqueSplits() const { return m_uniqueSplits; }
+	std::vector<std::set<Split> > splitSystem() const { return m_treeSplits; }
 
 	void addTree(const Tree* const tree);
 	std::vector<const Tree* const> trees() const { return m_trees; }
@@ -51,12 +52,16 @@ public:
 	bool isCompatible();
 	void createTree(Tree& tree);
 
-	//void project(const std::set<std::string> taxa);
-
+	std::vector<FreqPair> splitFreq(const SplitSystem* const splitSystem, const std::set<std::string>& commonTaxa) const;
+	std::map<std::vector<bool>, uint> projectedSplitFreq(const std::set<std::string>& commonTaxa) const;
+	
 	void print(std::ofstream& fout) const;
 
 private:
 	void addSplit(const Split& split);
+
+	std::vector<bool> projectionMask(const std::set<std::string>& commonTaxa) const;
+	bool project(const Split& split, const std::vector<bool>& projectionMask, std::vector<bool>& projectedSplit) const;
 
 private:
 	std::string m_name;

@@ -320,47 +320,116 @@ std::set<std::string> SplitSystem::commonTaxa(const SplitSystem* const splitSyst
 	return intersect;
 }
 
-/*
-
-Implementation is flawed. Doesn't account for identical splits
-occuring after taxa are removed. As such, these splits are counted twice.
-Ex:
-
-Project onto ABCD:
-AB|CDE -> AB|CD
-ABE|CD -> AB|CD
-
-These are the same split now, but appear seperately in the original
-split system. Need to account for this.
-
-void SplitSystem::project(const std::set<std::string> taxa)
+std::vector<bool> SplitSystem::projectionMask(const std::set<std::string>& commonTaxa) const
 {
-	m_uniqueSplits.clear();
+	std::vector<bool> projMask(m_taxaIdMap.size(), false);
 
-	// determine taxa indices to keep
-	std::vector<uint> indicesToKeep;
-	std::set<std::string>::const_iterator itCommon;
-	for(itCommon = taxa.begin(); itCommon != taxa.end(); ++itCommon)
+	uint index = 0;
+	TaxaIdMap::const_iterator taxaIt;
+	for(taxaIt = m_taxaIdMap.begin(); taxaIt != m_taxaIdMap.end(); ++taxaIt)
 	{
-		TaxaIdMap::iterator findIt = m_taxaIdMap.find(*itCommon);
-		indicesToKeep.push_back(findIt->second);
+		if(commonTaxa.find(taxaIt->first) != commonTaxa.end())
+			projMask.at(index) = true;
+
+		index++;
 	}
 
-	std::sort(indicesToKeep.begin(), indicesToKeep.end());
+	return projMask;
+}
 
-	for(uint i = 0; i < m_treeSplits.size(); ++i)
+bool SplitSystem::project(const Split& split, const std::vector<bool>& projectionMask, std::vector<bool>& projectedSplit) const
+{
+	std::vector<bool> curSplit = split.split();
+
+	uint leftCount = 0;
+	uint rightCount = 0;
+	for(uint i = 0; i < projectionMask.size(); ++i)
 	{
-		std::set<Split>::iterator it;
-		for(it = m_treeSplits.at(i).begin(); it != m_treeSplits.at(i).end(); ++it)
+		if(projectionMask.at(i))
 		{
-			std::vector<bool> split = it->split();		
-			std::vector<bool> projSplit(indicesToKeep.size());
+			projectedSplit.push_back(curSplit.at(i));
 
-			for(uint j = 0; j < indicesToKeep.size(); ++j)
-				projSplit.at(j) = split.at(indicesToKeep.at(j));
-
-			addSplit(Split(it->weight(), it->frequency(), projSplit));
+			if(curSplit.at(i) == Split::LEFT_TAXA)
+				leftCount++;
+			else
+				rightCount++;
 		}
 	}
+
+	if(leftCount == 0 || rightCount == 0)
+	{
+		// this is a degenerate split caused by the projection
+		return false;
+	}
+
+	return true;
 }
-*/
+
+std::map<std::vector<bool>, uint> SplitSystem::projectedSplitFreq(const std::set<std::string>& commonTaxa) const
+{
+	std::vector<bool> projMask = projectionMask(commonTaxa);
+	std::map<std::vector<bool>, uint> splitsFreq;
+	for(uint i = 0; i < m_treeSplits.size(); ++i)
+	{
+		// determine projected splits in tree
+		std::set<std::vector<bool> > projTreeSplits;
+		std::set<Split>::const_iterator it;
+		for(it = m_treeSplits.at(i).begin(); it != m_treeSplits.at(i).end(); ++it)
+		{
+			std::vector<bool> projSplit;
+			bool bValidSplit = project(*it, projMask, projSplit);
+
+			if(bValidSplit)
+				projTreeSplits.insert(projSplit);
+		}
+
+		// add tree splits into map of all splits
+		std::set<std::vector<bool> >::iterator projTreeSplitIt;
+		for(projTreeSplitIt = projTreeSplits.begin(); projTreeSplitIt != projTreeSplits.end(); ++projTreeSplitIt)
+		{
+			std::map<std::vector<bool>, uint>::iterator itFind = splitsFreq.find(*projTreeSplitIt);
+			if(itFind == splitsFreq.end())
+				splitsFreq[*projTreeSplitIt] = 1;
+			else
+				itFind->second += 1;
+		}
+	}
+
+	return splitsFreq;
+}
+
+std::vector<FreqPair> SplitSystem::splitFreq(const SplitSystem* const splitSystem, const std::set<std::string>& commonTaxa) const
+{
+	// get frequency of each projected split
+	std::map<std::vector<bool>, uint> splitsFreq1 = projectedSplitFreq(commonTaxa);
+	std::map<std::vector<bool>, uint> splitsFreq2 = splitSystem->projectedSplitFreq(commonTaxa);
+
+	// get splits contained in either split system
+	std::set<std::vector<bool>> allSplits;
+	std::map<std::vector<bool>, uint>::iterator mapIt;
+	for(mapIt = splitsFreq1.begin(); mapIt != splitsFreq1.end(); ++mapIt)
+		allSplits.insert(mapIt->first);
+
+	for(mapIt = splitsFreq2.begin(); mapIt != splitsFreq2.end(); ++mapIt)
+		allSplits.insert(mapIt->first);
+
+	// get frequency of each split across all splits in the two split systems
+	std::vector<FreqPair> splitFreqs;
+	std::set<std::vector<bool>>::iterator splitIt;
+	for(splitIt = allSplits.begin(); splitIt != allSplits.end(); ++splitIt)
+	{
+		double f1 = 0;
+		std::map<std::vector<bool>, uint>::const_iterator it1 = splitsFreq1.find(*splitIt);
+		if(it1 != splitsFreq1.end())
+			f1 = float(it1->second) / numTrees();
+
+		double f2 = 0;
+		std::map<std::vector<bool>, uint>::const_iterator it2 = splitsFreq2.find(*splitIt);
+		if(it2 != splitsFreq2.end())
+			f2 = float(it2->second) / splitSystem->numTrees();
+
+		splitFreqs.push_back(FreqPair(f1, f2));
+	}
+
+	return splitFreqs;
+}

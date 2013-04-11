@@ -38,8 +38,10 @@ public:
 	Strings labels() const { return m_labels; }
 
 private:
-	double calculateDist(const SplitSystem* const ss1, const SplitSystem* const ss2);
+	double calculateDistByProjection(const SplitSystem* const ss1, const SplitSystem* const ss2);
 	SplitSystem* project(const SplitSystem* const splitSystem, const std::set<std::string>& commonTaxa);
+
+	double calculateDistByInspection(const SplitSystem* const ss1, const SplitSystem* const ss2);
 
 private:
 	Strings m_labels;

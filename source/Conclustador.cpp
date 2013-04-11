@@ -39,13 +39,41 @@ void Conclustador::calculateDist(const std::vector<SplitSystem*>& splitSystems)
 
 		for(uint j = i+1; j < splitSystems.size(); ++j)
 		{
-			double dist = calculateDist(splitSystems.at(i), splitSystems.at(j));
+			double dist = calculateDistByInspection(splitSystems.at(i), splitSystems.at(j));
 			m_dist.at(i).at(j) = m_dist.at(j).at(i) = dist;
 		}
 	}
 }
 
-double Conclustador::calculateDist(const SplitSystem* const ss1, const SplitSystem* const ss2)
+double Conclustador::calculateDistByInspection(const SplitSystem* const ss1, const SplitSystem* const ss2)
+{
+	// get taxa in common between split systems
+	std::set<std::string> commonTaxa = ss1->commonTaxa(ss2);
+	
+	if(commonTaxa.size() < 4)
+		return INF;
+
+	// get splits in either split system
+	std::vector<FreqPair> splitFreqs = ss1->splitFreq(ss2, commonTaxa);
+
+	// calculate Euclidean distance between splits
+	double dist = 0.0f;
+	for(uint i = 0; i < splitFreqs.size(); ++i)
+	{
+		double f1 = splitFreqs.at(i).f1;
+		double f2 = splitFreqs.at(i).f2;
+		dist += (f1-f2)*(f1-f2);
+	}
+
+	dist = sqrt(dist);
+
+	// apply correction for number of taxa
+	dist = dist / sqrt(2.0f*commonTaxa.size() - 6.0f);
+
+	return dist;
+}
+
+double Conclustador::calculateDistByProjection(const SplitSystem* const ss1, const SplitSystem* const ss2)
 {
 	// get taxa in common between split systems
 	std::set<std::string> commonTaxa = ss1->commonTaxa(ss2);

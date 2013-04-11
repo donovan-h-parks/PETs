@@ -26,6 +26,10 @@
 #include "NewickIO.hpp"
 #include "StringUtils.hpp"
 
+#include "Tools.hpp"
+#include "Kmedoid.hpp"
+#include "PCoA.hpp"
+
 int main(int argc, char* argv[])
 {
 	srand((uint)time(NULL));
@@ -33,8 +37,8 @@ int main(int argc, char* argv[])
 	PETs pets;
 
 	// read input file specifying forest of trees for each gene
-	std::string inputFile("../../unit-tests/arPETs9595.trees.subsampled.txt"); //argv[1]
-	//std::string inputFile("../../unit-tests/test-case1.txt");
+	//std::string inputFile("../../unit-tests/arPETs9595.trees.subsampled.txt"); //argv[1]
+	std::string inputFile("../../unit-tests/test-case1.txt");
 	
 	std::ifstream fin(inputFile.c_str());
 	if(!fin.is_open())

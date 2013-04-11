@@ -41,6 +41,9 @@ bool Tools::readMatrix(const std::string& file, Matrix& matrix, Strings& labels)
 		std::string line;
 		getline(fin, line);
 
+		if(line.empty())
+			continue;
+
 		Strings tokens = StringUtils::split(line, '\t');
 		labels.push_back(tokens.at(0));
 

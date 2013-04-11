@@ -28,3 +28,12 @@ typedef unsigned long ulong;
 
 typedef std::vector< std::vector<double> > Matrix;
 typedef std::vector<std::string> Strings;
+
+struct FreqPair
+{
+	FreqPair(): f1(0), f2(0) {}
+	FreqPair(double _f1, double _f2): f1(_f1), f2(_f2) {}
+
+	double f1;
+	double f2;
+};
