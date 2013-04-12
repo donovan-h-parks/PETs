@@ -32,6 +32,7 @@ void Conclustador::calculateDist(const std::vector<SplitSystem*>& splitSystems)
 		m_dist.at(i).resize(splitSystems.size(), 0.0f);
 
 	// calculate distance between split systems
+	clock_t startTime = clock();
 	for(uint i = 0; i < splitSystems.size(); ++i)
 	{
 		std::cout << "  " << splitSystems.at(i)->name() << std::endl;
@@ -43,6 +44,7 @@ void Conclustador::calculateDist(const std::vector<SplitSystem*>& splitSystems)
 			m_dist.at(i).at(j) = m_dist.at(j).at(i) = dist;
 		}
 	}
+	std::cout << double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << std::endl;
 }
 
 double Conclustador::calculateDistByInspection(const SplitSystem* const ss1, const SplitSystem* const ss2)

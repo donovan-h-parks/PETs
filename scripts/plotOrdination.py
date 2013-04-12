@@ -57,6 +57,9 @@ def doWork(args):
 	geneIdToClusterId = {}
 	clusterIds  = []
 	for line in open(args.cluster):
+		if line.strip() == '':
+			continue 
+			
 		if line[0] == '%':
 			clusterId = line[1:].strip()
 			clusterIds.append(clusterId)
@@ -66,7 +69,7 @@ def doWork(args):
 	# create colour map for clusters
 	clusterIdToColour = {}
 	index = 0
-	for clusterId in clusterIds:
+	for clusterId in sorted(clusterIds):
 		rgb = tuple([int(c*255) for c in hsv_to_rgb(float(index)/len(clusterIds), 0.4, 1.0)])
 		clusterIdToColour[clusterId] = '#%02X%02X%02X' % rgb
 		index += 1

@@ -67,7 +67,7 @@ void PETs::conclustador(const std::string& file)
 
 	std::cout << "K-medioids." << std::endl;
 	Kmedoid kmedoid;
-	kmedoid.cluster(c.distMatrix(), c.labels(), 3, 1000);
+	kmedoid.cluster(c.distMatrix(), c.labels(), 6, 1000);
 	kmedoid.print("../../unit-tests/kmedoid.txt");
 
 	std::cout << "PCoA." << std::endl;
