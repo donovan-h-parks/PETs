@@ -1,0 +1,15 @@
+- There are 68 taxa
+  - All trees have at least 66 taxa
+
+- Number of well-supported splits increases with sequence length (roughly linear)
+  - As such, short sequences have few well-supported splits and are congruent with many trees
+  - Suggest clustering should treat these 'hub' nodes as unassignable
+  - Perhaps fuzzy clustering would work here since 'hub' nodes would be assigned to many clusters
+
+- Number of consistent gene trees increases with bootstrap threshold
+  - Results in an increased number of edges in graph
+  
+- Maximum clique changes substantially under different bootstrap thresholds
+  - This is bad - perhaps not the best way to cluster the data
+  - A given node could be in multiple cliques (removing maximum clique ignores this fact)
+  

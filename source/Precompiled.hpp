@@ -45,6 +45,7 @@
 #include <ctime>
 #include <limits>
 #include <float.h>
+#include <cassert>
 
 // Project files (add with caution!)
 #include "DataTypes.hpp"

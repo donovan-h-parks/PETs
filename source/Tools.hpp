@@ -28,4 +28,7 @@ class Tools
 public:
 	static bool printMatrix(const std::string& filename, const Matrix& matrix, const Strings& labels);
 	static bool readMatrix(const std::string& file, Matrix& matrix, Strings& labels);
+
+	static bool printMatrix(const std::string& filename, const AdjacencyMatrix& matrix, const Strings& labels);
+	static bool readMatrix(const std::string& file, AdjacencyMatrix& matrix, Strings& labels);
 };

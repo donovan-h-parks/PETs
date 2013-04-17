@@ -27,13 +27,17 @@ typedef unsigned char byte;
 typedef unsigned long ulong;
 
 typedef std::vector< std::vector<double> > Matrix;
+typedef std::vector< std::vector<uint> > AdjacencyMatrix;
 typedef std::vector<std::string> Strings;
+
+typedef std::vector<bool> BoolVec;
 
 struct FreqPair
 {
 	FreqPair(): f1(0), f2(0) {}
-	FreqPair(double _f1, double _f2): f1(_f1), f2(_f2) {}
+	FreqPair(const BoolVec& _split, double _f1, double _f2): split(_split), f1(_f1), f2(_f2) {}
 
+	BoolVec split;
 	double f1;
 	double f2;
 };

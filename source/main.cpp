@@ -38,8 +38,9 @@ int main(int argc, char* argv[])
 
 	// read input file specifying forest of trees for each gene
 	//std::string inputFile("../../unit-tests/arPETs9595.trees.subsampled.txt"); //argv[1]
-	std::string inputFile("../../unit-tests/arPETs9595.trees.subsampled.txt");
-	
+	//std::string inputFile("../../unit-tests/compatibility-test.txt");
+	std::string inputFile("../../unit-tests/arPETs9595.trees.txt");
+
 	std::ifstream fin(inputFile.c_str());
 	if(!fin.is_open())
 	{
@@ -78,11 +79,12 @@ int main(int argc, char* argv[])
 
 	fin.close();
 
-	pets.conclustador("../../unit-tests/conclustador-results-by-inspection.txt");
+	pets.compatibilityClustering(0.8, "../../unit-tests/ar-0.8", "../../unit-tests/ar-0.8.clustering.txt");
+	//pets.conclustador("../../unit-tests/conclustador-results-by-inspection.txt");
 
-	std::ofstream fout("../../unit-tests/euclidean-result.txt");
-	pets.print(fout);
-	fout.close();
+	//std::ofstream fout("../../unit-tests/euclidean-result.txt");
+	//pets.print(fout);
+	//fout.close();
 
 	return 0;
 }

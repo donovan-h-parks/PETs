@@ -1,0 +1,926 @@
+Cluster 1 (3 trees)
+
+Compatibility matrix:
+arCOG01741	0	1	1
+arCOG04077	1	0	1
+arCOG04108	1	1	0
+
+Shared taxa matrix:
+arCOG01741	0	67	67
+arCOG04077	67	0	67
+arCOG04108	67	67	0
+
+Splits matrix:
+arCOG01741	0	32.5	33
+arCOG04077	32.5	0	24.5
+arCOG04108	33	24.5	0
+----------------------------------------
+Cluster 2 (3 trees)
+
+Compatibility matrix:
+arCOG04087	0	1	1
+arCOG04240	1	0	1
+arCOG04245	1	1	0
+
+Shared taxa matrix:
+arCOG04087	0	66	67
+arCOG04240	66	0	66
+arCOG04245	67	66	0
+
+Splits matrix:
+arCOG04087	0	34.5	38.5
+arCOG04240	34.5	0	31
+arCOG04245	38.5	31	0
+----------------------------------------
+Cluster 3 (3 trees)
+
+Compatibility matrix:
+arCOG04086	0	1	1
+arCOG04094	1	0	1
+arCOG04244	1	1	0
+
+Shared taxa matrix:
+arCOG04086	0	67	67
+arCOG04094	67	0	67
+arCOG04244	67	67	0
+
+Splits matrix:
+arCOG04086	0	26.5	24.5
+arCOG04094	26.5	0	26
+arCOG04244	24.5	26	0
+----------------------------------------
+Cluster 4 (2 trees)
+
+Compatibility matrix:
+arCOG00780	0	1
+arCOG00985	1	0
+
+Shared taxa matrix:
+arCOG00780	0	67
+arCOG00985	67	0
+
+Splits matrix:
+arCOG00780	0	32.5
+arCOG00985	32.5	0
+----------------------------------------
+Cluster 5 (2 trees)
+
+Compatibility matrix:
+arCOG01219	0	1
+arCOG04098	1	0
+
+Shared taxa matrix:
+arCOG01219	0	66
+arCOG04098	66	0
+
+Splits matrix:
+arCOG01219	0	39
+arCOG04098	39	0
+----------------------------------------
+Cluster 6 (2 trees)
+
+Compatibility matrix:
+arCOG01561	0	1
+arCOG01751	1	0
+
+Shared taxa matrix:
+arCOG01561	0	66
+arCOG01751	66	0
+
+Splits matrix:
+arCOG01561	0	32.5
+arCOG01751	32.5	0
+----------------------------------------
+Cluster 7 (2 trees)
+
+Compatibility matrix:
+arCOG01560	0	1
+arCOG04254	1	0
+
+Shared taxa matrix:
+arCOG01560	0	67
+arCOG04254	67	0
+
+Splits matrix:
+arCOG01560	0	36.5
+arCOG04254	36.5	0
+----------------------------------------
+Cluster 8 (2 trees)
+
+Compatibility matrix:
+arCOG04112	0	1
+arCOG04129	1	0
+
+Shared taxa matrix:
+arCOG04112	0	66
+arCOG04129	66	0
+
+Splits matrix:
+arCOG04112	0	33.5
+arCOG04129	33.5	0
+----------------------------------------
+Cluster 9 (2 trees)
+
+Compatibility matrix:
+arCOG04154	0	1
+arCOG04256	1	0
+
+Shared taxa matrix:
+arCOG04154	0	66
+arCOG04256	66	0
+
+Splits matrix:
+arCOG04154	0	30
+arCOG04256	30	0
+----------------------------------------
+Cluster 10 (2 trees)
+
+Compatibility matrix:
+arCOG01228	0	1
+arCOG04186	1	0
+
+Shared taxa matrix:
+arCOG01228	0	65
+arCOG04186	65	0
+
+Splits matrix:
+arCOG01228	0	37.5
+arCOG04186	37.5	0
+----------------------------------------
+Cluster 11 (2 trees)
+
+Compatibility matrix:
+arCOG01563	0	1
+arCOG04169	1	0
+
+Shared taxa matrix:
+arCOG01563	0	66
+arCOG04169	66	0
+
+Splits matrix:
+arCOG01563	0	42
+arCOG04169	42	0
+----------------------------------------
+Cluster 12 (2 trees)
+
+Compatibility matrix:
+arCOG01183	0	1
+arCOG04258	1	0
+
+Shared taxa matrix:
+arCOG01183	0	65
+arCOG04258	65	0
+
+Splits matrix:
+arCOG01183	0	35.5
+arCOG04258	35.5	0
+----------------------------------------
+Cluster 13 (2 trees)
+
+Compatibility matrix:
+arCOG00470	0	1
+arCOG04092	1	0
+
+Shared taxa matrix:
+arCOG00470	0	67
+arCOG04092	67	0
+
+Splits matrix:
+arCOG00470	0	39.5
+arCOG04092	39.5	0
+----------------------------------------
+Cluster 14 (2 trees)
+
+Compatibility matrix:
+arCOG01920	0	1
+arCOG04093	1	0
+
+Shared taxa matrix:
+arCOG01920	0	66
+arCOG04093	66	0
+
+Splits matrix:
+arCOG01920	0	35
+arCOG04093	35	0
+----------------------------------------
+Cluster 15 (2 trees)
+
+Compatibility matrix:
+arCOG00675	0	1
+arCOG04176	1	0
+
+Shared taxa matrix:
+arCOG00675	0	66
+arCOG04176	66	0
+
+Splits matrix:
+arCOG00675	0	34
+arCOG04176	34	0
+----------------------------------------
+Cluster 16 (2 trees)
+
+Compatibility matrix:
+arCOG04130	0	1
+arCOG04281	1	0
+
+Shared taxa matrix:
+arCOG04130	0	66
+arCOG04281	66	0
+
+Splits matrix:
+arCOG04130	0	38.5
+arCOG04281	38.5	0
+----------------------------------------
+Cluster 17 (1 trees)
+
+Compatibility matrix:
+arCOG00029	0
+
+Shared taxa matrix:
+arCOG00029	0
+
+Splits matrix:
+arCOG00029	0
+----------------------------------------
+Cluster 18 (1 trees)
+
+Compatibility matrix:
+arCOG01950	0
+
+Shared taxa matrix:
+arCOG01950	0
+
+Splits matrix:
+arCOG01950	0
+----------------------------------------
+Cluster 19 (1 trees)
+
+Compatibility matrix:
+arCOG04288	0
+
+Shared taxa matrix:
+arCOG04288	0
+
+Splits matrix:
+arCOG04288	0
+----------------------------------------
+Cluster 20 (1 trees)
+
+Compatibility matrix:
+arCOG04161	0
+
+Shared taxa matrix:
+arCOG04161	0
+
+Splits matrix:
+arCOG04161	0
+----------------------------------------
+Cluster 21 (1 trees)
+
+Compatibility matrix:
+arCOG01719	0
+
+Shared taxa matrix:
+arCOG01719	0
+
+Splits matrix:
+arCOG01719	0
+----------------------------------------
+Cluster 22 (1 trees)
+
+Compatibility matrix:
+arCOG04243	0
+
+Shared taxa matrix:
+arCOG04243	0
+
+Splits matrix:
+arCOG04243	0
+----------------------------------------
+Cluster 23 (1 trees)
+
+Compatibility matrix:
+arCOG04184	0
+
+Shared taxa matrix:
+arCOG04184	0
+
+Splits matrix:
+arCOG04184	0
+----------------------------------------
+Cluster 24 (1 trees)
+
+Compatibility matrix:
+arCOG01988	0
+
+Shared taxa matrix:
+arCOG01988	0
+
+Splits matrix:
+arCOG01988	0
+----------------------------------------
+Cluster 25 (1 trees)
+
+Compatibility matrix:
+arCOG04185	0
+
+Shared taxa matrix:
+arCOG04185	0
+
+Splits matrix:
+arCOG04185	0
+----------------------------------------
+Cluster 26 (1 trees)
+
+Compatibility matrix:
+arCOG04239	0
+
+Shared taxa matrix:
+arCOG04239	0
+
+Splits matrix:
+arCOG04239	0
+----------------------------------------
+Cluster 27 (1 trees)
+
+Compatibility matrix:
+arCOG04302	0
+
+Shared taxa matrix:
+arCOG04302	0
+
+Splits matrix:
+arCOG04302	0
+----------------------------------------
+Cluster 28 (1 trees)
+
+Compatibility matrix:
+arCOG04091	0
+
+Shared taxa matrix:
+arCOG04091	0
+
+Splits matrix:
+arCOG04091	0
+----------------------------------------
+Cluster 29 (1 trees)
+
+Compatibility matrix:
+arCOG04071	0
+
+Shared taxa matrix:
+arCOG04071	0
+
+Splits matrix:
+arCOG04071	0
+----------------------------------------
+Cluster 30 (1 trees)
+
+Compatibility matrix:
+arCOG04067	0
+
+Shared taxa matrix:
+arCOG04067	0
+
+Splits matrix:
+arCOG04067	0
+----------------------------------------
+Cluster 31 (1 trees)
+
+Compatibility matrix:
+arCOG00402	0
+
+Shared taxa matrix:
+arCOG00402	0
+
+Splits matrix:
+arCOG00402	0
+----------------------------------------
+Cluster 32 (1 trees)
+
+Compatibility matrix:
+arCOG01016	0
+
+Shared taxa matrix:
+arCOG01016	0
+
+Splits matrix:
+arCOG01016	0
+----------------------------------------
+Cluster 33 (1 trees)
+
+Compatibility matrix:
+arCOG00410	0
+
+Shared taxa matrix:
+arCOG00410	0
+
+Splits matrix:
+arCOG00410	0
+----------------------------------------
+Cluster 34 (1 trees)
+
+Compatibility matrix:
+arCOG04150	0
+
+Shared taxa matrix:
+arCOG04150	0
+
+Splits matrix:
+arCOG04150	0
+----------------------------------------
+Cluster 35 (1 trees)
+
+Compatibility matrix:
+arCOG00868	0
+
+Shared taxa matrix:
+arCOG00868	0
+
+Splits matrix:
+arCOG00868	0
+----------------------------------------
+Cluster 36 (1 trees)
+
+Compatibility matrix:
+arCOG00035	0
+
+Shared taxa matrix:
+arCOG00035	0
+
+Splits matrix:
+arCOG00035	0
+----------------------------------------
+Cluster 37 (1 trees)
+
+Compatibility matrix:
+arCOG04187	0
+
+Shared taxa matrix:
+arCOG04187	0
+
+Splits matrix:
+arCOG04187	0
+----------------------------------------
+Cluster 38 (1 trees)
+
+Compatibility matrix:
+arCOG00869	0
+
+Shared taxa matrix:
+arCOG00869	0
+
+Splits matrix:
+arCOG00869	0
+----------------------------------------
+Cluster 39 (1 trees)
+
+Compatibility matrix:
+arCOG04106	0
+
+Shared taxa matrix:
+arCOG04106	0
+
+Splits matrix:
+arCOG04106	0
+----------------------------------------
+Cluster 40 (1 trees)
+
+Compatibility matrix:
+arCOG01122	0
+
+Shared taxa matrix:
+arCOG01122	0
+
+Splits matrix:
+arCOG01122	0
+----------------------------------------
+Cluster 41 (1 trees)
+
+Compatibility matrix:
+arCOG04255	0
+
+Shared taxa matrix:
+arCOG04255	0
+
+Splits matrix:
+arCOG04255	0
+----------------------------------------
+Cluster 42 (1 trees)
+
+Compatibility matrix:
+arCOG04223	0
+
+Shared taxa matrix:
+arCOG04223	0
+
+Splits matrix:
+arCOG04223	0
+----------------------------------------
+Cluster 43 (1 trees)
+
+Compatibility matrix:
+arCOG04182	0
+
+Shared taxa matrix:
+arCOG04182	0
+
+Splits matrix:
+arCOG04182	0
+----------------------------------------
+Cluster 44 (1 trees)
+
+Compatibility matrix:
+arCOG01180	0
+
+Shared taxa matrix:
+arCOG01180	0
+
+Splits matrix:
+arCOG01180	0
+----------------------------------------
+Cluster 45 (1 trees)
+
+Compatibility matrix:
+arCOG04228	0
+
+Shared taxa matrix:
+arCOG04228	0
+
+Splits matrix:
+arCOG04228	0
+----------------------------------------
+Cluster 46 (1 trees)
+
+Compatibility matrix:
+arCOG04097	0
+
+Shared taxa matrix:
+arCOG04097	0
+
+Splits matrix:
+arCOG04097	0
+----------------------------------------
+Cluster 47 (1 trees)
+
+Compatibility matrix:
+arCOG04090	0
+
+Shared taxa matrix:
+arCOG04090	0
+
+Splits matrix:
+arCOG04090	0
+----------------------------------------
+Cluster 48 (1 trees)
+
+Compatibility matrix:
+arCOG04064	0
+
+Shared taxa matrix:
+arCOG04064	0
+
+Splits matrix:
+arCOG04064	0
+----------------------------------------
+Cluster 49 (1 trees)
+
+Compatibility matrix:
+arCOG04208	0
+
+Shared taxa matrix:
+arCOG04208	0
+
+Splits matrix:
+arCOG04208	0
+----------------------------------------
+Cluster 50 (1 trees)
+
+Compatibility matrix:
+arCOG04249	0
+
+Shared taxa matrix:
+arCOG04249	0
+
+Splits matrix:
+arCOG04249	0
+----------------------------------------
+Cluster 51 (1 trees)
+
+Compatibility matrix:
+arCOG04107	0
+
+Shared taxa matrix:
+arCOG04107	0
+
+Splits matrix:
+arCOG04107	0
+----------------------------------------
+Cluster 52 (1 trees)
+
+Compatibility matrix:
+arCOG04372	0
+
+Shared taxa matrix:
+arCOG04372	0
+
+Splits matrix:
+arCOG04372	0
+----------------------------------------
+Cluster 53 (1 trees)
+
+Compatibility matrix:
+arCOG00412	0
+
+Shared taxa matrix:
+arCOG00412	0
+
+Splits matrix:
+arCOG00412	0
+----------------------------------------
+Cluster 54 (1 trees)
+
+Compatibility matrix:
+arCOG04473	0
+
+Shared taxa matrix:
+arCOG04473	0
+
+Splits matrix:
+arCOG04473	0
+----------------------------------------
+Cluster 55 (1 trees)
+
+Compatibility matrix:
+arCOG01015	0
+
+Shared taxa matrix:
+arCOG01015	0
+
+Splits matrix:
+arCOG01015	0
+----------------------------------------
+Cluster 56 (1 trees)
+
+Compatibility matrix:
+arCOG04209	0
+
+Shared taxa matrix:
+arCOG04209	0
+
+Splits matrix:
+arCOG04209	0
+----------------------------------------
+Cluster 57 (1 trees)
+
+Compatibility matrix:
+arCOG01923	0
+
+Shared taxa matrix:
+arCOG01923	0
+
+Splits matrix:
+arCOG01923	0
+----------------------------------------
+Cluster 58 (1 trees)
+
+Compatibility matrix:
+arCOG04070	0
+
+Shared taxa matrix:
+arCOG04070	0
+
+Splits matrix:
+arCOG04070	0
+----------------------------------------
+Cluster 59 (1 trees)
+
+Compatibility matrix:
+arCOG04072	0
+
+Shared taxa matrix:
+arCOG04072	0
+
+Splits matrix:
+arCOG04072	0
+----------------------------------------
+Cluster 60 (1 trees)
+
+Compatibility matrix:
+arCOG00487	0
+
+Shared taxa matrix:
+arCOG00487	0
+
+Splits matrix:
+arCOG00487	0
+----------------------------------------
+Cluster 61 (1 trees)
+
+Compatibility matrix:
+arCOG01358	0
+
+Shared taxa matrix:
+arCOG01358	0
+
+Splits matrix:
+arCOG01358	0
+----------------------------------------
+Cluster 62 (1 trees)
+
+Compatibility matrix:
+arCOG04179	0
+
+Shared taxa matrix:
+arCOG04179	0
+
+Splits matrix:
+arCOG04179	0
+----------------------------------------
+Cluster 63 (1 trees)
+
+Compatibility matrix:
+arCOG04277	0
+
+Shared taxa matrix:
+arCOG04277	0
+
+Splits matrix:
+arCOG04277	0
+----------------------------------------
+Cluster 64 (1 trees)
+
+Compatibility matrix:
+arCOG04111	0
+
+Shared taxa matrix:
+arCOG04111	0
+
+Splits matrix:
+arCOG04111	0
+----------------------------------------
+Cluster 65 (1 trees)
+
+Compatibility matrix:
+arCOG01038	0
+
+Shared taxa matrix:
+arCOG01038	0
+
+Splits matrix:
+arCOG01038	0
+----------------------------------------
+Cluster 66 (1 trees)
+
+Compatibility matrix:
+arCOG00980	0
+
+Shared taxa matrix:
+arCOG00980	0
+
+Splits matrix:
+arCOG00980	0
+----------------------------------------
+Cluster 67 (1 trees)
+
+Compatibility matrix:
+arCOG00081	0
+
+Shared taxa matrix:
+arCOG00081	0
+
+Splits matrix:
+arCOG00081	0
+----------------------------------------
+Cluster 68 (1 trees)
+
+Compatibility matrix:
+arCOG04099	0
+
+Shared taxa matrix:
+arCOG04099	0
+
+Splits matrix:
+arCOG04099	0
+----------------------------------------
+Cluster 69 (1 trees)
+
+Compatibility matrix:
+arCOG04089	0
+
+Shared taxa matrix:
+arCOG04089	0
+
+Splits matrix:
+arCOG04089	0
+----------------------------------------
+Cluster 70 (1 trees)
+
+Compatibility matrix:
+arCOG00358	0
+
+Shared taxa matrix:
+arCOG00358	0
+
+Splits matrix:
+arCOG00358	0
+----------------------------------------
+Cluster 71 (1 trees)
+
+Compatibility matrix:
+arCOG04289	0
+
+Shared taxa matrix:
+arCOG04289	0
+
+Splits matrix:
+arCOG04289	0
+----------------------------------------
+Cluster 72 (1 trees)
+
+Compatibility matrix:
+arCOG01722	0
+
+Shared taxa matrix:
+arCOG01722	0
+
+Splits matrix:
+arCOG01722	0
+----------------------------------------
+Cluster 73 (1 trees)
+
+Compatibility matrix:
+arCOG00078	0
+
+Shared taxa matrix:
+arCOG00078	0
+
+Splits matrix:
+arCOG00078	0
+----------------------------------------
+Cluster 74 (1 trees)
+
+Compatibility matrix:
+arCOG00406	0
+
+Shared taxa matrix:
+arCOG00406	0
+
+Splits matrix:
+arCOG00406	0
+----------------------------------------
+Cluster 75 (1 trees)
+
+Compatibility matrix:
+arCOG04113	0
+
+Shared taxa matrix:
+arCOG04113	0
+
+Splits matrix:
+arCOG04113	0
+----------------------------------------
+Cluster 76 (1 trees)
+
+Compatibility matrix:
+arCOG00865	0
+
+Shared taxa matrix:
+arCOG00865	0
+
+Splits matrix:
+arCOG00865	0
+----------------------------------------
+Cluster 77 (1 trees)
+
+Compatibility matrix:
+arCOG01559	0
+
+Shared taxa matrix:
+arCOG01559	0
+
+Splits matrix:
+arCOG01559	0
+----------------------------------------
+Cluster 78 (1 trees)
+
+Compatibility matrix:
+arCOG00781	0
+
+Shared taxa matrix:
+arCOG00781	0
+
+Splits matrix:
+arCOG00781	0
+----------------------------------------
+Cluster 79 (1 trees)
+
+Compatibility matrix:
+arCOG01001	0
+
+Shared taxa matrix:
+arCOG01001	0
+
+Splits matrix:
+arCOG01001	0
+----------------------------------------

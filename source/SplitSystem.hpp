@@ -37,6 +37,9 @@ public:
 	std::string name() const { return m_name; }
 	void name(const std::string& name) { m_name = name; }
 
+	uint numTaxa() const { return m_taxaIdMap.size(); }
+	uint supportedSplits(double bootstrapThreshold) const;
+
 	uint numUniqueSplits() const { return m_uniqueSplits.size(); }
 	uint numTrees() const { return m_treeSplits.size(); }
 	std::set<Split> uniqueSplits() const { return m_uniqueSplits; }
@@ -52,16 +55,16 @@ public:
 	bool isCompatible();
 	void createTree(Tree& tree);
 
-	std::vector<FreqPair> splitFreq(const SplitSystem* const splitSystem, const std::set<std::string>& commonTaxa) const;
-	std::map<std::vector<bool>, uint> projectedSplitFreq(const std::set<std::string>& commonTaxa) const;
+	std::vector<FreqPair> projectedSplitFreq(const SplitSystem* const splitSystem, const std::set<std::string>& commonTaxa) const;
+	std::map<BoolVec, uint> projectedSplitCount(const std::set<std::string>& commonTaxa) const;
 	
 	void print(std::ofstream& fout) const;
 
 private:
 	void addSplit(const Split& split);
 
-	std::vector<bool> projectionMask(const std::set<std::string>& commonTaxa) const;
-	bool project(const Split& split, const std::vector<bool>& projectionMask, std::vector<bool>& projectedSplit) const;
+	BoolVec projectionMask(const std::set<std::string>& commonTaxa) const;
+	bool project(const Split& split, const BoolVec& projectionMask, BoolVec& projectedSplit) const;
 
 private:
 	std::string m_name;

@@ -80,3 +80,59 @@ bool Tools::printMatrix(const std::string& filename, const Matrix& matrix, const
 
 	return true;
 }
+
+bool Tools::readMatrix(const std::string& file, AdjacencyMatrix& matrix, Strings& labels)
+{
+	matrix.clear();
+	labels.clear();
+
+	std::ifstream fin(file);
+	if(!fin.is_open())
+	{
+		std::cout << "[Error] Failed to open matrix file: " << file << std::endl;
+		return false;
+	}
+
+	while(!fin.eof())
+	{
+		std::string line;
+		getline(fin, line);
+
+		if(line.empty())
+			continue;
+
+		Strings tokens = StringUtils::split(line, '\t');
+		labels.push_back(tokens.at(0));
+
+		std::vector<uint> row;
+		for(uint i = 1; i < tokens.size(); ++i)
+			row.push_back(atoi(tokens.at(i).c_str()) > 0);
+
+		matrix.push_back(row);
+	}
+
+	return true;
+}
+
+bool Tools::printMatrix(const std::string& filename, const AdjacencyMatrix& matrix, const Strings& labels)
+{
+	std::ofstream fout(filename.c_str());
+	if(!fout.is_open())
+	{
+		std::cout << "[Error] Failed to output matrix file: " << filename << std::endl;
+		return false;
+	}
+
+	for(uint r = 0; r < matrix.size(); ++r)
+	{
+		fout << labels.at(r);
+
+		for(uint c = 0; c < matrix.size(); ++c)
+			fout << '\t' << matrix.at(r).at(c);
+		fout << std::endl;
+	}
+
+	fout.close();
+
+	return true;
+}

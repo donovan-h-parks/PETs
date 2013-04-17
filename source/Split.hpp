@@ -36,7 +36,7 @@ public:
 public:
 	Split();
 	Split(const Split& other);
-	Split(double weight, uint frequency, const std::vector<bool>& split);
+	Split(double weight, uint frequency, const BoolVec& split);
 	~Split() {}
 
 	Split& operator=(Split const& other);
@@ -53,7 +53,7 @@ public:
 
 	bool isTrivial() const;
 
-	std::vector<bool> split() const { return m_split; }
+	BoolVec split() const { return m_split; }
 
 	void print(std::ofstream& fout) const;
 
@@ -63,5 +63,5 @@ private:
 private:
 	double m_weight;
 	uint m_frequency;
-	std::vector<bool> m_split;
+	BoolVec m_split;
 };

@@ -23,7 +23,7 @@
 
 #include "Split.hpp"
 
-Split::Split(double weight, uint frequency, const std::vector<bool>& split)
+Split::Split(double weight, uint frequency, const BoolVec& split)
 	: m_weight(weight), m_frequency(frequency), m_split(split)
 {
 	canonicalFormat();
