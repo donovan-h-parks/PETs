@@ -30,8 +30,10 @@ class CompatibilityGraph
 public:
 	CompatibilityGraph() {}
 	
-	void build(const std::vector<SplitSystem*>& splitSystems, double bootstrapThreshold);
-	void cluster();
+	void buildByPercentage(const std::vector<SplitSystem*>& splitSystems, double bootstrapThreshold);
+	void buildByFixedNumber(const std::vector<SplitSystem*>& splitSystems, uint fixedNumber);
+
+	void findMaxClique();
 
 	bool printMatrices(const std::string& prefix);
 	bool printClustering(const std::string& filename);
@@ -61,6 +63,8 @@ private:
 
 private:
 	PairInfo isCompatible(const SplitSystem* const ss1, const SplitSystem* const ss2, double bootstrapThreshold);
+	PairInfo isCompatible(const SplitSystem* const ss1, const SplitSystem* const ss2, uint fixedNumber);
+
 	bool isCompatible(const BoolVec& split1, const BoolVec& split2);
 
 private:

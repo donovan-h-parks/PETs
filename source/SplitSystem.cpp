@@ -442,9 +442,22 @@ uint SplitSystem::supportedSplits(double bootstrapThreshold) const
 	std::set<Split>::iterator it;
 	for(it = m_uniqueSplits.begin(); it != m_uniqueSplits.end(); ++it)
 	{
-		if(double(it->frequency()) / numTaxa() >= bootstrapThreshold)
+		if(double(it->frequency()) / numTrees() >= bootstrapThreshold)
 			count++;
 	}
 
 	return (count - numTaxa()); // number of supported, non-trivial splits
+}
+
+double SplitSystem::bootstrapAt(uint number) const
+{
+	std::vector<double> bootstraps;
+	std::set<Split>::iterator it;
+	for(it = m_uniqueSplits.begin(); it != m_uniqueSplits.end(); ++it)
+		bootstraps.push_back(double(it->frequency()) / numTrees());
+
+	std::sort(bootstraps.begin(), bootstraps.end(), std::greater<double>());
+
+	return bootstraps.at(number + numTaxa());	// return bootstrap support of the nth best supported, non-trivial split
+
 }

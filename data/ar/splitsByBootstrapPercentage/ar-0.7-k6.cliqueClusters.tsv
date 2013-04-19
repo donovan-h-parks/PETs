@@ -1,0 +1,828 @@
+Cluster 0
+Cliques (225): Clique0,Clique1,Clique2,Clique3,Clique4,Clique5,Clique6,Clique7,Clique8,Clique9,Clique10,Clique11,Clique12,Clique13,Clique14,Clique15,Clique16,Clique17,Clique18,Clique19,Clique20,Clique21,Clique22,Clique23,Clique24,Clique25,Clique26,Clique27,Clique28,Clique29,Clique30,Clique31,Clique32,Clique33,Clique34,Clique35,Clique36,Clique37,Clique38,Clique39,Clique40,Clique41,Clique42,Clique43,Clique44,Clique45,Clique46,Clique47,Clique48,Clique49,Clique50,Clique51,Clique52,Clique53,Clique54,Clique55,Clique56,Clique57,Clique58,Clique59,Clique60,Clique61,Clique62,Clique63,Clique64,Clique65,Clique66,Clique67,Clique68,Clique69,Clique70,Clique71,Clique72,Clique73,Clique74,Clique75,Clique76,Clique77,Clique78,Clique79,Clique80,Clique81,Clique82,Clique83,Clique84,Clique85,Clique86,Clique87,Clique88,Clique89,Clique90,Clique91,Clique92,Clique93,Clique94,Clique95,Clique96,Clique97,Clique98,Clique99,Clique100,Clique101,Clique102,Clique103,Clique104,Clique105,Clique107,Clique108,Clique109,Clique110,Clique111,Clique112,Clique113,Clique114,Clique115,Clique116,Clique117,Clique118,Clique119,Clique120,Clique121,Clique122,Clique123,Clique124,Clique125,Clique126,Clique127,Clique128,Clique129,Clique130,Clique131,Clique132,Clique133,Clique134,Clique135,Clique136,Clique137,Clique138,Clique139,Clique140,Clique141,Clique142,Clique143,Clique144,Clique145,Clique146,Clique147,Clique148,Clique149,Clique150,Clique151,Clique152,Clique153,Clique154,Clique155,Clique156,Clique157,Clique158,Clique159,Clique160,Clique161,Clique162,Clique163,Clique164,Clique165,Clique166,Clique167,Clique168,Clique169,Clique170,Clique171,Clique172,Clique173,Clique174,Clique175,Clique176,Clique177,Clique178,Clique179,Clique180,Clique181,Clique182,Clique183,Clique184,Clique185,Clique186,Clique187,Clique188,Clique189,Clique190,Clique191,Clique192,Clique193,Clique194,Clique195,Clique196,Clique197,Clique198,Clique199,Clique200,Clique201,Clique202,Clique203,Clique204,Clique205,Clique206,Clique207,Clique208,Clique209,Clique210,Clique211,Clique212,Clique213,Clique214,Clique215,Clique216,Clique217,Clique218,Clique219,Clique220,Clique221,Clique222,Clique223,Clique224,Clique225
+Nodes (61): arCOG04179,arCOG00078,arCOG04249,arCOG04244,arCOG04245,arCOG04099,arCOG04243,arCOG04176,arCOG04089,arCOG04154,arCOG01228,arCOG04150,arCOG04208,arCOG04130,arCOG04086,arCOG04087,arCOG01183,arCOG01180,arCOG04289,arCOG00358,arCOG01561,arCOG01563,arCOG04228,arCOG01719,arCOG04281,arCOG00781,arCOG00780,arCOG04187,arCOG04107,arCOG01122,arCOG00869,arCOG04185,arCOG04169,arCOG04186,arCOG04254,arCOG04256,arCOG01950,arCOG04071,arCOG04108,arCOG00675,arCOG01920,arCOG04240,arCOG04077,arCOG04098,arCOG04097,arCOG01741,arCOG04129,arCOG04094,arCOG04093,arCOG04092,arCOG04091,arCOG04106,arCOG00470,arCOG01751,arCOG01722,arCOG01219,arCOG01559,arCOG01038,arCOG01015,arCOG01016,arCOG01358
+
+Cluster 1
+Cliques (1): Clique106
+Nodes (6): arCOG04077,arCOG04108,arCOG00675,arCOG01561,arCOG04169,arCOG01122
+
+Cluster 2
+Cliques (1): Clique226
+Nodes (5): arCOG04071,arCOG04108,arCOG00675,arCOG04072,arCOG04129
+
+Cluster 3
+Cliques (1): Clique227
+Nodes (5): arCOG04108,arCOG00675,arCOG01920,arCOG01122,arCOG04077
+
+Cluster 4
+Cliques (1): Clique228
+Nodes (5): arCOG04108,arCOG00675,arCOG01920,arCOG01122,arCOG04070
+
+Cluster 5
+Cliques (1): Clique229
+Nodes (5): arCOG04108,arCOG01741,arCOG01920,arCOG01122,arCOG04070
+
+Cluster 6
+Cliques (1): Clique230
+Nodes (5): arCOG04108,arCOG00780,arCOG04094,arCOG04372,arCOG04077
+
+Cluster 7
+Cliques (1): Clique231
+Nodes (5): arCOG04071,arCOG04108,arCOG00675,arCOG04072,arCOG01561
+
+Cluster 8
+Cliques (1): Clique232
+Nodes (5): arCOG04108,arCOG04129,arCOG04130,arCOG04169,arCOG01563
+
+Cluster 9
+Cliques (1): Clique233
+Nodes (5): arCOG04112,arCOG04108,arCOG04129,arCOG04071,arCOG04077
+
+Cluster 10
+Cliques (1): Clique234
+Nodes (5): arCOG04108,arCOG04129,arCOG04094,arCOG04064,arCOG04077
+
+Cluster 11
+Cliques (1): Clique235
+Nodes (5): arCOG04108,arCOG01741,arCOG04093,arCOG04077,arCOG01920
+
+Cluster 12
+Cliques (1): Clique236
+Nodes (5): arCOG04071,arCOG04108,arCOG04077,arCOG04176,arCOG04112
+
+Cluster 13
+Cliques (1): Clique237
+Nodes (5): arCOG04071,arCOG04108,arCOG00675,arCOG04072,arCOG04176
+
+Cluster 14
+Cliques (1): Clique238
+Nodes (5): arCOG04169,arCOG04108,arCOG00675,arCOG01950,arCOG04077
+
+Cluster 15
+Cliques (1): Clique239
+Nodes (5): arCOG04108,arCOG04094,arCOG01950,arCOG04077,arCOG01923
+
+Cluster 16
+Cliques (1): Clique240
+Nodes (5): arCOG04108,arCOG04094,arCOG00780,arCOG04077,arCOG01923
+
+Cluster 17
+Cliques (1): Clique241
+Nodes (5): arCOG01923,arCOG04108,arCOG04094,arCOG04077,arCOG00470
+
+Cluster 18
+Cliques (1): Clique242
+Nodes (5): arCOG04108,arCOG04094,arCOG01920,arCOG00078,arCOG01950
+
+Cluster 19
+Cliques (1): Clique243
+Nodes (5): arCOG04108,arCOG01038,arCOG00780,arCOG00078,arCOG04176
+
+Cluster 20
+Cliques (1): Clique244
+Nodes (5): arCOG04179,arCOG04108,arCOG01950,arCOG04077,arCOG01923
+
+Cluster 21
+Cliques (1): Clique245
+Nodes (5): arCOG04179,arCOG04108,arCOG01923,arCOG04077,arCOG00470
+
+Cluster 22
+Cliques (1): Clique246
+Nodes (5): arCOG04108,arCOG04256,arCOG01950,arCOG04077,arCOG01741
+
+Cluster 23
+Cliques (1): Clique247
+Nodes (5): arCOG04254,arCOG04108,arCOG04092,arCOG04099,arCOG04098
+
+Cluster 24
+Cliques (1): Clique248
+Nodes (5): arCOG04071,arCOG04254,arCOG04130,arCOG04091,arCOG04108
+
+Cluster 25
+Cliques (1): Clique249
+Nodes (5): arCOG04254,arCOG04256,arCOG04077,arCOG04091,arCOG04108
+
+Cluster 26
+Cliques (1): Clique250
+Nodes (5): arCOG04254,arCOG04108,arCOG01923,arCOG04077,arCOG00470
+
+Cluster 27
+Cliques (1): Clique251
+Nodes (5): arCOG04108,arCOG01038,arCOG01016,arCOG01122,arCOG04186
+
+Cluster 28
+Cliques (1): Clique252
+Nodes (5): arCOG04071,arCOG04108,arCOG01038,arCOG04176,arCOG04186
+
+Cluster 29
+Cliques (1): Clique253
+Nodes (5): arCOG04071,arCOG04108,arCOG04092,arCOG04187,arCOG04098
+
+Cluster 30
+Cliques (1): Clique254
+Nodes (5): arCOG04179,arCOG01038,arCOG01923,arCOG04187,arCOG04108
+
+Cluster 31
+Cliques (1): Clique255
+Nodes (5): arCOG04108,arCOG04094,arCOG00780,arCOG04258,arCOG04077
+
+Cluster 32
+Cliques (1): Clique256
+Nodes (5): arCOG04108,arCOG01038,arCOG04093,arCOG04258,arCOG04187
+
+Cluster 33
+Cliques (1): Clique257
+Nodes (5): arCOG04071,arCOG04108,arCOG00675,arCOG04185,arCOG01751
+
+Cluster 34
+Cliques (1): Clique258
+Nodes (5): arCOG04108,arCOG04130,arCOG04185,arCOG04169,arCOG01563
+
+Cluster 35
+Cliques (1): Clique259
+Nodes (5): arCOG04179,arCOG00675,arCOG04185,arCOG04187,arCOG04108
+
+Cluster 36
+Cliques (1): Clique260
+Nodes (5): arCOG04108,arCOG00675,arCOG04077,arCOG00868,arCOG04098
+
+Cluster 37
+Cliques (1): Clique261
+Nodes (5): arCOG04179,arCOG00675,arCOG00868,arCOG04077,arCOG04108
+
+Cluster 38
+Cliques (1): Clique262
+Nodes (5): arCOG01016,arCOG04094,arCOG01219,arCOG04186,arCOG04106
+
+Cluster 39
+Cliques (1): Clique263
+Nodes (5): arCOG04108,arCOG01563,arCOG04169,arCOG04107,arCOG00869
+
+Cluster 40
+Cliques (1): Clique264
+Nodes (5): arCOG04108,arCOG04130,arCOG04169,arCOG04107,arCOG01563
+
+Cluster 41
+Cliques (1): Clique265
+Nodes (5): arCOG04108,arCOG00675,arCOG00865,arCOG04077,arCOG04107
+
+Cluster 42
+Cliques (1): Clique266
+Nodes (5): arCOG04108,arCOG00675,arCOG00865,arCOG04185,arCOG04077
+
+Cluster 43
+Cliques (1): Clique267
+Nodes (5): arCOG04071,arCOG04254,arCOG00358,arCOG04092,arCOG04108
+
+Cluster 44
+Cliques (1): Clique268
+Nodes (5): arCOG00470,arCOG00358,arCOG04092,arCOG04108,arCOG04254
+
+Cluster 45
+Cliques (1): Clique269
+Nodes (5): arCOG04108,arCOG01180,arCOG04094,arCOG01920,arCOG01741
+
+Cluster 46
+Cliques (1): Clique270
+Nodes (5): arCOG04108,arCOG01180,arCOG00780,arCOG04094,arCOG01923
+
+Cluster 47
+Cliques (1): Clique271
+Nodes (5): arCOG04108,arCOG01180,arCOG00780,arCOG01038,arCOG01923
+
+Cluster 48
+Cliques (1): Clique272
+Nodes (5): arCOG04108,arCOG01180,arCOG00780,arCOG00675,arCOG01038
+
+Cluster 49
+Cliques (1): Clique273
+Nodes (5): arCOG04108,arCOG01180,arCOG04094,arCOG01741,arCOG04186
+
+Cluster 50
+Cliques (1): Clique274
+Nodes (5): arCOG01183,arCOG04094,arCOG04258,arCOG04077,arCOG04108
+
+Cluster 51
+Cliques (1): Clique275
+Nodes (5): arCOG01183,arCOG00675,arCOG04094,arCOG04077,arCOG04108
+
+Cluster 52
+Cliques (1): Clique276
+Nodes (5): arCOG04108,arCOG00675,arCOG04093,arCOG04086,arCOG04077
+
+Cluster 53
+Cliques (1): Clique277
+Nodes (5): arCOG04108,arCOG00675,arCOG04093,arCOG01038,arCOG04086
+
+Cluster 54
+Cliques (1): Clique278
+Nodes (5): arCOG01016,arCOG04106,arCOG04186,arCOG04086,arCOG04223
+
+Cluster 55
+Cliques (1): Clique279
+Nodes (5): arCOG04108,arCOG01038,arCOG04093,arCOG04086,arCOG04186
+
+Cluster 56
+Cliques (1): Clique280
+Nodes (5): arCOG04071,arCOG01016,arCOG04223,arCOG04086,arCOG04186
+
+Cluster 57
+Cliques (1): Clique281
+Nodes (5): arCOG04108,arCOG01719,arCOG01038,arCOG04086,arCOG04186
+
+Cluster 58
+Cliques (1): Clique282
+Nodes (5): arCOG04108,arCOG04094,arCOG00078,arCOG04086,arCOG04098
+
+Cluster 59
+Cliques (1): Clique283
+Nodes (5): arCOG04208,arCOG04094,arCOG01950,arCOG04186,arCOG04106
+
+Cluster 60
+Cliques (1): Clique284
+Nodes (5): arCOG04108,arCOG04208,arCOG04094,arCOG04258,arCOG04077
+
+Cluster 61
+Cliques (1): Clique285
+Nodes (5): arCOG04108,arCOG04150,arCOG04094,arCOG04258,arCOG04077
+
+Cluster 62
+Cliques (1): Clique286
+Nodes (5): arCOG04150,arCOG04108,arCOG01038,arCOG04258,arCOG04187
+
+Cluster 63
+Cliques (1): Clique287
+Nodes (5): arCOG04108,arCOG01228,arCOG04093,arCOG04077,arCOG01920
+
+Cluster 64
+Cliques (1): Clique288
+Nodes (5): arCOG04108,arCOG01228,arCOG04093,arCOG04077,arCOG04186
+
+Cluster 65
+Cliques (1): Clique289
+Nodes (5): arCOG01183,arCOG01038,arCOG01228,arCOG04108,arCOG04186
+
+Cluster 66
+Cliques (1): Clique290
+Nodes (5): arCOG04108,arCOG01228,arCOG04093,arCOG04187,arCOG01920
+
+Cluster 67
+Cliques (1): Clique291
+Nodes (5): arCOG04071,arCOG04108,arCOG04154,arCOG04129,arCOG04112
+
+Cluster 68
+Cliques (1): Clique292
+Nodes (5): arCOG04071,arCOG04108,arCOG04154,arCOG01561,arCOG04098
+
+Cluster 69
+Cliques (1): Clique293
+Nodes (5): arCOG04071,arCOG04108,arCOG04154,arCOG04289,arCOG01219
+
+Cluster 70
+Cliques (1): Clique294
+Nodes (5): arCOG04071,arCOG04108,arCOG04154,arCOG04289,arCOG00780
+
+Cluster 71
+Cliques (1): Clique295
+Nodes (5): arCOG04108,arCOG04154,arCOG04256,arCOG04091,arCOG00869
+
+Cluster 72
+Cliques (1): Clique296
+Nodes (5): arCOG04254,arCOG04154,arCOG04256,arCOG04091,arCOG04108
+
+Cluster 73
+Cliques (1): Clique297
+Nodes (5): arCOG01722,arCOG04254,arCOG04154,arCOG04092,arCOG04108
+
+Cluster 74
+Cliques (1): Clique298
+Nodes (5): arCOG01722,arCOG04254,arCOG04154,arCOG04256,arCOG04108
+
+Cluster 75
+Cliques (1): Clique299
+Nodes (5): arCOG04108,arCOG04154,arCOG01561,arCOG04169,arCOG00869
+
+Cluster 76
+Cliques (1): Clique300
+Nodes (5): arCOG01559,arCOG04071,arCOG04154,arCOG04185,arCOG04108
+
+Cluster 77
+Cliques (1): Clique301
+Nodes (5): arCOG04089,arCOG01016,arCOG04094,arCOG01219,arCOG04106
+
+Cluster 78
+Cliques (1): Clique302
+Nodes (5): arCOG04089,arCOG04094,arCOG00780,arCOG04086,arCOG04106
+
+Cluster 79
+Cliques (1): Clique303
+Nodes (5): arCOG04089,arCOG01016,arCOG04223,arCOG04086,arCOG04106
+
+Cluster 80
+Cliques (1): Clique304
+Nodes (5): arCOG04071,arCOG04089,arCOG01016,arCOG04086,arCOG04223
+
+Cluster 81
+Cliques (1): Clique305
+Nodes (5): arCOG04071,arCOG04089,arCOG04092,arCOG04187,arCOG04108
+
+Cluster 82
+Cliques (1): Clique306
+Nodes (5): arCOG01722,arCOG04108,arCOG04154,arCOG04097,arCOG04240
+
+Cluster 83
+Cliques (1): Clique307
+Nodes (5): arCOG04108,arCOG00675,arCOG04240,arCOG04077,arCOG01561
+
+Cluster 84
+Cliques (1): Clique308
+Nodes (5): arCOG01722,arCOG04108,arCOG04154,arCOG04256,arCOG04240
+
+Cluster 85
+Cliques (1): Clique309
+Nodes (5): arCOG04108,arCOG04154,arCOG04256,arCOG04185,arCOG04240
+
+Cluster 86
+Cliques (1): Clique310
+Nodes (5): arCOG01559,arCOG04108,arCOG04154,arCOG04185,arCOG04240
+
+Cluster 87
+Cliques (1): Clique311
+Nodes (5): arCOG04108,arCOG00675,arCOG04185,arCOG04240,arCOG04187
+
+Cluster 88
+Cliques (1): Clique312
+Nodes (5): arCOG04108,arCOG04099,arCOG04243,arCOG04107,arCOG01563
+
+Cluster 89
+Cliques (1): Clique313
+Nodes (5): arCOG04108,arCOG00780,arCOG04243,arCOG04099,arCOG01563
+
+Cluster 90
+Cliques (1): Clique314
+Nodes (5): arCOG04254,arCOG04099,arCOG04243,arCOG04107,arCOG04108
+
+Cluster 91
+Cliques (1): Clique315
+Nodes (5): arCOG04108,arCOG04185,arCOG04243,arCOG04099,arCOG01563
+
+Cluster 92
+Cliques (1): Clique316
+Nodes (5): arCOG04071,arCOG04108,arCOG04245,arCOG04077,arCOG01228
+
+Cluster 93
+Cliques (1): Clique317
+Nodes (5): arCOG04071,arCOG04108,arCOG04245,arCOG04077,arCOG01741
+
+Cluster 94
+Cliques (1): Clique318
+Nodes (5): arCOG01228,arCOG04108,arCOG04245,arCOG01950,arCOG04077
+
+Cluster 95
+Cliques (1): Clique319
+Nodes (5): arCOG04108,arCOG04288,arCOG04245,arCOG01950,arCOG04077
+
+Cluster 96
+Cliques (1): Clique320
+Nodes (5): arCOG04108,arCOG04245,arCOG01950,arCOG04077,arCOG01741
+
+Cluster 97
+Cliques (1): Clique321
+Nodes (5): arCOG04071,arCOG04254,arCOG04245,arCOG00358,arCOG04108
+
+Cluster 98
+Cliques (1): Clique322
+Nodes (5): arCOG04108,arCOG04154,arCOG04245,arCOG04185,arCOG04240
+
+Cluster 99
+Cliques (1): Clique323
+Nodes (5): arCOG04108,arCOG04244,arCOG04094,arCOG04086,arCOG04098
+
+Cluster 100
+Cliques (1): Clique324
+Nodes (5): arCOG04108,arCOG04244,arCOG04094,arCOG04150,arCOG04098
+
+Cluster 101
+Cliques (1): Clique325
+Nodes (5): arCOG04108,arCOG04244,arCOG04094,arCOG04150,arCOG04186
+
+Cluster 102
+Cliques (1): Clique326
+Nodes (5): arCOG04108,arCOG04244,arCOG04150,arCOG04187,arCOG04098
+
+Cluster 103
+Cliques (1): Clique327
+Nodes (5): arCOG04108,arCOG04244,arCOG04187,arCOG04150,arCOG04186
+
+Cluster 104
+Cliques (1): Clique328
+Nodes (5): arCOG04179,arCOG04244,arCOG04150,arCOG04187,arCOG04108
+
+Cluster 105
+Cliques (1): Clique329
+Nodes (5): arCOG04108,arCOG01038,arCOG00780,arCOG04086,arCOG04249
+
+Cluster 106
+Cliques (1): Clique330
+Nodes (4): arCOG04108,arCOG00780,arCOG04092,arCOG04090
+
+Cluster 107
+Cliques (1): Clique331
+Nodes (4): arCOG04108,arCOG00780,arCOG04092,arCOG04099
+
+Cluster 108
+Cliques (1): Clique332
+Nodes (4): arCOG04108,arCOG01038,arCOG00780,arCOG04372
+
+Cluster 109
+Cliques (1): Clique333
+Nodes (4): arCOG04108,arCOG04130,arCOG01561,arCOG04169
+
+Cluster 110
+Cliques (1): Clique334
+Nodes (4): arCOG04108,arCOG04288,arCOG04064,arCOG04077
+
+Cluster 111
+Cliques (1): Clique335
+Nodes (4): arCOG04108,arCOG01038,arCOG00675,arCOG04067
+
+Cluster 112
+Cliques (1): Clique336
+Nodes (4): arCOG04108,arCOG00402,arCOG04094,arCOG04098
+
+Cluster 113
+Cliques (1): Clique337
+Nodes (4): arCOG04108,arCOG00402,arCOG04094,arCOG00780
+
+Cluster 114
+Cliques (1): Clique338
+Nodes (4): arCOG04108,arCOG04094,arCOG01950,arCOG04092
+
+Cluster 115
+Cliques (1): Clique339
+Nodes (4): arCOG04108,arCOG04077,arCOG01122,arCOG01923
+
+Cluster 116
+Cliques (1): Clique340
+Nodes (4): arCOG04108,arCOG01038,arCOG01122,arCOG01923
+
+Cluster 117
+Cliques (1): Clique341
+Nodes (4): arCOG04108,arCOG00675,arCOG04067,arCOG04302
+
+Cluster 118
+Cliques (1): Clique342
+Nodes (4): arCOG04108,arCOG04256,arCOG04473,arCOG04098
+
+Cluster 119
+Cliques (1): Clique343
+Nodes (4): arCOG04254,arCOG00675,arCOG01001,arCOG04108
+
+Cluster 120
+Cliques (1): Clique344
+Nodes (4): arCOG04254,arCOG00078,arCOG04108,arCOG04098
+
+Cluster 121
+Cliques (1): Clique345
+Nodes (4): arCOG04108,arCOG04093,arCOG04473,arCOG04186
+
+Cluster 122
+Cliques (1): Clique346
+Nodes (4): arCOG04108,arCOG04093,arCOG04258,arCOG04077
+
+Cluster 123
+Cliques (1): Clique347
+Nodes (4): arCOG04108,arCOG01038,arCOG00780,arCOG04258
+
+Cluster 124
+Cliques (1): Clique348
+Nodes (4): arCOG04108,arCOG00675,arCOG04185,arCOG04067
+
+Cluster 125
+Cliques (1): Clique349
+Nodes (4): arCOG04106,arCOG04094,arCOG01219,arCOG04098
+
+Cluster 126
+Cliques (1): Clique350
+Nodes (4): arCOG00675,arCOG00029,arCOG01561,arCOG04098
+
+Cluster 127
+Cliques (1): Clique351
+Nodes (4): arCOG00675,arCOG00029,arCOG04185,arCOG04098
+
+Cluster 128
+Cliques (1): Clique352
+Nodes (4): arCOG04108,arCOG00675,arCOG04067,arCOG04107
+
+Cluster 129
+Cliques (1): Clique353
+Nodes (4): arCOG04108,arCOG00781,arCOG04094,arCOG00410
+
+Cluster 130
+Cliques (1): Clique354
+Nodes (4): arCOG04108,arCOG01180,arCOG01038,arCOG04186
+
+Cluster 131
+Cliques (1): Clique355
+Nodes (4): arCOG01183,arCOG01038,arCOG04258,arCOG04108
+
+Cluster 132
+Cliques (1): Clique356
+Nodes (4): arCOG01183,arCOG00675,arCOG01038,arCOG04108
+
+Cluster 133
+Cliques (1): Clique357
+Nodes (4): arCOG00675,arCOG00029,arCOG04086,arCOG04098
+
+Cluster 134
+Cliques (1): Clique358
+Nodes (4): arCOG04098,arCOG04094,arCOG04086,arCOG04106
+
+Cluster 135
+Cliques (1): Clique359
+Nodes (4): arCOG04108,arCOG04239,arCOG04086,arCOG04091
+
+Cluster 136
+Cliques (1): Clique360
+Nodes (4): arCOG00470,arCOG04239,arCOG04086,arCOG04108
+
+Cluster 137
+Cliques (1): Clique361
+Nodes (4): arCOG04108,arCOG00980,arCOG04107,arCOG04473
+
+Cluster 138
+Cliques (1): Clique362
+Nodes (4): arCOG04108,arCOG01016,arCOG00980,arCOG04107
+
+Cluster 139
+Cliques (1): Clique363
+Nodes (4): arCOG04108,arCOG01038,arCOG04111,arCOG01751
+
+Cluster 140
+Cliques (1): Clique364
+Nodes (4): arCOG04071,arCOG04186,arCOG04150,arCOG04223
+
+Cluster 141
+Cliques (1): Clique365
+Nodes (4): arCOG04289,arCOG04154,arCOG00780,arCOG04106
+
+Cluster 142
+Cliques (1): Clique366
+Nodes (4): arCOG04154,arCOG04289,arCOG01219,arCOG04106
+
+Cluster 143
+Cliques (1): Clique367
+Nodes (4): arCOG04154,arCOG01219,arCOG04098,arCOG04106
+
+Cluster 144
+Cliques (1): Clique368
+Nodes (4): arCOG04097,arCOG04108,arCOG04154,arCOG04098
+
+Cluster 145
+Cliques (1): Clique369
+Nodes (4): arCOG04097,arCOG04108,arCOG04154,arCOG00780
+
+Cluster 146
+Cliques (1): Clique370
+Nodes (4): arCOG04154,arCOG01219,arCOG04186,arCOG04106
+
+Cluster 147
+Cliques (1): Clique371
+Nodes (4): arCOG04089,arCOG01016,arCOG00029,arCOG04086
+
+Cluster 148
+Cliques (1): Clique372
+Nodes (4): arCOG04089,arCOG00675,arCOG00029,arCOG04086
+
+Cluster 149
+Cliques (1): Clique373
+Nodes (4): arCOG04089,arCOG00675,arCOG00029,arCOG01561
+
+Cluster 150
+Cliques (1): Clique374
+Nodes (4): arCOG04089,arCOG04154,arCOG01219,arCOG04106
+
+Cluster 151
+Cliques (1): Clique375
+Nodes (4): arCOG04089,arCOG04154,arCOG00780,arCOG04106
+
+Cluster 152
+Cliques (1): Clique376
+Nodes (4): arCOG04071,arCOG04089,arCOG04150,arCOG04223
+
+Cluster 153
+Cliques (1): Clique377
+Nodes (4): arCOG04289,arCOG04223,arCOG04240,arCOG04106
+
+Cluster 154
+Cliques (1): Clique378
+Nodes (4): arCOG04108,arCOG04154,arCOG04129,arCOG04240
+
+Cluster 155
+Cliques (1): Clique379
+Nodes (4): arCOG04108,arCOG04154,arCOG01561,arCOG04240
+
+Cluster 156
+Cliques (1): Clique380
+Nodes (4): arCOG04108,arCOG04256,arCOG04240,arCOG04473
+
+Cluster 157
+Cliques (1): Clique381
+Nodes (4): arCOG04108,arCOG04185,arCOG04240,arCOG04099
+
+Cluster 158
+Cliques (1): Clique382
+Nodes (4): arCOG04288,arCOG04245,arCOG01950,arCOG04106
+
+Cluster 159
+Cliques (1): Clique383
+Nodes (4): arCOG04106,arCOG04245,arCOG04240,arCOG04087
+
+Cluster 160
+Cliques (1): Clique384
+Nodes (4): arCOG04108,arCOG04245,arCOG04240,arCOG04473
+
+Cluster 161
+Cliques (1): Clique385
+Nodes (4): arCOG04245,arCOG01950,arCOG04240,arCOG04106
+
+Cluster 162
+Cliques (1): Clique386
+Nodes (4): arCOG04108,arCOG04245,arCOG00078,arCOG01950
+
+Cluster 163
+Cliques (1): Clique387
+Nodes (4): arCOG04108,arCOG04245,arCOG00078,arCOG04254
+
+Cluster 164
+Cliques (1): Clique388
+Nodes (4): arCOG04108,arCOG04244,arCOG04154,arCOG04098
+
+Cluster 165
+Cliques (1): Clique389
+Nodes (4): arCOG04244,arCOG04223,arCOG04086,arCOG04186
+
+Cluster 166
+Cliques (1): Clique390
+Nodes (4): arCOG04244,arCOG04186,arCOG04150,arCOG04223
+
+Cluster 167
+Cliques (1): Clique391
+Nodes (4): arCOG04108,arCOG04244,arCOG04154,arCOG04186
+
+Cluster 168
+Cliques (1): Clique392
+Nodes (4): arCOG04179,arCOG04244,arCOG01950,arCOG04108
+
+Cluster 169
+Cliques (1): Clique393
+Nodes (4): arCOG04179,arCOG04244,arCOG04150,arCOG04223
+
+Cluster 170
+Cliques (1): Clique394
+Nodes (4): arCOG04179,arCOG04244,arCOG00470,arCOG04108
+
+Cluster 171
+Cliques (1): Clique395
+Nodes (3): arCOG04071,arCOG04228,arCOG04223
+
+Cluster 172
+Cliques (1): Clique396
+Nodes (3): arCOG01988,arCOG00780,arCOG04077
+
+Cluster 173
+Cliques (1): Clique397
+Nodes (3): arCOG04108,arCOG01038,arCOG00410
+
+Cluster 174
+Cliques (1): Clique398
+Nodes (3): arCOG04108,arCOG04072,arCOG04099
+
+Cluster 175
+Cliques (1): Clique399
+Nodes (3): arCOG04108,arCOG04239,arCOG01560
+
+Cluster 176
+Cliques (1): Clique400
+Nodes (3): arCOG04108,arCOG04239,arCOG04067
+
+Cluster 177
+Cliques (1): Clique401
+Nodes (3): arCOG04108,arCOG04239,arCOG01950
+
+Cluster 178
+Cliques (1): Clique402
+Nodes (3): arCOG04254,arCOG04184,arCOG04098
+
+Cluster 179
+Cliques (1): Clique403
+Nodes (3): arCOG04254,arCOG01560,arCOG04108
+
+Cluster 180
+Cliques (1): Clique404
+Nodes (3): arCOG04223,arCOG04473,arCOG04186
+
+Cluster 181
+Cliques (1): Clique405
+Nodes (3): arCOG04108,arCOG00675,arCOG04182
+
+Cluster 182
+Cliques (1): Clique406
+Nodes (3): arCOG04239,arCOG01950,arCOG04106
+
+Cluster 183
+Cliques (1): Clique407
+Nodes (3): arCOG04179,arCOG04106,arCOG04223
+
+Cluster 184
+Cliques (1): Clique408
+Nodes (3): arCOG04179,arCOG01950,arCOG04106
+
+Cluster 185
+Cliques (1): Clique409
+Nodes (3): arCOG04071,arCOG04289,arCOG04223
+
+Cluster 186
+Cliques (1): Clique410
+Nodes (3): arCOG04239,arCOG04087,arCOG04106
+
+Cluster 187
+Cliques (1): Clique411
+Nodes (3): arCOG04108,arCOG04239,arCOG04087
+
+Cluster 188
+Cliques (1): Clique412
+Nodes (3): arCOG04277,arCOG04239,arCOG04087
+
+Cluster 189
+Cliques (1): Clique413
+Nodes (3): arCOG04239,arCOG04086,arCOG04106
+
+Cluster 190
+Cliques (1): Clique414
+Nodes (3): arCOG04108,arCOG04111,arCOG04228
+
+Cluster 191
+Cliques (1): Clique415
+Nodes (3): arCOG04108,arCOG04208,arCOG04111
+
+Cluster 192
+Cliques (1): Clique416
+Nodes (3): arCOG04113,arCOG01950,arCOG04077
+
+Cluster 193
+Cliques (1): Clique417
+Nodes (3): arCOG04108,arCOG04154,arCOG04182
+
+Cluster 194
+Cliques (1): Clique418
+Nodes (3): arCOG04240,arCOG04473,arCOG04223
+
+Cluster 195
+Cliques (1): Clique419
+Nodes (3): arCOG04240,arCOG04150,arCOG04223
+
+Cluster 196
+Cliques (1): Clique420
+Nodes (2): arCOG04209,arCOG01920
+
+Cluster 197
+Cliques (1): Clique421
+Nodes (2): arCOG04090,arCOG04223
+
+Cluster 198
+Cliques (1): Clique422
+Nodes (2): arCOG04108,arCOG00412
+
+Cluster 199
+Cliques (1): Clique423
+Nodes (2): arCOG04108,arCOG00487
+
+Cluster 200
+Cliques (1): Clique424
+Nodes (2): arCOG04108,arCOG00035
+
+Cluster 201
+Cliques (1): Clique425
+Nodes (2): arCOG04182,arCOG04184
+
+Cluster 202
+Cliques (1): Clique426
+Nodes (2): arCOG04255,arCOG04106
+
+Cluster 203
+Cliques (1): Clique427
+Nodes (2): arCOG00985,arCOG00780
+
+Cluster 204
+Cliques (1): Clique428
+Nodes (1): arCOG00081
+
+Cluster 205
+Cliques (1): Clique429
+Nodes (1): arCOG04161
+
+Cluster 206
+Cliques (1): Clique430
+Nodes (1): arCOG00406
+

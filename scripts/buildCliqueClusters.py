@@ -12,6 +12,8 @@ __status__ = 'Development'
 import sys, argparse
 import random
 
+from numpy import argsort, mean
+
 '''
 Simple class for working with unweighted undirected graphs
 @author: Oleksii Kuchaiev; http://www.kuchaev.com
@@ -330,10 +332,18 @@ class Graph(object):
 		return Cliques
 
 def doWork(args):
+	# read sequence length
+	geneIdToLen = {}
+	for line in open(args.seq_len):
+		lineSplit = line.split('\t')
+		geneIdToLen[lineSplit[0]] = float(lineSplit[1])
+	
 	# read compatibility matrix
 	connections = {}
 	ids = []
 	index = 1
+	possibleLinks = 0
+	numLinks = 0
 	for line in open(args.input):
 		lineSplit = line.split('\t')
 		id = lineSplit[0]
@@ -341,9 +351,15 @@ def doWork(args):
 		
 		connections[id] = []
 		for i in xrange(index, len(lineSplit)):
+			possibleLinks += 1
 			if float(lineSplit[i]) > 0:
 				connections[id].append(i-1)
+				numLinks +=1
 		index += 1
+		
+	# calculate fraction of possible edges that have been made
+	f = float(numLinks) / possibleLinks
+	print '  Fraction of edges: %.2f' % f
 		
 	# create graph
 	graph = Graph()
@@ -396,25 +412,57 @@ def doWork(args):
 	# find connected components (clique clusters) in co-clique matrix
 	fout = open(args.output_prefix + '.cliqueClusters.tsv', 'w')
 	connectedComponents = coCliqueGraph.connected_components()
+	nodesInCliqueClusters = []
 	for cc in connectedComponents:
+		# get nodes in clique cluster
 		uniqueNodes = set()
 		for cliqueId in connectedComponents[cc]:
 			uniqueNodes = uniqueNodes.union(sortedCliques[cliqueId])
-	
+			
+		# get length of genes
+		seqLens = []
+		nodes = []
+		for node in uniqueNodes:
+			seqLens.append(geneIdToLen[node])
+			nodes.append(node)
+			
+		lenAndNodes = zip(seqLens, nodes)
+		lenAndNodes.sort(reverse = True)
+		seqLens, nodes = zip(*lenAndNodes)
+		
 		fout.write('Cluster ' + str(cc) + '\n')
 		cliqueStr = []
 		for cliqueId in connectedComponents[cc]:
 			cliqueStr.append('Clique' + str(cliqueId))
 		fout.write('Cliques (' + str(len(connectedComponents[cc])) + '): ' + ','.join(cliqueStr) + '\n')
-		fout.write('Nodes (' + str(len(uniqueNodes)) + '): ' + ','.join(uniqueNodes) + '\n\n')
+		
+		fout.write('Nodes (' + str(len(nodes)) + '): ' + ','.join(nodes) + '\n')
+		
+		seqLenStr = []
+		for seqLen in seqLens:
+			seqLenStr.append(str(seqLen))
+		fout.write('Seq. Length (%.2f' % mean(seqLens) + '): ' + ','.join(seqLenStr) + '\n\n')
+		nodesInCliqueClusters.append(len(nodes))
 	fout.close()
+	
+	nodesInCliqueClusters.sort(reverse=True)
+	print '  Size of largest cluster: ' + str(nodesInCliqueClusters[0])
+	print '  Size of 2nd largest cluster: ' + str(nodesInCliqueClusters[1])
+	print ''
+	
+	if nodesInCliqueClusters[0] > 2*nodesInCliqueClusters[0]:
+		print '  Community is highly structured according to Vicsek criterion.'
+		return True
+		
+	return False
 			
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 	parser.add_argument('input', help='Compatibility matrix.')
+	parser.add_argument('seq_len', help='File indicating length of genes.')
 	parser.add_argument('output_prefix', help='Output prefix.')
 	parser.add_argument('-k', '--clique_size', help='Build clusters from adjacent k-cliques.', type=int, default=4)
 
-	args = parser.parse_args()        
-
+	args = parser.parse_args()
+	
 	doWork(args)

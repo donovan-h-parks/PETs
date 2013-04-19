@@ -36,7 +36,8 @@ public:
 
 	void conclustador(const std::string& file);
 
-	void compatibilityClustering(double bootstrapThreshold, const std::string& matrixPrefix, const std::string& clusteringOutput);
+	void compatibilityClusteringByPercentage(double bootstrapThreshold, const std::string& matrixPrefix, const std::string& clusteringOutput);
+	void compatibilityClusteringByFixedNumber(uint numSplits, const std::string& matrixPrefix, const std::string& clusteringOutput);
 
 	void print(std::ofstream& fout) const;
 

@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
 	// read input file specifying forest of trees for each gene
 	//std::string inputFile("../../unit-tests/arPETs9595.trees.subsampled.txt"); //argv[1]
 	//std::string inputFile("../../unit-tests/compatibility-test.txt");
-	std::string inputFile("../../unit-tests/arPETs9595.trees.txt");
+	std::string inputFile("../../data/ar/arPETs9595.trees.txt");
 
 	std::ifstream fin(inputFile.c_str());
 	if(!fin.is_open())
@@ -79,7 +79,15 @@ int main(int argc, char* argv[])
 
 	fin.close();
 
-	pets.compatibilityClustering(0.8, "../../unit-tests/ar-0.8", "../../unit-tests/ar-0.8.clustering.txt");
+	//pets.compatibilityClusteringByPercentage(0.85, "../../data/ar/ar-0.85", "../../data/ar/ar-0.85.clustering.txt");
+
+	for(uint i = 10; i < 40; ++i)
+	{
+		std::cout << i << std::endl;
+		std::string iStr = StringUtils::toString(i);
+		pets.compatibilityClusteringByFixedNumber(i, "../../data/ar/ar-" + iStr, "../../data/ar/ar-" + iStr + ".maxClique.txt");
+	}
+
 	//pets.conclustador("../../unit-tests/conclustador-results-by-inspection.txt");
 
 	//std::ofstream fout("../../unit-tests/euclidean-result.txt");

@@ -39,6 +39,7 @@ public:
 
 	uint numTaxa() const { return m_taxaIdMap.size(); }
 	uint supportedSplits(double bootstrapThreshold) const;
+	double bootstrapAt(uint number) const;
 
 	uint numUniqueSplits() const { return m_uniqueSplits.size(); }
 	uint numTrees() const { return m_treeSplits.size(); }

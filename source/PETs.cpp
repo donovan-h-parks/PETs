@@ -84,18 +84,34 @@ void PETs::conclustador(const std::string& file)
 	newickIO.write(upgmaTree, "../../unit-tests/upgma.txt");
 }
 
-void PETs::compatibilityClustering(double bootstrapThreshold, const std::string& matrixPrefix, const std::string& clusteringOutput)
+void PETs::compatibilityClusteringByPercentage(double bootstrapThreshold, const std::string& matrixPrefix, const std::string& clusteringOutput)
 {
 	std::cout << "Constructing compatibility graph." << std::endl;
 	clock_t startTime = clock();
 	CompatibilityGraph c;
-	c.build(m_geneSplitSystems, bootstrapThreshold);
+	c.buildByPercentage(m_geneSplitSystems, bootstrapThreshold);
 	c.printMatrices(matrixPrefix);
 	std::cout << double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << std::endl;
 
-	std::cout << "Clustering compatibility graph." << std::endl;
+	std::cout << "Finding max clique in graph." << std::endl;
 	startTime = clock();
-	c.cluster();
+	c.findMaxClique();
+	c.printClustering(clusteringOutput);
+	std::cout << double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << std::endl;
+}
+
+void PETs::compatibilityClusteringByFixedNumber(uint numSplits, const std::string& matrixPrefix, const std::string& clusteringOutput)
+{
+	std::cout << "Constructing compatibility graph." << std::endl;
+	clock_t startTime = clock();
+	CompatibilityGraph c;
+	c.buildByFixedNumber(m_geneSplitSystems, numSplits);
+	c.printMatrices(matrixPrefix);
+	std::cout << double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << std::endl;
+
+	std::cout << "Finding max clique in graph." << std::endl;
+	startTime = clock();
+	c.findMaxClique();
 	c.printClustering(clusteringOutput);
 	std::cout << double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << std::endl;
 }
