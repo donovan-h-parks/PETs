@@ -93,11 +93,8 @@ void PETs::compatibilityClusteringByPercentage(double bootstrapThreshold, const 
 	c.printMatrices(matrixPrefix);
 	std::cout << double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << std::endl;
 
-	std::cout << "Finding max clique in graph." << std::endl;
-	startTime = clock();
 	c.findMaxClique();
 	c.printClustering(clusteringOutput);
-	std::cout << double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << std::endl;
 }
 
 void PETs::compatibilityClusteringByFixedNumber(uint numSplits, const std::string& matrixPrefix, const std::string& clusteringOutput)
@@ -109,9 +106,6 @@ void PETs::compatibilityClusteringByFixedNumber(uint numSplits, const std::strin
 	c.printMatrices(matrixPrefix);
 	std::cout << double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << std::endl;
 
-	std::cout << "Finding max clique in graph." << std::endl;
-	startTime = clock();
 	c.findMaxClique();
 	c.printClustering(clusteringOutput);
-	std::cout << double( clock() - startTime ) / (double)CLOCKS_PER_SEC<< " seconds." << std::endl;
 }

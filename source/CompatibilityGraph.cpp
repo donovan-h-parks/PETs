@@ -270,8 +270,6 @@ void CompatibilityGraph::findMaxClique()
 	uint clusterIndex = 0;
 	do
 	{
-		std::cout << clusterIndex << std::endl;
-
 		// get index mapping
 		std::vector<uint> indexMapping;
 		for(uint i = 0; i < m_adjacencyMatrix.size(); ++i)
@@ -308,8 +306,6 @@ void CompatibilityGraph::findMaxClique()
 		int *qmax;
 		int qsize;
 		m.mcqdyn(qmax, qsize);
-
-		std::cout << "   " << qsize << std::endl;
 
 		Strings treeLabels;
 		for(int i = 0; i < qsize; ++i)
