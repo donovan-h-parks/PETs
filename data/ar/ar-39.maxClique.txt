@@ -1,0 +1,284 @@
+%Cluster 1 (2 trees)
+arCOG00470	67	68
+arCOG04176	66	50
+
+%Cluster 2 (2 trees)
+arCOG04064	67	68
+arCOG04288	67	62
+
+%Cluster 3 (2 trees)
+arCOG00675	67	51
+arCOG04107	67	59
+
+%Cluster 4 (2 trees)
+arCOG01559	66	75
+arCOG04071	67	55
+
+%Cluster 5 (2 trees)
+arCOG01563	67	58
+arCOG04169	66	69
+
+%Cluster 6 (1 trees)
+arCOG04112	66	60
+
+%Cluster 7 (1 trees)
+arCOG00029	66	55
+
+%Cluster 8 (1 trees)
+arCOG01920	67	56
+
+%Cluster 9 (1 trees)
+arCOG04087	67	63
+
+%Cluster 10 (1 trees)
+arCOG04244	67	36
+
+%Cluster 11 (1 trees)
+arCOG01950	67	40
+
+%Cluster 12 (1 trees)
+arCOG04240	66	45
+
+%Cluster 13 (1 trees)
+arCOG01219	66	62
+
+%Cluster 14 (1 trees)
+arCOG01751	67	42
+
+%Cluster 15 (1 trees)
+arCOG04094	67	40
+
+%Cluster 16 (1 trees)
+arCOG04161	66	51
+
+%Cluster 17 (1 trees)
+arCOG01719	66	64
+
+%Cluster 18 (1 trees)
+arCOG04243	67	51
+
+%Cluster 19 (1 trees)
+arCOG04184	66	55
+
+%Cluster 20 (1 trees)
+arCOG01988	67	43
+
+%Cluster 21 (1 trees)
+arCOG04185	67	53
+
+%Cluster 22 (1 trees)
+arCOG00780	67	42
+
+%Cluster 23 (1 trees)
+arCOG04239	67	47
+
+%Cluster 24 (1 trees)
+arCOG01560	67	65
+
+%Cluster 25 (1 trees)
+arCOG04302	67	71
+
+%Cluster 26 (1 trees)
+arCOG04091	66	60
+
+%Cluster 27 (1 trees)
+arCOG04077	67	43
+
+%Cluster 28 (1 trees)
+arCOG04067	66	59
+
+%Cluster 29 (1 trees)
+arCOG00402	66	79
+
+%Cluster 30 (1 trees)
+arCOG01016	67	54
+
+%Cluster 31 (1 trees)
+arCOG01741	67	60
+
+%Cluster 32 (1 trees)
+arCOG00410	67	69
+
+%Cluster 33 (1 trees)
+arCOG04150	67	60
+
+%Cluster 34 (1 trees)
+arCOG00868	66	72
+
+%Cluster 35 (1 trees)
+arCOG00035	66	49
+
+%Cluster 36 (1 trees)
+arCOG04187	67	63
+
+%Cluster 37 (1 trees)
+arCOG00869	66	53
+
+%Cluster 38 (1 trees)
+arCOG04256	66	49
+
+%Cluster 39 (1 trees)
+arCOG04106	66	48
+
+%Cluster 40 (1 trees)
+arCOG01228	66	70
+
+%Cluster 41 (1 trees)
+arCOG01122	66	57
+
+%Cluster 42 (1 trees)
+arCOG04255	67	47
+
+%Cluster 43 (1 trees)
+arCOG01183	66	65
+
+%Cluster 44 (1 trees)
+arCOG04223	66	49
+
+%Cluster 45 (1 trees)
+arCOG04182	68	53
+
+%Cluster 46 (1 trees)
+arCOG01180	66	56
+
+%Cluster 47 (1 trees)
+arCOG04228	67	45
+
+%Cluster 48 (1 trees)
+arCOG04129	67	46
+
+%Cluster 49 (1 trees)
+arCOG04097	67	52
+
+%Cluster 50 (1 trees)
+arCOG04090	66	51
+
+%Cluster 51 (1 trees)
+arCOG04258	67	43
+
+%Cluster 52 (1 trees)
+arCOG04208	67	54
+
+%Cluster 53 (1 trees)
+arCOG04108	67	42
+
+%Cluster 54 (1 trees)
+arCOG04249	67	57
+
+%Cluster 55 (1 trees)
+arCOG04093	66	51
+
+%Cluster 56 (1 trees)
+arCOG01561	66	58
+
+%Cluster 57 (1 trees)
+arCOG04372	67	55
+
+%Cluster 58 (1 trees)
+arCOG00412	66	72
+
+%Cluster 59 (1 trees)
+arCOG04473	67	49
+
+%Cluster 60 (1 trees)
+arCOG04098	67	47
+
+%Cluster 61 (1 trees)
+arCOG01015	66	64
+
+%Cluster 62 (1 trees)
+arCOG04086	67	45
+
+%Cluster 63 (1 trees)
+arCOG04209	66	50
+
+%Cluster 64 (1 trees)
+arCOG01923	67	67
+
+%Cluster 65 (1 trees)
+arCOG04070	67	69
+
+%Cluster 66 (1 trees)
+arCOG04281	67	62
+
+%Cluster 67 (1 trees)
+arCOG04072	67	44
+
+%Cluster 68 (1 trees)
+arCOG04092	67	51
+
+%Cluster 69 (1 trees)
+arCOG00487	67	70
+
+%Cluster 70 (1 trees)
+arCOG01358	66	59
+
+%Cluster 71 (1 trees)
+arCOG04179	67	49
+
+%Cluster 72 (1 trees)
+arCOG04277	67	51
+
+%Cluster 73 (1 trees)
+arCOG04111	67	40
+
+%Cluster 74 (1 trees)
+arCOG01038	66	39
+
+%Cluster 75 (1 trees)
+arCOG00980	67	63
+
+%Cluster 76 (1 trees)
+arCOG04130	66	51
+
+%Cluster 77 (1 trees)
+arCOG00985	67	54
+
+%Cluster 78 (1 trees)
+arCOG04245	67	51
+
+%Cluster 79 (1 trees)
+arCOG04154	67	39
+
+%Cluster 80 (1 trees)
+arCOG00081	66	52
+
+%Cluster 81 (1 trees)
+arCOG04099	67	51
+
+%Cluster 82 (1 trees)
+arCOG04089	67	55
+
+%Cluster 83 (1 trees)
+arCOG00358	66	66
+
+%Cluster 84 (1 trees)
+arCOG04289	66	55
+
+%Cluster 85 (1 trees)
+arCOG01722	67	50
+
+%Cluster 86 (1 trees)
+arCOG00078	67	57
+
+%Cluster 87 (1 trees)
+arCOG00406	66	72
+
+%Cluster 88 (1 trees)
+arCOG04186	66	51
+
+%Cluster 89 (1 trees)
+arCOG04254	67	52
+
+%Cluster 90 (1 trees)
+arCOG04113	67	48
+
+%Cluster 91 (1 trees)
+arCOG00865	67	66
+
+%Cluster 92 (1 trees)
+arCOG00781	67	55
+
+%Cluster 93 (1 trees)
+arCOG01001	67	76
+

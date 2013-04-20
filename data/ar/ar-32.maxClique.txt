@@ -1,0 +1,222 @@
+%Cluster 1 (7 trees)
+arCOG00470	67	84
+arCOG01219	66	69
+arCOG01228	66	89
+arCOG01563	67	70
+arCOG01741	67	72
+arCOG04187	67	74
+arCOG04281	67	72
+
+%Cluster 2 (5 trees)
+arCOG00675	67	59
+arCOG01923	67	73
+arCOG04107	67	67
+arCOG04169	66	90
+arCOG04288	67	80
+
+%Cluster 3 (4 trees)
+arCOG00358	66	79
+arCOG04071	67	71
+arCOG04089	67	66
+arCOG04150	67	70
+
+%Cluster 4 (4 trees)
+arCOG01180	66	77
+arCOG01559	66	90
+arCOG01920	67	67
+arCOG04070	67	83
+
+%Cluster 5 (3 trees)
+arCOG01722	67	60
+arCOG04240	66	56
+arCOG04245	67	65
+
+%Cluster 6 (3 trees)
+arCOG01358	66	69
+arCOG01561	66	67
+arCOG04094	67	52
+
+%Cluster 7 (3 trees)
+arCOG00865	67	88
+arCOG00868	66	86
+arCOG04091	66	67
+
+%Cluster 8 (3 trees)
+arCOG01015	66	78
+arCOG01560	67	83
+arCOG04243	67	65
+
+%Cluster 9 (2 trees)
+arCOG04087	67	80
+arCOG04209	66	59
+
+%Cluster 10 (2 trees)
+arCOG00980	67	74
+arCOG01719	66	70
+
+%Cluster 11 (2 trees)
+arCOG00029	66	65
+arCOG01016	67	66
+
+%Cluster 12 (2 trees)
+arCOG04112	66	70
+arCOG04176	66	70
+
+%Cluster 13 (2 trees)
+arCOG04067	66	70
+arCOG04302	67	90
+
+%Cluster 14 (2 trees)
+arCOG00869	66	63
+arCOG04256	66	68
+
+%Cluster 15 (2 trees)
+arCOG01183	66	77
+arCOG04258	67	54
+
+%Cluster 16 (2 trees)
+arCOG01001	67	82
+arCOG04097	67	66
+
+%Cluster 17 (2 trees)
+arCOG00402	66	84
+arCOG04072	67	62
+
+%Cluster 18 (2 trees)
+arCOG00780	67	50
+arCOG00985	67	66
+
+%Cluster 19 (2 trees)
+arCOG00410	67	80
+arCOG00412	66	87
+
+%Cluster 20 (2 trees)
+arCOG04092	67	60
+arCOG04254	67	59
+
+%Cluster 21 (1 trees)
+arCOG04244	67	45
+
+%Cluster 22 (1 trees)
+arCOG01950	67	52
+
+%Cluster 23 (1 trees)
+arCOG01751	67	50
+
+%Cluster 24 (1 trees)
+arCOG04161	66	62
+
+%Cluster 25 (1 trees)
+arCOG04184	66	60
+
+%Cluster 26 (1 trees)
+arCOG01988	67	55
+
+%Cluster 27 (1 trees)
+arCOG04185	67	60
+
+%Cluster 28 (1 trees)
+arCOG04239	67	62
+
+%Cluster 29 (1 trees)
+arCOG04077	67	47
+
+%Cluster 30 (1 trees)
+arCOG00035	66	57
+
+%Cluster 31 (1 trees)
+arCOG04106	66	57
+
+%Cluster 32 (1 trees)
+arCOG01122	66	64
+
+%Cluster 33 (1 trees)
+arCOG04255	67	60
+
+%Cluster 34 (1 trees)
+arCOG04223	66	58
+
+%Cluster 35 (1 trees)
+arCOG04182	68	62
+
+%Cluster 36 (1 trees)
+arCOG04228	67	51
+
+%Cluster 37 (1 trees)
+arCOG04129	67	54
+
+%Cluster 38 (1 trees)
+arCOG04090	66	61
+
+%Cluster 39 (1 trees)
+arCOG04064	67	84
+
+%Cluster 40 (1 trees)
+arCOG04208	67	63
+
+%Cluster 41 (1 trees)
+arCOG04108	67	50
+
+%Cluster 42 (1 trees)
+arCOG04249	67	75
+
+%Cluster 43 (1 trees)
+arCOG04093	66	65
+
+%Cluster 44 (1 trees)
+arCOG04372	67	61
+
+%Cluster 45 (1 trees)
+arCOG04473	67	54
+
+%Cluster 46 (1 trees)
+arCOG04098	67	66
+
+%Cluster 47 (1 trees)
+arCOG04086	67	52
+
+%Cluster 48 (1 trees)
+arCOG00487	67	84
+
+%Cluster 49 (1 trees)
+arCOG04179	67	58
+
+%Cluster 50 (1 trees)
+arCOG04277	67	60
+
+%Cluster 51 (1 trees)
+arCOG04111	67	55
+
+%Cluster 52 (1 trees)
+arCOG01038	66	47
+
+%Cluster 53 (1 trees)
+arCOG04130	66	65
+
+%Cluster 54 (1 trees)
+arCOG04154	67	49
+
+%Cluster 55 (1 trees)
+arCOG00081	66	69
+
+%Cluster 56 (1 trees)
+arCOG04099	67	56
+
+%Cluster 57 (1 trees)
+arCOG04289	66	64
+
+%Cluster 58 (1 trees)
+arCOG00078	67	69
+
+%Cluster 59 (1 trees)
+arCOG00406	66	80
+
+%Cluster 60 (1 trees)
+arCOG04186	66	61
+
+%Cluster 61 (1 trees)
+arCOG04113	67	57
+
+%Cluster 62 (1 trees)
+arCOG00781	67	64
+
