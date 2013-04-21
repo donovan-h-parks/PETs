@@ -1,0 +1,1235 @@
+Cluster 0
+Cliques (9): Clique0,Clique1,Clique2,Clique3,Clique4,Clique5,Clique6,Clique7,Clique8
+Nodes (12): arCOG01560,arCOG00470,arCOG01228,arCOG04281,arCOG01358,arCOG01563,arCOG01219,arCOG01741,arCOG04071,arCOG04187,arCOG04150,arCOG04243
+Seq. Length (363.96): 635.57,466.88,447.03,435.63,423.38,413.81,374.68,347.1,259.37,233.88,191.27,138.96
+
+Cluster 1
+Cliques (1): Clique9
+Nodes (6): arCOG00470,arCOG01228,arCOG01741,arCOG04070,arCOG04187,arCOG04245
+Seq. Length (342.69): 466.88,447.03,347.1,341.81,233.88,219.46
+
+Cluster 2
+Cliques (1): Clique10
+Nodes (5): arCOG01559,arCOG00470,arCOG01741,arCOG04070,arCOG04288
+Seq. Length (443.54): 732.2,466.88,347.1,341.81,329.7
+
+Cluster 3
+Cliques (1): Clique11
+Nodes (5): arCOG04169,arCOG00470,arCOG04064,arCOG01563,arCOG04187
+Seq. Length (405.77): 473.7,466.88,440.6,413.81,233.88
+
+Cluster 4
+Cliques (1): Clique12
+Nodes (5): arCOG04169,arCOG01923,arCOG04288,arCOG04107,arCOG00675
+Seq. Length (326.93): 473.7,376.22,329.7,265.61,189.42
+
+Cluster 5
+Cliques (1): Clique13
+Nodes (5): arCOG04169,arCOG00470,arCOG01923,arCOG04107,arCOG04187
+Seq. Length (363.26): 473.7,466.88,376.22,265.61,233.88
+
+Cluster 6
+Cliques (1): Clique14
+Nodes (5): arCOG04169,arCOG00470,arCOG01563,arCOG04107,arCOG04187
+Seq. Length (370.78): 473.7,466.88,413.81,265.61,233.88
+
+Cluster 7
+Cliques (1): Clique15
+Nodes (5): arCOG04169,arCOG00470,arCOG01923,arCOG04288,arCOG04107
+Seq. Length (382.42): 473.7,466.88,376.22,329.7,265.61
+
+Cluster 8
+Cliques (1): Clique16
+Nodes (5): arCOG04169,arCOG00470,arCOG04070,arCOG04107,arCOG04187
+Seq. Length (356.38): 473.7,466.88,341.81,265.61,233.88
+
+Cluster 9
+Cliques (1): Clique17
+Nodes (5): arCOG04169,arCOG00470,arCOG04070,arCOG04288,arCOG04107
+Seq. Length (375.54): 473.7,466.88,341.81,329.7,265.61
+
+Cluster 10
+Cliques (1): Clique18
+Nodes (5): arCOG01559,arCOG00470,arCOG04070,arCOG04288,arCOG04107
+Seq. Length (427.24): 732.2,466.88,341.81,329.7,265.61
+
+Cluster 11
+Cliques (1): Clique19
+Nodes (5): arCOG04281,arCOG01563,arCOG01741,arCOG04187,arCOG04094
+Seq. Length (310.92): 435.63,413.81,347.1,233.88,124.19
+
+Cluster 12
+Cliques (1): Clique20
+Nodes (5): arCOG00470,arCOG04064,arCOG04281,arCOG01563,arCOG04187
+Seq. Length (398.16): 466.88,440.6,435.63,413.81,233.88
+
+Cluster 13
+Cliques (1): Clique21
+Nodes (5): arCOG01559,arCOG01741,arCOG04070,arCOG01180,arCOG01920
+Seq. Length (369.13): 732.2,347.1,341.81,265.14,159.42
+
+Cluster 14
+Cliques (1): Clique22
+Nodes (5): arCOG01741,arCOG04070,arCOG01180,arCOG04187,arCOG01920
+Seq. Length (269.47): 347.1,341.81,265.14,233.88,159.42
+
+Cluster 15
+Cliques (1): Clique23
+Nodes (5): arCOG01559,arCOG01228,arCOG01741,arCOG04070,arCOG04150
+Seq. Length (411.88): 732.2,447.03,347.1,341.81,191.27
+
+Cluster 16
+Cliques (1): Clique24
+Nodes (5): arCOG01559,arCOG00470,arCOG01228,arCOG01741,arCOG04070
+Seq. Length (467.00): 732.2,466.88,447.03,347.1,341.81
+
+Cluster 17
+Cliques (1): Clique25
+Nodes (5): arCOG01559,arCOG01228,arCOG01741,arCOG04071,arCOG04150
+Seq. Length (395.39): 732.2,447.03,347.1,259.37,191.27
+
+Cluster 18
+Cliques (1): Clique26
+Nodes (5): arCOG01228,arCOG01741,arCOG04070,arCOG04187,arCOG04150
+Seq. Length (312.22): 447.03,347.1,341.81,233.88,191.27
+
+Cluster 19
+Cliques (1): Clique27
+Nodes (5): arCOG01228,arCOG01358,arCOG04071,arCOG04187,arCOG04150
+Seq. Length (310.99): 447.03,423.38,259.37,233.88,191.27
+
+Cluster 20
+Cliques (1): Clique28
+Nodes (5): arCOG01228,arCOG04071,arCOG04187,arCOG04150,arCOG00781
+Seq. Length (257.06): 447.03,259.37,233.88,191.27,153.76
+
+Cluster 21
+Cliques (1): Clique29
+Nodes (5): arCOG01228,arCOG04281,arCOG01358,arCOG04187,arCOG04150
+Seq. Length (346.24): 447.03,435.63,423.38,233.88,191.27
+
+Cluster 22
+Cliques (1): Clique30
+Nodes (5): arCOG01228,arCOG01219,arCOG01741,arCOG04071,arCOG01016
+Seq. Length (308.60): 447.03,374.68,347.1,259.37,114.82
+
+Cluster 23
+Cliques (1): Clique31
+Nodes (5): arCOG01559,arCOG01228,arCOG01219,arCOG01741,arCOG04071
+Seq. Length (432.08): 732.2,447.03,374.68,347.1,259.37
+
+Cluster 24
+Cliques (1): Clique32
+Nodes (5): arCOG01228,arCOG01358,arCOG01219,arCOG04071,arCOG04187
+Seq. Length (347.67): 447.03,423.38,374.68,259.37,233.88
+
+Cluster 25
+Cliques (1): Clique33
+Nodes (5): arCOG01228,arCOG01219,arCOG04071,arCOG04187,arCOG00781
+Seq. Length (293.74): 447.03,374.68,259.37,233.88,153.76
+
+Cluster 26
+Cliques (1): Clique34
+Nodes (5): arCOG00470,arCOG01228,arCOG01219,arCOG01741,arCOG01016
+Seq. Length (350.10): 466.88,447.03,374.68,347.1,114.82
+
+Cluster 27
+Cliques (1): Clique35
+Nodes (5): arCOG01559,arCOG00470,arCOG01228,arCOG01219,arCOG01741
+Seq. Length (473.58): 732.2,466.88,447.03,374.68,347.1
+
+Cluster 28
+Cliques (1): Clique36
+Nodes (5): arCOG00470,arCOG01228,arCOG01219,arCOG04187,arCOG00781
+Seq. Length (335.25): 466.88,447.03,374.68,233.88,153.76
+
+Cluster 29
+Cliques (1): Clique37
+Nodes (5): arCOG00470,arCOG01228,arCOG01923,arCOG04187,arCOG04179
+Seq. Length (327.65): 466.88,447.03,376.22,233.88,114.22
+
+Cluster 30
+Cliques (1): Clique38
+Nodes (5): arCOG01228,arCOG01219,arCOG04071,arCOG04089,arCOG01016
+Seq. Length (269.17): 447.03,374.68,259.37,149.96,114.82
+
+Cluster 31
+Cliques (1): Clique39
+Nodes (5): arCOG01228,arCOG01923,arCOG04071,arCOG04187,arCOG04089
+Seq. Length (293.29): 447.03,376.22,259.37,233.88,149.96
+
+Cluster 32
+Cliques (1): Clique40
+Nodes (5): arCOG01228,arCOG04071,arCOG04187,arCOG04150,arCOG04089
+Seq. Length (256.30): 447.03,259.37,233.88,191.27,149.96
+
+Cluster 33
+Cliques (1): Clique41
+Nodes (5): arCOG01228,arCOG01219,arCOG04071,arCOG04187,arCOG04089
+Seq. Length (292.98): 447.03,374.68,259.37,233.88,149.96
+
+Cluster 34
+Cliques (1): Clique42
+Nodes (5): arCOG00470,arCOG01228,arCOG01219,arCOG04089,arCOG01016
+Seq. Length (310.67): 466.88,447.03,374.68,149.96,114.82
+
+Cluster 35
+Cliques (1): Clique43
+Nodes (5): arCOG00470,arCOG01228,arCOG01923,arCOG04187,arCOG04089
+Seq. Length (334.79): 466.88,447.03,376.22,233.88,149.96
+
+Cluster 36
+Cliques (1): Clique44
+Nodes (5): arCOG00470,arCOG01228,arCOG01219,arCOG04187,arCOG04089
+Seq. Length (334.49): 466.88,447.03,374.68,233.88,149.96
+
+Cluster 37
+Cliques (1): Clique45
+Nodes (5): arCOG01228,arCOG01923,arCOG04071,arCOG04254,arCOG04243
+Seq. Length (284.35): 447.03,376.22,259.37,200.16,138.96
+
+Cluster 38
+Cliques (1): Clique46
+Nodes (5): arCOG00865,arCOG01563,arCOG04107,arCOG04071,arCOG04243
+Seq. Length (310.11): 472.82,413.81,265.61,259.37,138.96
+
+Cluster 39
+Cliques (1): Clique47
+Nodes (5): arCOG01923,arCOG04107,arCOG04071,arCOG04187,arCOG04243
+Seq. Length (254.81): 376.22,265.61,259.37,233.88,138.96
+
+Cluster 40
+Cliques (1): Clique48
+Nodes (5): arCOG01228,arCOG01923,arCOG04071,arCOG04187,arCOG04243
+Seq. Length (291.09): 447.03,376.22,259.37,233.88,138.96
+
+Cluster 41
+Cliques (1): Clique49
+Nodes (5): arCOG01923,arCOG01001,arCOG04071,arCOG04187,arCOG04243
+Seq. Length (261.12): 376.22,297.18,259.37,233.88,138.96
+
+Cluster 42
+Cliques (1): Clique50
+Nodes (5): arCOG01001,arCOG04071,arCOG04187,arCOG04150,arCOG04243
+Seq. Length (224.13): 297.18,259.37,233.88,191.27,138.96
+
+Cluster 43
+Cliques (1): Clique51
+Nodes (5): arCOG01563,arCOG04107,arCOG04071,arCOG04187,arCOG04243
+Seq. Length (262.33): 413.81,265.61,259.37,233.88,138.96
+
+Cluster 44
+Cliques (1): Clique52
+Nodes (5): arCOG01560,arCOG01228,arCOG04071,arCOG04254,arCOG04243
+Seq. Length (336.22): 635.57,447.03,259.37,200.16,138.96
+
+Cluster 45
+Cliques (1): Clique53
+Nodes (5): arCOG01560,arCOG01001,arCOG04071,arCOG04187,arCOG04243
+Seq. Length (312.99): 635.57,297.18,259.37,233.88,138.96
+
+Cluster 46
+Cliques (1): Clique54
+Nodes (5): arCOG00470,arCOG01923,arCOG04107,arCOG04187,arCOG04243
+Seq. Length (296.31): 466.88,376.22,265.61,233.88,138.96
+
+Cluster 47
+Cliques (1): Clique55
+Nodes (5): arCOG00470,arCOG01563,arCOG04107,arCOG04187,arCOG04243
+Seq. Length (303.83): 466.88,413.81,265.61,233.88,138.96
+
+Cluster 48
+Cliques (1): Clique56
+Nodes (5): arCOG00470,arCOG01228,arCOG01923,arCOG04187,arCOG04243
+Seq. Length (332.59): 466.88,447.03,376.22,233.88,138.96
+
+Cluster 49
+Cliques (1): Clique57
+Nodes (5): arCOG00470,arCOG01923,arCOG04288,arCOG04107,arCOG04243
+Seq. Length (315.47): 466.88,376.22,329.7,265.61,138.96
+
+Cluster 50
+Cliques (1): Clique58
+Nodes (5): arCOG01741,arCOG04070,arCOG01180,arCOG04187,arCOG04245
+Seq. Length (281.48): 347.1,341.81,265.14,233.88,219.46
+
+Cluster 51
+Cliques (1): Clique59
+Nodes (5): arCOG00470,arCOG01741,arCOG04070,arCOG04288,arCOG04245
+Seq. Length (340.99): 466.88,347.1,341.81,329.7,219.46
+
+Cluster 52
+Cliques (1): Clique60
+Nodes (5): arCOG01228,arCOG01741,arCOG04071,arCOG04187,arCOG04245
+Seq. Length (301.37): 447.03,347.1,259.37,233.88,219.46
+
+Cluster 53
+Cliques (1): Clique61
+Nodes (5): arCOG00470,arCOG01228,arCOG04187,arCOG04245,arCOG04243
+Seq. Length (301.24): 466.88,447.03,233.88,219.46,138.96
+
+Cluster 54
+Cliques (1): Clique62
+Nodes (5): arCOG01228,arCOG04071,arCOG04187,arCOG04245,arCOG04243
+Seq. Length (259.74): 447.03,259.37,233.88,219.46,138.96
+
+Cluster 55
+Cliques (1): Clique63
+Nodes (5): arCOG04169,arCOG00470,arCOG04070,arCOG04187,arCOG04245
+Seq. Length (347.15): 473.7,466.88,341.81,233.88,219.46
+
+Cluster 56
+Cliques (1): Clique64
+Nodes (5): arCOG04169,arCOG00470,arCOG04070,arCOG04288,arCOG04245
+Seq. Length (366.31): 473.7,466.88,341.81,329.7,219.46
+
+Cluster 57
+Cliques (1): Clique65
+Nodes (4): arCOG01561,arCOG01923,arCOG01001,arCOG04071
+Seq. Length (340.53): 429.35,376.22,297.18,259.37
+
+Cluster 58
+Cliques (1): Clique66
+Nodes (4): arCOG01560,arCOG01563,arCOG04071,arCOG04130
+Seq. Length (378.06): 635.57,413.81,259.37,203.48
+
+Cluster 59
+Cliques (1): Clique67
+Nodes (4): arCOG04302,arCOG01923,arCOG04288,arCOG04067
+Seq. Length (378.84): 569.21,376.22,329.7,240.23
+
+Cluster 60
+Cliques (1): Clique68
+Nodes (4): arCOG01358,arCOG01219,arCOG04071,arCOG04130
+Seq. Length (315.23): 423.38,374.68,259.37,203.48
+
+Cluster 61
+Cliques (1): Clique69
+Nodes (4): arCOG01563,arCOG01219,arCOG04071,arCOG04130
+Seq. Length (312.84): 413.81,374.68,259.37,203.48
+
+Cluster 62
+Cliques (1): Clique70
+Nodes (4): arCOG04302,arCOG00470,arCOG01923,arCOG01122
+Seq. Length (410.29): 569.21,466.88,376.22,228.85
+
+Cluster 63
+Cliques (1): Clique71
+Nodes (4): arCOG04302,arCOG00470,arCOG01561,arCOG01923
+Seq. Length (460.42): 569.21,466.88,429.35,376.22
+
+Cluster 64
+Cliques (1): Clique72
+Nodes (4): arCOG04302,arCOG00470,arCOG01923,arCOG04288
+Seq. Length (435.50): 569.21,466.88,376.22,329.7
+
+Cluster 65
+Cliques (1): Clique73
+Nodes (4): arCOG04169,arCOG00470,arCOG04064,arCOG04288
+Seq. Length (427.72): 473.7,466.88,440.6,329.7
+
+Cluster 66
+Cliques (1): Clique74
+Nodes (4): arCOG04302,arCOG01561,arCOG01923,arCOG04094
+Seq. Length (374.74): 569.21,429.35,376.22,124.19
+
+Cluster 67
+Cliques (1): Clique75
+Nodes (4): arCOG01219,arCOG01741,arCOG01920,arCOG01016
+Seq. Length (249.00): 374.68,347.1,159.42,114.82
+
+Cluster 68
+Cliques (1): Clique76
+Nodes (4): arCOG01559,arCOG01219,arCOG01741,arCOG01920
+Seq. Length (403.35): 732.2,374.68,347.1,159.42
+
+Cluster 69
+Cliques (1): Clique77
+Nodes (4): arCOG00470,arCOG01741,arCOG04288,arCOG01016
+Seq. Length (314.62): 466.88,347.1,329.7,114.82
+
+Cluster 70
+Cliques (1): Clique78
+Nodes (4): arCOG01923,arCOG04288,arCOG01001,arCOG00675
+Seq. Length (298.13): 376.22,329.7,297.18,189.42
+
+Cluster 71
+Cliques (1): Clique79
+Nodes (4): arCOG01219,arCOG01741,arCOG04187,arCOG01920
+Seq. Length (278.77): 374.68,347.1,233.88,159.42
+
+Cluster 72
+Cliques (1): Clique80
+Nodes (4): arCOG04302,arCOG01923,arCOG04187,arCOG04094
+Seq. Length (325.88): 569.21,376.22,233.88,124.19
+
+Cluster 73
+Cliques (1): Clique81
+Nodes (4): arCOG04302,arCOG00470,arCOG01923,arCOG04187
+Seq. Length (411.55): 569.21,466.88,376.22,233.88
+
+Cluster 74
+Cliques (1): Clique82
+Nodes (4): arCOG01563,arCOG04107,arCOG04071,arCOG04130
+Seq. Length (285.57): 413.81,265.61,259.37,203.48
+
+Cluster 75
+Cliques (1): Clique83
+Nodes (4): arCOG04169,arCOG01563,arCOG04107,arCOG04130
+Seq. Length (339.15): 473.7,413.81,265.61,203.48
+
+Cluster 76
+Cliques (1): Clique84
+Nodes (4): arCOG00868,arCOG00865,arCOG04071,arCOG04091
+Seq. Length (370.00): 617.14,472.82,259.37,130.65
+
+Cluster 77
+Cliques (1): Clique85
+Nodes (4): arCOG00470,arCOG04281,arCOG01561,arCOG01358
+Seq. Length (438.81): 466.88,435.63,429.35,423.38
+
+Cluster 78
+Cliques (1): Clique86
+Nodes (4): arCOG00470,arCOG04281,arCOG01015,arCOG01219
+Seq. Length (422.29): 466.88,435.63,411.97,374.68
+
+Cluster 79
+Cliques (1): Clique87
+Nodes (4): arCOG04281,arCOG01563,arCOG01219,arCOG04130
+Seq. Length (356.90): 435.63,413.81,374.68,203.48
+
+Cluster 80
+Cliques (1): Clique88
+Nodes (4): arCOG04281,arCOG01358,arCOG01219,arCOG04130
+Seq. Length (359.29): 435.63,423.38,374.68,203.48
+
+Cluster 81
+Cliques (1): Clique89
+Nodes (4): arCOG04281,arCOG01561,arCOG01358,arCOG04094
+Seq. Length (353.14): 435.63,429.35,423.38,124.19
+
+Cluster 82
+Cliques (1): Clique90
+Nodes (4): arCOG00470,arCOG04281,arCOG01015,arCOG04176
+Seq. Length (384.38): 466.88,435.63,411.97,223.06
+
+Cluster 83
+Cliques (1): Clique91
+Nodes (4): arCOG04281,arCOG01358,arCOG04187,arCOG04094
+Seq. Length (304.27): 435.63,423.38,233.88,124.19
+
+Cluster 84
+Cliques (1): Clique92
+Nodes (4): arCOG04281,arCOG01563,arCOG00078,arCOG04094
+Seq. Length (299.64): 435.63,413.81,224.93,124.19
+
+Cluster 85
+Cliques (1): Clique93
+Nodes (4): arCOG04302,arCOG01923,arCOG01180,arCOG04187
+Seq. Length (361.11): 569.21,376.22,265.14,233.88
+
+Cluster 86
+Cliques (1): Clique94
+Nodes (4): arCOG01923,arCOG01001,arCOG01180,arCOG04187
+Seq. Length (293.11): 376.22,297.18,265.14,233.88
+
+Cluster 87
+Cliques (1): Clique95
+Nodes (4): arCOG04302,arCOG01561,arCOG01923,arCOG04087
+Seq. Length (397.82): 569.21,429.35,376.22,216.49
+
+Cluster 88
+Cliques (1): Clique96
+Nodes (4): arCOG01741,arCOG04288,arCOG00980,arCOG01016
+Seq. Length (261.91): 347.1,329.7,256.03,114.82
+
+Cluster 89
+Cliques (1): Clique97
+Nodes (4): arCOG01923,arCOG04288,arCOG04107,arCOG00980
+Seq. Length (306.89): 376.22,329.7,265.61,256.03
+
+Cluster 90
+Cliques (1): Clique98
+Nodes (4): arCOG01923,arCOG04288,arCOG01001,arCOG00980
+Seq. Length (314.78): 376.22,329.7,297.18,256.03
+
+Cluster 91
+Cliques (1): Clique99
+Nodes (4): arCOG01923,arCOG04288,arCOG00980,arCOG04254
+Seq. Length (290.53): 376.22,329.7,256.03,200.16
+
+Cluster 92
+Cliques (1): Clique100
+Nodes (4): arCOG01719,arCOG01741,arCOG04288,arCOG00980
+Seq. Length (389.92): 626.85,347.1,329.7,256.03
+
+Cluster 93
+Cliques (1): Clique101
+Nodes (4): arCOG04302,arCOG01923,arCOG04288,arCOG00980
+Seq. Length (382.79): 569.21,376.22,329.7,256.03
+
+Cluster 94
+Cliques (1): Clique102
+Nodes (4): arCOG04071,arCOG04187,arCOG04150,arCOG04092
+Seq. Length (215.81): 259.37,233.88,191.27,178.72
+
+Cluster 95
+Cliques (1): Clique103
+Nodes (4): arCOG04169,arCOG01563,arCOG04187,arCOG04150
+Seq. Length (328.16): 473.7,413.81,233.88,191.27
+
+Cluster 96
+Cliques (1): Clique104
+Nodes (4): arCOG04169,arCOG04070,arCOG04187,arCOG04150
+Seq. Length (310.16): 473.7,341.81,233.88,191.27
+
+Cluster 97
+Cliques (1): Clique105
+Nodes (4): arCOG00470,arCOG01228,arCOG01923,arCOG01122
+Seq. Length (379.75): 466.88,447.03,376.22,228.85
+
+Cluster 98
+Cliques (1): Clique106
+Nodes (4): arCOG00470,arCOG01228,arCOG01183,arCOG01923
+Seq. Length (428.73): 466.88,447.03,424.8,376.22
+
+Cluster 99
+Cliques (1): Clique107
+Nodes (4): arCOG01559,arCOG01560,arCOG01228,arCOG04071
+Seq. Length (518.54): 732.2,635.57,447.03,259.37
+
+Cluster 100
+Cliques (1): Clique108
+Nodes (4): arCOG00470,arCOG01228,arCOG04281,arCOG04176
+Seq. Length (393.15): 466.88,447.03,435.63,223.06
+
+Cluster 101
+Cliques (1): Clique109
+Nodes (4): arCOG01228,arCOG04112,arCOG04071,arCOG04176
+Seq. Length (314.89): 447.03,330.12,259.37,223.06
+
+Cluster 102
+Cliques (1): Clique110
+Nodes (4): arCOG01228,arCOG01183,arCOG01923,arCOG04097
+Seq. Length (371.88): 447.03,424.8,376.22,239.49
+
+Cluster 103
+Cliques (1): Clique111
+Nodes (4): arCOG00470,arCOG01228,arCOG01741,arCOG04186
+Seq. Length (367.82): 466.88,447.03,347.1,210.26
+
+Cluster 104
+Cliques (1): Clique112
+Nodes (4): arCOG01228,arCOG04187,arCOG04150,arCOG04179
+Seq. Length (246.60): 447.03,233.88,191.27,114.22
+
+Cluster 105
+Cliques (1): Clique113
+Nodes (4): arCOG01228,arCOG01923,arCOG04087,arCOG04089
+Seq. Length (297.43): 447.03,376.22,216.49,149.96
+
+Cluster 106
+Cliques (1): Clique114
+Nodes (4): arCOG01015,arCOG01923,arCOG04071,arCOG04089
+Seq. Length (299.38): 411.97,376.22,259.37,149.96
+
+Cluster 107
+Cliques (1): Clique115
+Nodes (4): arCOG01015,arCOG01219,arCOG04071,arCOG04089
+Seq. Length (299.00): 411.97,374.68,259.37,149.96
+
+Cluster 108
+Cliques (1): Clique116
+Nodes (4): arCOG01561,arCOG01923,arCOG04087,arCOG04089
+Seq. Length (293.00): 429.35,376.22,216.49,149.96
+
+Cluster 109
+Cliques (1): Clique117
+Nodes (4): arCOG01561,arCOG01923,arCOG04089,arCOG04094
+Seq. Length (269.93): 429.35,376.22,149.96,124.19
+
+Cluster 110
+Cliques (1): Clique118
+Nodes (4): arCOG01561,arCOG01923,arCOG04071,arCOG04089
+Seq. Length (303.73): 429.35,376.22,259.37,149.96
+
+Cluster 111
+Cliques (1): Clique119
+Nodes (4): arCOG01923,arCOG04187,arCOG04089,arCOG04094
+Seq. Length (221.06): 376.22,233.88,149.96,124.19
+
+Cluster 112
+Cliques (1): Clique120
+Nodes (4): arCOG00358,arCOG04071,arCOG04150,arCOG04089
+Seq. Length (242.80): 370.59,259.37,191.27,149.96
+
+Cluster 113
+Cliques (1): Clique121
+Nodes (4): arCOG01219,arCOG00358,arCOG04071,arCOG04089
+Seq. Length (288.65): 374.68,370.59,259.37,149.96
+
+Cluster 114
+Cliques (1): Clique122
+Nodes (4): arCOG00470,arCOG01015,arCOG01923,arCOG04089
+Seq. Length (351.26): 466.88,411.97,376.22,149.96
+
+Cluster 115
+Cliques (1): Clique123
+Nodes (4): arCOG00470,arCOG01015,arCOG01219,arCOG04089
+Seq. Length (350.87): 466.88,411.97,374.68,149.96
+
+Cluster 116
+Cliques (1): Clique124
+Nodes (4): arCOG00470,arCOG01561,arCOG01923,arCOG04089
+Seq. Length (355.60): 466.88,429.35,376.22,149.96
+
+Cluster 117
+Cliques (1): Clique125
+Nodes (4): arCOG00470,arCOG01219,arCOG00358,arCOG04089
+Seq. Length (340.53): 466.88,374.68,370.59,149.96
+
+Cluster 118
+Cliques (1): Clique126
+Nodes (4): arCOG01015,arCOG01923,arCOG04071,arCOG04243
+Seq. Length (296.63): 411.97,376.22,259.37,138.96
+
+Cluster 119
+Cliques (1): Clique127
+Nodes (4): arCOG01560,arCOG01015,arCOG04071,arCOG04243
+Seq. Length (361.47): 635.57,411.97,259.37,138.96
+
+Cluster 120
+Cliques (1): Clique128
+Nodes (4): arCOG01923,arCOG04288,arCOG01001,arCOG04243
+Seq. Length (285.52): 376.22,329.7,297.18,138.96
+
+Cluster 121
+Cliques (1): Clique129
+Nodes (4): arCOG01923,arCOG04288,arCOG04254,arCOG04243
+Seq. Length (261.26): 376.22,329.7,200.16,138.96
+
+Cluster 122
+Cliques (1): Clique130
+Nodes (4): arCOG00470,arCOG01015,arCOG01923,arCOG04243
+Seq. Length (348.51): 466.88,411.97,376.22,138.96
+
+Cluster 123
+Cliques (1): Clique131
+Nodes (4): arCOG00470,arCOG04281,arCOG01015,arCOG04243
+Seq. Length (363.36): 466.88,435.63,411.97,138.96
+
+Cluster 124
+Cliques (1): Clique132
+Nodes (4): arCOG00470,arCOG00358,arCOG04288,arCOG04245
+Seq. Length (346.66): 466.88,370.59,329.7,219.46
+
+Cluster 125
+Cliques (1): Clique133
+Nodes (4): arCOG01228,arCOG04070,arCOG04245,arCOG04087
+Seq. Length (306.20): 447.03,341.81,219.46,216.49
+
+Cluster 126
+Cliques (1): Clique134
+Nodes (4): arCOG00470,arCOG01015,arCOG04070,arCOG04245
+Seq. Length (360.03): 466.88,411.97,341.81,219.46
+
+Cluster 127
+Cliques (1): Clique135
+Nodes (4): arCOG00470,arCOG01228,arCOG04245,arCOG04240
+Seq. Length (316.16): 466.88,447.03,219.46,131.26
+
+Cluster 128
+Cliques (1): Clique136
+Nodes (4): arCOG00470,arCOG04288,arCOG04245,arCOG04240
+Seq. Length (286.82): 466.88,329.7,219.46,131.26
+
+Cluster 129
+Cliques (1): Clique137
+Nodes (4): arCOG00470,arCOG04288,arCOG04245,arCOG04243
+Seq. Length (288.75): 466.88,329.7,219.46,138.96
+
+Cluster 130
+Cliques (1): Clique138
+Nodes (4): arCOG00470,arCOG01015,arCOG04245,arCOG04243
+Seq. Length (309.32): 466.88,411.97,219.46,138.96
+
+Cluster 131
+Cliques (1): Clique139
+Nodes (4): arCOG01015,arCOG04071,arCOG04245,arCOG04243
+Seq. Length (257.44): 411.97,259.37,219.46,138.96
+
+Cluster 132
+Cliques (1): Clique140
+Nodes (4): arCOG04169,arCOG04070,arCOG04245,arCOG04087
+Seq. Length (312.87): 473.7,341.81,219.46,216.49
+
+Cluster 133
+Cliques (1): Clique141
+Nodes (3): arCOG01561,arCOG04071,arCOG01751
+Seq. Length (271.92): 429.35,259.37,127.04
+
+Cluster 134
+Cliques (1): Clique142
+Nodes (3): arCOG04169,arCOG01563,arCOG04223
+Seq. Length (330.02): 473.7,413.81,102.56
+
+Cluster 135
+Cliques (1): Clique143
+Nodes (3): arCOG01001,arCOG04071,arCOG04176
+Seq. Length (259.87): 297.18,259.37,223.06
+
+Cluster 136
+Cliques (1): Clique144
+Nodes (3): arCOG01561,arCOG01358,arCOG04071
+Seq. Length (370.70): 429.35,423.38,259.37
+
+Cluster 137
+Cliques (1): Clique145
+Nodes (3): arCOG01015,arCOG04176,arCOG01920
+Seq. Length (264.82): 411.97,223.06,159.42
+
+Cluster 138
+Cliques (1): Clique146
+Nodes (3): arCOG01015,arCOG04070,arCOG01920
+Seq. Length (304.40): 411.97,341.81,159.42
+
+Cluster 139
+Cliques (1): Clique147
+Nodes (3): arCOG01015,arCOG04071,arCOG04176
+Seq. Length (298.13): 411.97,259.37,223.06
+
+Cluster 140
+Cliques (1): Clique148
+Nodes (3): arCOG01015,arCOG01219,arCOG01920
+Seq. Length (315.36): 411.97,374.68,159.42
+
+Cluster 141
+Cliques (1): Clique149
+Nodes (3): arCOG01559,arCOG04288,arCOG04067
+Seq. Length (434.04): 732.2,329.7,240.23
+
+Cluster 142
+Cliques (1): Clique150
+Nodes (3): arCOG04302,arCOG00470,arCOG04176
+Seq. Length (419.72): 569.21,466.88,223.06
+
+Cluster 143
+Cliques (1): Clique151
+Nodes (3): arCOG00470,arCOG04288,arCOG04239
+Seq. Length (325.15): 466.88,329.7,178.88
+
+Cluster 144
+Cliques (1): Clique152
+Nodes (3): arCOG04071,arCOG04130,arCOG04091
+Seq. Length (197.83): 259.37,203.48,130.65
+
+Cluster 145
+Cliques (1): Clique153
+Nodes (3): arCOG01741,arCOG04094,arCOG01016
+Seq. Length (195.37): 347.1,124.19,114.82
+
+Cluster 146
+Cliques (1): Clique154
+Nodes (3): arCOG01559,arCOG01741,arCOG04094
+Seq. Length (401.16): 732.2,347.1,124.19
+
+Cluster 147
+Cliques (1): Clique155
+Nodes (3): arCOG01015,arCOG01923,arCOG04097
+Seq. Length (342.56): 411.97,376.22,239.49
+
+Cluster 148
+Cliques (1): Clique156
+Nodes (3): arCOG01923,arCOG01001,arCOG04097
+Seq. Length (304.30): 376.22,297.18,239.49
+
+Cluster 149
+Cliques (1): Clique157
+Nodes (3): arCOG04302,arCOG01923,arCOG04097
+Seq. Length (394.97): 569.21,376.22,239.49
+
+Cluster 150
+Cliques (1): Clique158
+Nodes (3): arCOG01219,arCOG04071,arCOG04098
+Seq. Length (263.66): 374.68,259.37,156.93
+
+Cluster 151
+Cliques (1): Clique159
+Nodes (3): arCOG01001,arCOG04176,arCOG00675
+Seq. Length (236.55): 297.18,223.06,189.42
+
+Cluster 152
+Cliques (1): Clique160
+Nodes (3): arCOG01560,arCOG01001,arCOG00675
+Seq. Length (374.06): 635.57,297.18,189.42
+
+Cluster 153
+Cliques (1): Clique161
+Nodes (3): arCOG04288,arCOG00078,arCOG04254
+Seq. Length (251.60): 329.7,224.93,200.16
+
+Cluster 154
+Cliques (1): Clique162
+Nodes (3): arCOG04071,arCOG04254,arCOG04092
+Seq. Length (212.75): 259.37,200.16,178.72
+
+Cluster 155
+Cliques (1): Clique163
+Nodes (3): arCOG00470,arCOG04187,arCOG04092
+Seq. Length (293.16): 466.88,233.88,178.72
+
+Cluster 156
+Cliques (1): Clique164
+Nodes (3): arCOG01560,arCOG04302,arCOG04187
+Seq. Length (479.55): 635.57,569.21,233.88
+
+Cluster 157
+Cliques (1): Clique165
+Nodes (3): arCOG01560,arCOG04187,arCOG04239
+Seq. Length (349.44): 635.57,233.88,178.88
+
+Cluster 158
+Cliques (1): Clique166
+Nodes (3): arCOG00470,arCOG04187,arCOG04239
+Seq. Length (293.21): 466.88,233.88,178.88
+
+Cluster 159
+Cliques (1): Clique167
+Nodes (3): arCOG01559,arCOG04107,arCOG04071
+Seq. Length (419.06): 732.2,265.61,259.37
+
+Cluster 160
+Cliques (1): Clique168
+Nodes (3): arCOG00865,arCOG04071,arCOG04072
+Seq. Length (272.24): 472.82,259.37,84.52
+
+Cluster 161
+Cliques (1): Clique169
+Nodes (3): arCOG00865,arCOG04071,arCOG01751
+Seq. Length (286.41): 472.82,259.37,127.04
+
+Cluster 162
+Cliques (1): Clique170
+Nodes (3): arCOG00865,arCOG01563,arCOG04094
+Seq. Length (336.94): 472.82,413.81,124.19
+
+Cluster 163
+Cliques (1): Clique171
+Nodes (3): arCOG00865,arCOG04071,arCOG00781
+Seq. Length (295.32): 472.82,259.37,153.76
+
+Cluster 164
+Cliques (1): Clique172
+Nodes (3): arCOG04281,arCOG04176,arCOG00675
+Seq. Length (282.70): 435.63,223.06,189.42
+
+Cluster 165
+Cliques (1): Clique173
+Nodes (3): arCOG04281,arCOG00078,arCOG04176
+Seq. Length (294.54): 435.63,224.93,223.06
+
+Cluster 166
+Cliques (1): Clique174
+Nodes (3): arCOG04281,arCOG00406,arCOG01563
+Seq. Length (427.41): 435.63,432.79,413.81
+
+Cluster 167
+Cliques (1): Clique175
+Nodes (3): arCOG01741,arCOG01180,arCOG04186
+Seq. Length (274.17): 347.1,265.14,210.26
+
+Cluster 168
+Cliques (1): Clique176
+Nodes (3): arCOG04281,arCOG01561,arCOG04087
+Seq. Length (360.49): 435.63,429.35,216.49
+
+Cluster 169
+Cliques (1): Clique177
+Nodes (3): arCOG04169,arCOG01923,arCOG04087
+Seq. Length (355.47): 473.7,376.22,216.49
+
+Cluster 170
+Cliques (1): Clique178
+Nodes (3): arCOG04281,arCOG00078,arCOG04087
+Seq. Length (292.35): 435.63,224.93,216.49
+
+Cluster 171
+Cliques (1): Clique179
+Nodes (3): arCOG04187,arCOG04150,arCOG04239
+Seq. Length (201.34): 233.88,191.27,178.88
+
+Cluster 172
+Cliques (1): Clique180
+Nodes (3): arCOG01228,arCOG04281,arCOG04087
+Seq. Length (366.38): 447.03,435.63,216.49
+
+Cluster 173
+Cliques (1): Clique181
+Nodes (3): arCOG01228,arCOG01923,arCOG00780
+Seq. Length (314.42): 447.03,376.22,120.0
+
+Cluster 174
+Cliques (1): Clique182
+Nodes (3): arCOG01228,arCOG04071,arCOG01751
+Seq. Length (277.81): 447.03,259.37,127.04
+
+Cluster 175
+Cliques (1): Clique183
+Nodes (3): arCOG01228,arCOG04071,arCOG04072
+Seq. Length (263.64): 447.03,259.37,84.52
+
+Cluster 176
+Cliques (1): Clique184
+Nodes (3): arCOG04256,arCOG01228,arCOG04070
+Seq. Length (418.23): 465.85,447.03,341.81
+
+Cluster 177
+Cliques (1): Clique185
+Nodes (3): arCOG01228,arCOG01219,arCOG04129
+Seq. Length (307.44): 447.03,374.68,100.6
+
+Cluster 178
+Cliques (1): Clique186
+Nodes (3): arCOG04089,arCOG04094,arCOG01016
+Seq. Length (129.66): 149.96,124.19,114.82
+
+Cluster 179
+Cliques (1): Clique187
+Nodes (3): arCOG00078,arCOG04087,arCOG04089
+Seq. Length (197.13): 224.93,216.49,149.96
+
+Cluster 180
+Cliques (1): Clique188
+Nodes (3): arCOG00078,arCOG04089,arCOG04094
+Seq. Length (166.36): 224.93,149.96,124.19
+
+Cluster 181
+Cliques (1): Clique189
+Nodes (3): arCOG01561,arCOG00029,arCOG04089
+Seq. Length (254.85): 429.35,185.23,149.96
+
+Cluster 182
+Cliques (1): Clique190
+Nodes (3): arCOG00029,arCOG04089,arCOG01016
+Seq. Length (150.00): 185.23,149.96,114.82
+
+Cluster 183
+Cliques (1): Clique191
+Nodes (3): arCOG04288,arCOG00675,arCOG04240
+Seq. Length (216.79): 329.7,189.42,131.26
+
+Cluster 184
+Cliques (1): Clique192
+Nodes (3): arCOG04071,arCOG04245,arCOG04091
+Seq. Length (203.16): 259.37,219.46,130.65
+
+Cluster 185
+Cliques (1): Clique193
+Nodes (3): arCOG00358,arCOG04071,arCOG04245
+Seq. Length (283.14): 370.59,259.37,219.46
+
+Cluster 186
+Cliques (1): Clique194
+Nodes (3): arCOG04071,arCOG04245,arCOG04289
+Seq. Length (231.86): 259.37,219.46,216.76
+
+Cluster 187
+Cliques (1): Clique195
+Nodes (3): arCOG04245,arCOG01722,arCOG04240
+Seq. Length (169.75): 219.46,158.54,131.26
+
+Cluster 188
+Cliques (1): Clique196
+Nodes (3): arCOG04169,arCOG04245,arCOG04289
+Seq. Length (303.31): 473.7,219.46,216.76
+
+Cluster 189
+Cliques (1): Clique197
+Nodes (3): arCOG00078,arCOG04245,arCOG04087
+Seq. Length (220.29): 224.93,219.46,216.49
+
+Cluster 190
+Cliques (1): Clique198
+Nodes (3): arCOG04288,arCOG00078,arCOG04245
+Seq. Length (258.03): 329.7,224.93,219.46
+
+Cluster 191
+Cliques (1): Clique199
+Nodes (3): arCOG00470,arCOG04249,arCOG01923
+Seq. Length (428.74): 466.88,443.12,376.22
+
+Cluster 192
+Cliques (1): Clique200
+Nodes (2): arCOG01122,arCOG01920
+Seq. Length (194.13): 228.85,159.42
+
+Cluster 193
+Cliques (1): Clique201
+Nodes (2): arCOG01563,arCOG04067
+Seq. Length (327.02): 413.81,240.23
+
+Cluster 194
+Cliques (1): Clique202
+Nodes (2): arCOG00402,arCOG04130
+Seq. Length (341.30): 479.12,203.48
+
+Cluster 195
+Cliques (1): Clique203
+Nodes (2): arCOG00402,arCOG04072
+Seq. Length (281.82): 479.12,84.52
+
+Cluster 196
+Cliques (1): Clique204
+Nodes (2): arCOG00078,arCOG00780
+Seq. Length (172.47): 224.93,120.0
+
+Cluster 197
+Cliques (1): Clique205
+Nodes (2): arCOG00412,arCOG00410
+Seq. Length (521.18): 550.67,491.69
+
+Cluster 198
+Cliques (1): Clique206
+Nodes (2): arCOG01559,arCOG04090
+Seq. Length (457.59): 732.2,182.97
+
+Cluster 199
+Cliques (1): Clique207
+Nodes (2): arCOG04302,arCOG04091
+Seq. Length (349.93): 569.21,130.65
+
+Cluster 200
+Cliques (1): Clique208
+Nodes (2): arCOG04092,arCOG00780
+Seq. Length (149.36): 178.72,120.0
+
+Cluster 201
+Cliques (1): Clique209
+Nodes (2): arCOG04092,arCOG01722
+Seq. Length (168.63): 178.72,158.54
+
+Cluster 202
+Cliques (1): Clique210
+Nodes (2): arCOG04093,arCOG01920
+Seq. Length (200.99): 242.55,159.42
+
+Cluster 203
+Cliques (1): Clique211
+Nodes (2): arCOG04097,arCOG01722
+Seq. Length (199.01): 239.49,158.54
+
+Cluster 204
+Cliques (1): Clique212
+Nodes (2): arCOG01563,arCOG04099
+Seq. Length (278.80): 413.81,143.79
+
+Cluster 205
+Cliques (1): Clique213
+Nodes (2): arCOG04187,arCOG04258
+Seq. Length (157.56): 233.88,81.24
+
+Cluster 206
+Cliques (1): Clique214
+Nodes (2): arCOG01559,arCOG04258
+Seq. Length (406.72): 732.2,81.24
+
+Cluster 207
+Cliques (1): Clique215
+Nodes (2): arCOG01559,arCOG04185
+Seq. Length (442.04): 732.2,151.87
+
+Cluster 208
+Cliques (1): Clique216
+Nodes (2): arCOG04302,arCOG04182
+Seq. Length (338.73): 569.21,108.25
+
+Cluster 209
+Cliques (1): Clique217
+Nodes (2): arCOG01015,arCOG04182
+Seq. Length (260.11): 411.97,108.25
+
+Cluster 210
+Cliques (1): Clique218
+Nodes (2): arCOG01560,arCOG00869
+Seq. Length (415.86): 635.57,196.15
+
+Cluster 211
+Cliques (1): Clique219
+Nodes (2): arCOG04256,arCOG00869
+Seq. Length (331.00): 465.85,196.15
+
+Cluster 212
+Cliques (1): Clique220
+Nodes (2): arCOG00868,arCOG04064
+Seq. Length (528.87): 617.14,440.6
+
+Cluster 213
+Cliques (1): Clique221
+Nodes (2): arCOG00868,arCOG04179
+Seq. Length (365.68): 617.14,114.22
+
+Cluster 214
+Cliques (1): Clique222
+Nodes (2): arCOG04107,arCOG00869
+Seq. Length (230.88): 265.61,196.15
+
+Cluster 215
+Cliques (1): Clique223
+Nodes (2): arCOG00865,arCOG01920
+Seq. Length (316.12): 472.82,159.42
+
+Cluster 216
+Cliques (1): Clique224
+Nodes (2): arCOG00410,arCOG00781
+Seq. Length (322.73): 491.69,153.76
+
+Cluster 217
+Cliques (1): Clique225
+Nodes (2): arCOG04281,arCOG00869
+Seq. Length (315.89): 435.63,196.15
+
+Cluster 218
+Cliques (1): Clique226
+Nodes (2): arCOG01183,arCOG04258
+Seq. Length (253.02): 424.8,81.24
+
+Cluster 219
+Cliques (1): Clique227
+Nodes (2): arCOG04087,arCOG04092
+Seq. Length (197.61): 216.49,178.72
+
+Cluster 220
+Cliques (1): Clique228
+Nodes (2): arCOG04087,arCOG04209
+Seq. Length (207.88): 216.49,199.26
+
+Cluster 221
+Cliques (1): Clique229
+Nodes (2): arCOG04087,arCOG04239
+Seq. Length (197.69): 216.49,178.88
+
+Cluster 222
+Cliques (1): Clique230
+Nodes (2): arCOG00980,arCOG04185
+Seq. Length (203.95): 256.03,151.87
+
+Cluster 223
+Cliques (1): Clique231
+Nodes (2): arCOG00985,arCOG00780
+Seq. Length (141.28): 162.55,120.0
+
+Cluster 224
+Cliques (1): Clique232
+Nodes (2): arCOG01228,arCOG04093
+Seq. Length (344.79): 447.03,242.55
+
+Cluster 225
+Cliques (1): Clique233
+Nodes (1): arCOG04473
+Seq. Length (91.22): 91.22
+
+Cluster 226
+Cliques (1): Clique234
+Nodes (1): arCOG01038
+Seq. Length (177.02): 177.02
+
+Cluster 227
+Cliques (1): Clique235
+Nodes (1): arCOG00081
+Seq. Length (225.44): 225.44
+
+Cluster 228
+Cliques (1): Clique236
+Nodes (1): arCOG04077
+Seq. Length (64.76): 64.76
+
+Cluster 229
+Cliques (1): Clique237
+Nodes (1): arCOG04161
+Seq. Length (259.48): 259.48
+
+Cluster 230
+Cliques (1): Clique238
+Nodes (1): arCOG04372
+Seq. Length (162.36): 162.36
+
+Cluster 231
+Cliques (1): Clique239
+Nodes (1): arCOG04277
+Seq. Length (131.34): 131.34
+
+Cluster 232
+Cliques (1): Clique240
+Nodes (1): arCOG00487
+Seq. Length (602.10): 602.1
+
+Cluster 233
+Cliques (1): Clique241
+Nodes (1): arCOG04228
+Seq. Length (117.69): 117.69
+
+Cluster 234
+Cliques (1): Clique242
+Nodes (1): arCOG04184
+Seq. Length (189.24): 189.24
+
+Cluster 235
+Cliques (1): Clique243
+Nodes (1): arCOG00035
+Seq. Length (230.18): 230.18
+
+Cluster 236
+Cliques (1): Clique244
+Nodes (1): arCOG01950
+Seq. Length (66.60): 66.6
+
+Cluster 237
+Cliques (1): Clique245
+Nodes (1): arCOG01988
+Seq. Length (90.90): 90.9
+
+Cluster 238
+Cliques (1): Clique246
+Nodes (1): arCOG04108
+Seq. Length (63.69): 63.69
+
+Cluster 239
+Cliques (1): Clique247
+Nodes (1): arCOG04255
+Seq. Length (153.10): 153.1
+
+Cluster 240
+Cliques (1): Clique248
+Nodes (1): arCOG04106
+Seq. Length (175.24): 175.24
+
+Cluster 241
+Cliques (1): Clique249
+Nodes (1): arCOG04086
+Seq. Length (157.88): 157.88
+
+Cluster 242
+Cliques (1): Clique250
+Nodes (1): arCOG04111
+Seq. Length (94.55): 94.55
+
+Cluster 243
+Cliques (1): Clique251
+Nodes (1): arCOG04208
+Seq. Length (89.01): 89.01
+
+Cluster 244
+Cliques (1): Clique252
+Nodes (1): arCOG04113
+Seq. Length (175.94): 175.94
+
+Cluster 245
+Cliques (1): Clique253
+Nodes (1): arCOG04154
+Seq. Length (128.33): 128.33
+
+Cluster 246
+Cliques (1): Clique254
+Nodes (1): arCOG04244
+Seq. Length (67.75): 67.75
+

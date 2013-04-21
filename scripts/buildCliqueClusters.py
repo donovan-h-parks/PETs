@@ -331,7 +331,12 @@ class Graph(object):
 						Stack.append(new1_search_node)     
 		return Cliques
 
-def doWork(args):
+def doWork(args, cliqueOut):
+	print str(args.clique_size) + '-clique graph'
+	
+	splitsToRetain = args.input[args.input.find('-')+1:args.input.find('.compatibility.tsv')]
+	print 'Splits to retain: ' + splitsToRetain
+	
 	# read sequence length
 	geneIdToLen = {}
 	for line in open(args.seq_len):
@@ -358,8 +363,8 @@ def doWork(args):
 		index += 1
 		
 	# calculate fraction of possible edges that have been made
-	f = float(numLinks) / possibleLinks
-	print '  Fraction of edges: %.2f' % f
+	fracLinks = float(numLinks) / possibleLinks
+	print '  Fraction of edges: %.2f' % fracLinks
 		
 	# create graph
 	graph = Graph()
@@ -446,15 +451,22 @@ def doWork(args):
 	fout.close()
 	
 	nodesInCliqueClusters.sort(reverse=True)
+	
 	print '  Size of largest cluster: ' + str(nodesInCliqueClusters[0])
 	print '  Size of 2nd largest cluster: ' + str(nodesInCliqueClusters[1])
 	print ''
-	
 	if nodesInCliqueClusters[0] > 2*nodesInCliqueClusters[0]:
 		print '  Community is highly structured according to Vicsek criterion.'
-		return True
 		
-	return False
+	cliqueOut.write(str(args.clique_size) + '-clique graph\n') 
+	cliqueOut.write('Splits retained: ' + splitsToRetain + '\n')
+	cliqueOut.write('Fraction of edges: %.2f' % fracLinks + '\n')
+	cliqueOut.write('Size of largest cluster: ' + str(nodesInCliqueClusters[0]) + '\n')
+	cliqueOut.write('Size of 2nd largest cluster: ' + str(nodesInCliqueClusters[1]) + '\n')
+	if nodesInCliqueClusters[0] > 2*nodesInCliqueClusters[0]:
+		cliqueOut.write('Community is highly structured according to Vicsek criterion.\n')
+		
+	cliqueOut.write('\n')
 			
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
@@ -465,4 +477,14 @@ if __name__ == '__main__':
 
 	args = parser.parse_args()
 	
-	doWork(args)
+	cliqueOut = open('../data/ar/clique.cluster.stats.txt', 'w')
+	for x in xrange(39, 10, -1):
+		for k in xrange(3, 10):
+			args.clique_size = k
+			args.input = '../data/ar/ar-' + str(x) + '.compatibility.tsv'
+			args.seq_len = '../data/seqLength.txt'
+			args.output_prefix = '../data/ar/ar-' + str(x) + '.k' + str(k)
+			
+	
+			doWork(args, cliqueOut)
+	cliqueOut.close()

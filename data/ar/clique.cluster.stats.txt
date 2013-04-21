@@ -1,0 +1,546 @@
+3-clique graph
+Splits retained: 39
+Fraction of edges: 0.00
+Size of largest cluster: 2
+Size of 2nd largest cluster: 2
+
+4-clique graph
+Splits retained: 39
+Fraction of edges: 0.00
+Size of largest cluster: 2
+Size of 2nd largest cluster: 2
+
+5-clique graph
+Splits retained: 39
+Fraction of edges: 0.00
+Size of largest cluster: 2
+Size of 2nd largest cluster: 2
+
+6-clique graph
+Splits retained: 39
+Fraction of edges: 0.00
+Size of largest cluster: 2
+Size of 2nd largest cluster: 2
+
+7-clique graph
+Splits retained: 39
+Fraction of edges: 0.00
+Size of largest cluster: 2
+Size of 2nd largest cluster: 2
+
+8-clique graph
+Splits retained: 39
+Fraction of edges: 0.00
+Size of largest cluster: 2
+Size of 2nd largest cluster: 2
+
+9-clique graph
+Splits retained: 39
+Fraction of edges: 0.00
+Size of largest cluster: 2
+Size of 2nd largest cluster: 2
+
+3-clique graph
+Splits retained: 38
+Fraction of edges: 0.00
+Size of largest cluster: 3
+Size of 2nd largest cluster: 2
+
+4-clique graph
+Splits retained: 38
+Fraction of edges: 0.00
+Size of largest cluster: 3
+Size of 2nd largest cluster: 2
+
+5-clique graph
+Splits retained: 38
+Fraction of edges: 0.00
+Size of largest cluster: 3
+Size of 2nd largest cluster: 2
+
+6-clique graph
+Splits retained: 38
+Fraction of edges: 0.00
+Size of largest cluster: 3
+Size of 2nd largest cluster: 2
+
+7-clique graph
+Splits retained: 38
+Fraction of edges: 0.00
+Size of largest cluster: 3
+Size of 2nd largest cluster: 2
+
+8-clique graph
+Splits retained: 38
+Fraction of edges: 0.00
+Size of largest cluster: 3
+Size of 2nd largest cluster: 2
+
+9-clique graph
+Splits retained: 38
+Fraction of edges: 0.00
+Size of largest cluster: 3
+Size of 2nd largest cluster: 2
+
+3-clique graph
+Splits retained: 37
+Fraction of edges: 0.01
+Size of largest cluster: 3
+Size of 2nd largest cluster: 2
+
+4-clique graph
+Splits retained: 37
+Fraction of edges: 0.01
+Size of largest cluster: 3
+Size of 2nd largest cluster: 2
+
+5-clique graph
+Splits retained: 37
+Fraction of edges: 0.01
+Size of largest cluster: 3
+Size of 2nd largest cluster: 2
+
+6-clique graph
+Splits retained: 37
+Fraction of edges: 0.01
+Size of largest cluster: 3
+Size of 2nd largest cluster: 2
+
+7-clique graph
+Splits retained: 37
+Fraction of edges: 0.01
+Size of largest cluster: 3
+Size of 2nd largest cluster: 2
+
+8-clique graph
+Splits retained: 37
+Fraction of edges: 0.01
+Size of largest cluster: 3
+Size of 2nd largest cluster: 2
+
+9-clique graph
+Splits retained: 37
+Fraction of edges: 0.01
+Size of largest cluster: 3
+Size of 2nd largest cluster: 2
+
+3-clique graph
+Splits retained: 36
+Fraction of edges: 0.01
+Size of largest cluster: 3
+Size of 2nd largest cluster: 3
+
+4-clique graph
+Splits retained: 36
+Fraction of edges: 0.01
+Size of largest cluster: 3
+Size of 2nd largest cluster: 3
+
+5-clique graph
+Splits retained: 36
+Fraction of edges: 0.01
+Size of largest cluster: 3
+Size of 2nd largest cluster: 3
+
+6-clique graph
+Splits retained: 36
+Fraction of edges: 0.01
+Size of largest cluster: 3
+Size of 2nd largest cluster: 3
+
+7-clique graph
+Splits retained: 36
+Fraction of edges: 0.01
+Size of largest cluster: 3
+Size of 2nd largest cluster: 3
+
+8-clique graph
+Splits retained: 36
+Fraction of edges: 0.01
+Size of largest cluster: 3
+Size of 2nd largest cluster: 3
+
+9-clique graph
+Splits retained: 36
+Fraction of edges: 0.01
+Size of largest cluster: 3
+Size of 2nd largest cluster: 3
+
+3-clique graph
+Splits retained: 35
+Fraction of edges: 0.02
+Size of largest cluster: 8
+Size of 2nd largest cluster: 4
+
+4-clique graph
+Splits retained: 35
+Fraction of edges: 0.02
+Size of largest cluster: 3
+Size of 2nd largest cluster: 3
+
+5-clique graph
+Splits retained: 35
+Fraction of edges: 0.02
+Size of largest cluster: 3
+Size of 2nd largest cluster: 3
+
+6-clique graph
+Splits retained: 35
+Fraction of edges: 0.02
+Size of largest cluster: 3
+Size of 2nd largest cluster: 3
+
+7-clique graph
+Splits retained: 35
+Fraction of edges: 0.02
+Size of largest cluster: 3
+Size of 2nd largest cluster: 3
+
+8-clique graph
+Splits retained: 35
+Fraction of edges: 0.02
+Size of largest cluster: 3
+Size of 2nd largest cluster: 3
+
+9-clique graph
+Splits retained: 35
+Fraction of edges: 0.02
+Size of largest cluster: 3
+Size of 2nd largest cluster: 3
+
+3-clique graph
+Splits retained: 34
+Fraction of edges: 0.03
+Size of largest cluster: 26
+Size of 2nd largest cluster: 2
+
+4-clique graph
+Splits retained: 34
+Fraction of edges: 0.03
+Size of largest cluster: 5
+Size of 2nd largest cluster: 4
+
+5-clique graph
+Splits retained: 34
+Fraction of edges: 0.03
+Size of largest cluster: 4
+Size of 2nd largest cluster: 4
+
+6-clique graph
+Splits retained: 34
+Fraction of edges: 0.03
+Size of largest cluster: 4
+Size of 2nd largest cluster: 4
+
+7-clique graph
+Splits retained: 34
+Fraction of edges: 0.03
+Size of largest cluster: 4
+Size of 2nd largest cluster: 4
+
+8-clique graph
+Splits retained: 34
+Fraction of edges: 0.03
+Size of largest cluster: 4
+Size of 2nd largest cluster: 4
+
+9-clique graph
+Splits retained: 34
+Fraction of edges: 0.03
+Size of largest cluster: 4
+Size of 2nd largest cluster: 4
+
+3-clique graph
+Splits retained: 33
+Fraction of edges: 0.05
+Size of largest cluster: 46
+Size of 2nd largest cluster: 2
+
+4-clique graph
+Splits retained: 33
+Fraction of edges: 0.05
+Size of largest cluster: 27
+Size of 2nd largest cluster: 6
+
+5-clique graph
+Splits retained: 33
+Fraction of edges: 0.05
+Size of largest cluster: 16
+Size of 2nd largest cluster: 5
+
+6-clique graph
+Splits retained: 33
+Fraction of edges: 0.05
+Size of largest cluster: 8
+Size of 2nd largest cluster: 5
+
+7-clique graph
+Splits retained: 33
+Fraction of edges: 0.05
+Size of largest cluster: 6
+Size of 2nd largest cluster: 6
+
+8-clique graph
+Splits retained: 33
+Fraction of edges: 0.05
+Size of largest cluster: 6
+Size of 2nd largest cluster: 6
+
+9-clique graph
+Splits retained: 33
+Fraction of edges: 0.05
+Size of largest cluster: 6
+Size of 2nd largest cluster: 6
+
+3-clique graph
+Splits retained: 32
+Fraction of edges: 0.08
+Size of largest cluster: 64
+Size of 2nd largest cluster: 2
+
+4-clique graph
+Splits retained: 32
+Fraction of edges: 0.08
+Size of largest cluster: 48
+Size of 2nd largest cluster: 4
+
+5-clique graph
+Splits retained: 32
+Fraction of edges: 0.08
+Size of largest cluster: 31
+Size of 2nd largest cluster: 4
+
+6-clique graph
+Splits retained: 32
+Fraction of edges: 0.08
+Size of largest cluster: 12
+Size of 2nd largest cluster: 6
+
+7-clique graph
+Splits retained: 32
+Fraction of edges: 0.08
+Size of largest cluster: 7
+Size of 2nd largest cluster: 6
+
+8-clique graph
+Splits retained: 32
+Fraction of edges: 0.08
+Size of largest cluster: 7
+Size of 2nd largest cluster: 6
+
+9-clique graph
+Splits retained: 32
+Fraction of edges: 0.08
+Size of largest cluster: 7
+Size of 2nd largest cluster: 6
+
+3-clique graph
+Splits retained: 31
+Fraction of edges: 0.10
+Size of largest cluster: 71
+Size of 2nd largest cluster: 3
+
+4-clique graph
+Splits retained: 31
+Fraction of edges: 0.10
+Size of largest cluster: 60
+Size of 2nd largest cluster: 4
+
+5-clique graph
+Splits retained: 31
+Fraction of edges: 0.10
+Size of largest cluster: 48
+Size of 2nd largest cluster: 4
+
+6-clique graph
+Splits retained: 31
+Fraction of edges: 0.10
+Size of largest cluster: 26
+Size of 2nd largest cluster: 12
+
+7-clique graph
+Splits retained: 31
+Fraction of edges: 0.10
+Size of largest cluster: 16
+Size of 2nd largest cluster: 7
+
+8-clique graph
+Splits retained: 31
+Fraction of edges: 0.10
+Size of largest cluster: 10
+Size of 2nd largest cluster: 7
+
+9-clique graph
+Splits retained: 31
+Fraction of edges: 0.10
+Size of largest cluster: 8
+Size of 2nd largest cluster: 8
+
+3-clique graph
+Splits retained: 30
+Fraction of edges: 0.14
+Size of largest cluster: 74
+Size of 2nd largest cluster: 4
+
+4-clique graph
+Splits retained: 30
+Fraction of edges: 0.14
+Size of largest cluster: 70
+Size of 2nd largest cluster: 3
+
+5-clique graph
+Splits retained: 30
+Fraction of edges: 0.14
+Size of largest cluster: 63
+Size of 2nd largest cluster: 5
+
+6-clique graph
+Splits retained: 30
+Fraction of edges: 0.14
+Size of largest cluster: 56
+Size of 2nd largest cluster: 5
+
+7-clique graph
+Splits retained: 30
+Fraction of edges: 0.14
+Size of largest cluster: 48
+Size of 2nd largest cluster: 6
+
+8-clique graph
+Splits retained: 30
+Fraction of edges: 0.14
+Size of largest cluster: 33
+Size of 2nd largest cluster: 15
+
+9-clique graph
+Splits retained: 30
+Fraction of edges: 0.14
+Size of largest cluster: 22
+Size of 2nd largest cluster: 8
+
+3-clique graph
+Splits retained: 29
+Fraction of edges: 0.20
+Size of largest cluster: 76
+Size of 2nd largest cluster: 4
+
+4-clique graph
+Splits retained: 29
+Fraction of edges: 0.20
+Size of largest cluster: 74
+Size of 2nd largest cluster: 3
+
+5-clique graph
+Splits retained: 29
+Fraction of edges: 0.20
+Size of largest cluster: 72
+Size of 2nd largest cluster: 4
+
+6-clique graph
+Splits retained: 29
+Fraction of edges: 0.20
+Size of largest cluster: 64
+Size of 2nd largest cluster: 5
+
+7-clique graph
+Splits retained: 29
+Fraction of edges: 0.20
+Size of largest cluster: 61
+Size of 2nd largest cluster: 6
+
+8-clique graph
+Splits retained: 29
+Fraction of edges: 0.20
+Size of largest cluster: 56
+Size of 2nd largest cluster: 7
+
+9-clique graph
+Splits retained: 29
+Fraction of edges: 0.20
+Size of largest cluster: 49
+Size of 2nd largest cluster: 8
+
+3-clique graph
+Splits retained: 28
+Fraction of edges: 0.25
+Size of largest cluster: 83
+Size of 2nd largest cluster: 5
+
+4-clique graph
+Splits retained: 28
+Fraction of edges: 0.25
+Size of largest cluster: 80
+Size of 2nd largest cluster: 3
+
+5-clique graph
+Splits retained: 28
+Fraction of edges: 0.25
+Size of largest cluster: 78
+Size of 2nd largest cluster: 4
+
+6-clique graph
+Splits retained: 28
+Fraction of edges: 0.25
+Size of largest cluster: 75
+Size of 2nd largest cluster: 5
+
+7-clique graph
+Splits retained: 28
+Fraction of edges: 0.25
+Size of largest cluster: 66
+Size of 2nd largest cluster: 6
+
+8-clique graph
+Splits retained: 28
+Fraction of edges: 0.25
+Size of largest cluster: 63
+Size of 2nd largest cluster: 7
+
+9-clique graph
+Splits retained: 28
+Fraction of edges: 0.25
+Size of largest cluster: 59
+Size of 2nd largest cluster: 8
+
+3-clique graph
+Splits retained: 27
+Fraction of edges: 0.31
+Size of largest cluster: 91
+Size of 2nd largest cluster: 2
+
+4-clique graph
+Splits retained: 27
+Fraction of edges: 0.31
+Size of largest cluster: 86
+Size of 2nd largest cluster: 3
+
+5-clique graph
+Splits retained: 27
+Fraction of edges: 0.31
+Size of largest cluster: 82
+Size of 2nd largest cluster: 4
+
+6-clique graph
+Splits retained: 27
+Fraction of edges: 0.31
+Size of largest cluster: 80
+Size of 2nd largest cluster: 5
+
+7-clique graph
+Splits retained: 27
+Fraction of edges: 0.31
+Size of largest cluster: 78
+Size of 2nd largest cluster: 6
+
+8-clique graph
+Splits retained: 27
+Fraction of edges: 0.31
+Size of largest cluster: 75
+Size of 2nd largest cluster: 7
+
+9-clique graph
+Splits retained: 27
+Fraction of edges: 0.31
+Size of largest cluster: 69
+Size of 2nd largest cluster: 8
+
